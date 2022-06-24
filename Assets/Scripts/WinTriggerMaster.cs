@@ -32,16 +32,23 @@ public class WinTriggerMaster : MonoBehaviour
     {
         if (objectsTriggered == totalItemsInt)
         {
-            winCanvas.SetActive(true);
-            Debug.Log("Win condition achieved");
-            Time.timeScale = 0;
+            Invoke("WinTrigger", 0f);
         }
+    }
+
+    public void WinTrigger()
+    {
+        winCanvas.SetActive(true);
+        Debug.Log("Win condition achieved");
+        Time.timeScale = 0;
     }
 
     public void ItemsRemaining()
     {
         itemsRemainingInt = totalItemsInt - objectsTriggered;
-        itemsRemaining.text = itemsRemainingInt.ToString() + " / " + totalItemsInt.ToString() + " Items Remaining"; 
+        itemsRemaining.text = itemsRemainingInt.ToString() + " / " + totalItemsInt.ToString() + " Items Remaining";
+
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -56,7 +63,7 @@ public class WinTriggerMaster : MonoBehaviour
                     objectsTriggered++;
                     obj.GetComponent<PlayerGuideObjects>().endTriggered = true;
                     Debug.Log(objectsTriggered);
-                    CheckWinCondition();
+                    Invoke("CheckWinCondition", 1f);
                     ItemsRemaining();
                 }
             }
