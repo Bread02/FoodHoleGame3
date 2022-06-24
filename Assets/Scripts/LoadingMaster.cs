@@ -19,6 +19,7 @@ public class LoadingMaster : MonoBehaviour
     {
         loadingCanvas = GameObject.Find("LoadingCanvas");
         loadingCanvas.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void ClickNextLevel()

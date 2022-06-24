@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerGuideObjects : MonoBehaviour
 {
-    public WinTriggerMaster winTriggerMaster;
+    private WinTriggerMaster winTriggerMaster;
     public bool endTriggered;
 
     // Start is called before the first frame update

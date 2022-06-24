@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class CubeTiltController : MonoBehaviour
 {
-    public GameObject cube;
-    public Rigidbody cubeRB;
+    private GameObject cube;
+    private Rigidbody cubeRB;
 
-    public GameObject cubeRotateTowardsXPos;
-    public GameObject cubeRotateTowardsXNeg;
-    public GameObject cubeRotateTowardsZNeg;
-    public GameObject cubeRotateTowardsZPos;
-
-
-
+    private GameObject cubeRotateTowardsXPos;
+    private GameObject cubeRotateTowardsXNeg;
+    private GameObject cubeRotateTowardsZNeg;
+    private GameObject cubeRotateTowardsZPos;
 
     // Start is called before the first frame update
     void Start()
