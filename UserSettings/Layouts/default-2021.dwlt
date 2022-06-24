@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 41
+  controlID: 45
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 42
+  controlID: 46
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 43
+  controlID: 47
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,38 +317,38 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Altai\Documents\GitHub\FoodHoleGame3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d45c0000
-    m_LastClickedID: 23764
-    m_ExpandedIDs: 00000000d45c000000ca9a3b
+    m_SelectedIDs: e05c0000
+    m_LastClickedID: 23776
+    m_ExpandedIDs: 00000000d45c0000e25c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Materials
+      m_OriginalName: Materials
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 23774
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -404,7 +404,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -490,7 +490,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 34fbffff
+      m_ExpandedIDs: ea57fdff6858fdffaa5bfdff685dfdff0262fdffea63fdff4c7ffdff2681fdff2881fdffae83fdff5885fdff72d4fdff74d4fdff38d6fdff3ad6fdfffeddfdffcadffdff68fbfdff5423feff6223feff1643feff2843feffb848fefff048feff3e80feff6080feff9c82feff3c8bfeff408bfeff6a8bfeff348efeffb690feff6892feff34cffeffe4d0feffe6d0feff26eefeff3208ffffdc09ffffde09ffff840bffff0e0dffff8c0effff2610ffff6012ffffea13ffff5616ffff3a18fffffe19ffffb21bffff6e1dffff321ffffff620ffffc222ffff7624ffff3626ffff4a28ffffe229ffff9e2bffff5a2dffff5e2fffff7a31ffff8c33ffffb635ffffc837ffffde39ffff183cffff3a3effff6040fffffe42ffff8245ffff5c47ffff1649ffff544bffff124dffff544dffff744fffff1458fffff659ffffe45affff4c9affff669affffac9affffec9affff069bffff0a9bffff289bffffeea4ffff34a5ffff92a5ffffbca5ffff4cb8fffff4bbffffcacfffff22fbffff26fbffff34fbffffd85a00004a740000e6750000f27f0000dedc00007edd0000a0e2000096f700002cfb0000f60301002a040100c616010000170100623f0100de400100fa400100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -739,9 +739,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 207.51064, y: 12.384216, z: 201.56712}
+    m_Target: {x: -5.3431706, y: -44.292717, z: 34.410576}
     speed: 2
-    m_Value: {x: 207.51064, y: 12.384216, z: 201.56712}
+    m_Value: {x: -5.3431706, y: -44.292717, z: 34.410576}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -788,13 +788,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.28730646, y: -0.3373804, z: 0.108932495, w: -0.889837}
+    m_Target: {x: 0.4668451, y: -0.005292502, z: 0.0027968339, w: 0.88436157}
     speed: 2
-    m_Value: {x: -0.28729975, y: -0.3373725, z: 0.10892995, w: -0.8898162}
+    m_Value: {x: 0.46682745, y: -0.0052923025, z: 0.0027967282, w: 0.8843281}
   m_Size:
-    m_Target: 545.02423
+    m_Target: 38.46117
     speed: 2
-    m_Value: 545.02423
+    m_Value: 38.46117
   m_Ortho:
     m_Target: 0
     speed: 2
