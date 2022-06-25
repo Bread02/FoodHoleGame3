@@ -11,6 +11,8 @@ public class GameDataManager : MonoBehaviour
 
     [SerializeField] UnlockedLevels unlockedLevels;
 
+    public UnlockedLevels unlockedLevels1 {get => unlockedLevels; set { unlockedLevels = value; } }
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -58,11 +60,341 @@ public class GameDataManager : MonoBehaviour
         Debug.Log("Saving game");
         WriteToSave();
     }
+
+    #region Unlock Levels
+    public void UnlockLevel2()
+    {
+        unlockedLevels1.level2Unlocked = true;
+    }
+
+    public void UnlockLevel3()
+    {
+        unlockedLevels1.level3Unlocked = true;
+    }
+
+    public void UnlockLevel4()
+    {
+        unlockedLevels1.level4Unlocked = true;
+    }
+
+    public void UnlockLevel5()
+    {
+        unlockedLevels1.level5Unlocked = true;
+    }
+
+    public void UnlockLevel6()
+    {
+        unlockedLevels1.level6Unlocked = true;
+    }
+
+    public void UnlockLevel7()
+    {
+        unlockedLevels1.level7Unlocked = true;
+    }
+
+    public void UnlockLevel8()
+    {
+        unlockedLevels1.level8Unlocked = true;
+    }
+
+    public void UnlockLevel9()
+    {
+        unlockedLevels1.level9Unlocked = true;
+    }
+
+    public void UnlockLevel10()
+    {
+        unlockedLevels1.level10Unlocked = true;
+    }
+
+    public void UnlockLevel11()
+    {
+        unlockedLevels1.level11Unlocked = true;
+    }
+
+    public void UnlockLevel12()
+    {
+        unlockedLevels1.level12Unlocked = true;
+    }
+
+    public void UnlockLevel13()
+    {
+        unlockedLevels1.level13Unlocked = true;
+    }
+
+    public void UnlockLevel14()
+    {
+        unlockedLevels1.level14Unlocked = true;
+    }
+
+    public void UnlockLevel15()
+    {
+        unlockedLevels1.level15Unlocked = true;
+    }
+
+    public void UnlockLevel16()
+    {
+        unlockedLevels1.level16Unlocked = true;
+    }
+
+    public void UnlockLevel17()
+    {
+        unlockedLevels1.level17Unlocked = true;
+    }
+
+    public void UnlockLevel18()
+
+    {
+        unlockedLevels1.level18Unlocked = true;
+    }
+
+    public void UnlockLevel19()
+    {
+        unlockedLevels1.level19Unlocked = true;
+    }
+
+
+    public void UnlockLevel20()
+    {
+        unlockedLevels1.level20Unlocked = true;
+    }
+
+    #endregion
+
+    #region Check Unlocked Levels
+    public bool Level2UnlockedCheck()
+    {
+        if (unlockedLevels1.level2Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level3UnlockedCheck()
+    {
+        if (unlockedLevels1.level3Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level4UnlockedCheck()
+    {
+        if (unlockedLevels1.level4Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level5UnlockedCheck()
+    {
+        if (unlockedLevels1.level5Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level6UnlockedCheck()
+    {
+        if (unlockedLevels1.level6Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level7UnlockedCheck()
+    {
+        if (unlockedLevels1.level7Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level8UnlockedCheck()
+    {
+        if (unlockedLevels1.level8Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level9UnlockedCheck()
+    {
+        if (unlockedLevels1.level9Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level10UnlockedCheck()
+    {
+        if (unlockedLevels1.level10Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level11UnlockedCheck()
+    {
+        if (unlockedLevels1.level11Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level12UnlockedCheck()
+    {
+        if (unlockedLevels1.level12Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level13UnlockedCheck()
+    {
+        if (unlockedLevels1.level13Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public bool Level14UnlockedCheck()
+    {
+        if (unlockedLevels1.level14Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level15UnlockedCheck()
+    {
+        if (unlockedLevels1.level15Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level16UnlockedCheck()
+    {
+        if (unlockedLevels1.level16Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level17UnlockedCheck()
+    {
+        if (unlockedLevels1.level17Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level18UnlockedCheck()
+    {
+        if (unlockedLevels1.level18Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level19UnlockedCheck()
+    {
+        if (unlockedLevels1.level19Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level20UnlockedCheck()
+
+    {
+        if (unlockedLevels1.level20Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    #endregion
 }
 
-    public class UnlockedLevels
-    {
-        public bool level2Unlocked;
+public class UnlockedLevels
+{
+    public bool level2Unlocked;
         public bool level3Unlocked;
         public bool level4Unlocked;
         public bool level5Unlocked;
