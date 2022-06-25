@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class CubeTiltController : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class CubeTiltController : MonoBehaviour
     private Button leftButton;
     private Button rightButton;
 
+    private EventTrigger upButtonTrigger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,11 +36,16 @@ public class CubeTiltController : MonoBehaviour
         rightButton = GameObject.Find("RightButton").GetComponent<Button>();
         downButton = GameObject.Find("DownButton").GetComponent<Button>();
 
+        upButtonTrigger = GameObject.Find("UpButton").GetComponent<EventTrigger>();
+       
+
+
         upButton.onClick.AddListener(UpButton);
         downButton.onClick.AddListener(DownButton);
         leftButton.onClick.AddListener(LeftButton);
         rightButton.onClick.AddListener(RightButton);
     }
+
 
     public void UpButton()
     {
