@@ -51,6 +51,7 @@ public class WinTriggerMaster : MonoBehaviour
         {
             case "Level 1":
                 gameDataManager.UnlockLevel2();
+                Debug.Log("Unlocking level 2");
                 break;
             case "Level 2":
                 gameDataManager.UnlockLevel3();
