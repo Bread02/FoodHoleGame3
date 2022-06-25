@@ -8,7 +8,12 @@ public class MainMenuManager : LoadingMaster
     // Start is called before the first frame update
 
     public GameObject mainMainCanvas;
-    public GameObject levelSelectCanvas;
+
+    [Header("Level Canvases")]
+    public GameObject levelSelectCanvas1;
+    public GameObject levelSelectCanvas2;
+    public GameObject levelSelectCanvas3;
+    public GameObject levelSelectCanvas4;
 
     public GameDataManager gameDataManager;
 
@@ -59,18 +64,51 @@ public class MainMenuManager : LoadingMaster
     {
         gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
         mainMainCanvas.SetActive(true);
-        levelSelectCanvas.SetActive(false);
+        HideAllLevelSelectCanvas();
     }
 
     public void ClickPlay()
     {
         mainMainCanvas.SetActive(false);
-        levelSelectCanvas.SetActive(true);
+        levelSelectCanvas1.SetActive(true);
         CheckUnlockedLevels();
+    }
+
+    public void HideAllLevelSelectCanvas()
+    {
+        levelSelectCanvas1.SetActive(false);
+        levelSelectCanvas2.SetActive(false);
+        levelSelectCanvas3.SetActive(false);
+        levelSelectCanvas4.SetActive(false);
+    }
+
+    public void ClickPage1()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas1.SetActive(true);
+    }
+
+    public void ClickPage2()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas2.SetActive(true);
+    }
+
+    public void ClickPage3()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas3.SetActive(true);
+    }
+
+    public void ClickPage4()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas4.SetActive(true);
     }
 
     public void CheckUnlockedLevels()
     {
+        
         if (gameDataManager.Level2UnlockedCheck())
         {
             level2Button.SetActive(true);
@@ -78,10 +116,10 @@ public class MainMenuManager : LoadingMaster
         }
         else
         {
-            level2Button.SetActive(false);
-            level2LockedButton.SetActive(true);
+           level2Button.SetActive(false);
+           level2LockedButton.SetActive(true);
         }
-
+        
         if (gameDataManager.Level3UnlockedCheck())
         {
             level3Button.SetActive(true);

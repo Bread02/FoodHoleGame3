@@ -9,7 +9,7 @@ public class GameDataManager : MonoBehaviour
 {
     public static GameDataManager gameDataManagerInstance;
 
-    [SerializeField] UnlockedLevels unlockedLevels;
+    [SerializeField] UnlockedLevels unlockedLevels = new UnlockedLevels();
 
     public UnlockedLevels unlockedLevels1 {get => unlockedLevels; set { unlockedLevels = value; } }
 
@@ -65,98 +65,135 @@ public class GameDataManager : MonoBehaviour
     public void UnlockLevel2()
     {
         unlockedLevels1.level2Unlocked = true;
+        SaveGame();
     }
 
     public void UnlockLevel3()
     {
         unlockedLevels1.level3Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel4()
     {
         unlockedLevels1.level4Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel5()
     {
         unlockedLevels1.level5Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel6()
     {
         unlockedLevels1.level6Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel7()
     {
         unlockedLevels1.level7Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel8()
     {
         unlockedLevels1.level8Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel9()
     {
         unlockedLevels1.level9Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel10()
     {
         unlockedLevels1.level10Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel11()
     {
         unlockedLevels1.level11Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel12()
     {
         unlockedLevels1.level12Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel13()
     {
         unlockedLevels1.level13Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel14()
     {
         unlockedLevels1.level14Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel15()
     {
         unlockedLevels1.level15Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel16()
     {
         unlockedLevels1.level16Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel17()
     {
         unlockedLevels1.level17Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel18()
 
     {
         unlockedLevels1.level18Unlocked = true;
+        SaveGame();
+
     }
 
     public void UnlockLevel19()
     {
         unlockedLevels1.level19Unlocked = true;
+        SaveGame();
+
     }
 
 
     public void UnlockLevel20()
     {
         unlockedLevels1.level20Unlocked = true;
+        SaveGame();
+
     }
 
     #endregion
@@ -171,7 +208,7 @@ public class GameDataManager : MonoBehaviour
         else
         {
             return false;
-        }
+        }     
     }
 
     public bool Level3UnlockedCheck()
