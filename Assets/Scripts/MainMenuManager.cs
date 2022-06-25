@@ -10,7 +10,7 @@ public class MainMenuManager : LoadingMaster
     public GameObject mainMainCanvas;
     public GameObject levelSelectCanvas;
 
-    private GameDataManager gameDataManager;
+    public GameDataManager gameDataManager;
 
     [Header("LevelButtons")]
     public GameObject level1Button;
@@ -35,7 +35,6 @@ public class MainMenuManager : LoadingMaster
     public GameObject level20Button;
 
     [Header("LevelLockedButtons")]
-    public GameObject level1LockedButton;
     public GameObject level2LockedButton;
     public GameObject level3LockedButton;
     public GameObject level4LockedButton;
@@ -67,6 +66,7 @@ public class MainMenuManager : LoadingMaster
     {
         mainMainCanvas.SetActive(false);
         levelSelectCanvas.SetActive(true);
+        CheckUnlockedLevels();
     }
 
     public void CheckUnlockedLevels()
