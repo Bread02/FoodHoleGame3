@@ -14,12 +14,15 @@ public class CubeTiltController : MonoBehaviour
     private GameObject cubeRotateTowardsZNeg;
     private GameObject cubeRotateTowardsZPos;
 
-    private Button upButton;
-    private Button downButton;
-    private Button leftButton;
-    private Button rightButton;
+    public bool upButtonPressed;
+    public bool downButtonPressed;
+    public bool leftButtonPressed;
+    public bool rightButtonPressed;
 
-    private EventTrigger upButtonTrigger;
+    public UpButtonManager upButtonManager;
+    public DownButtonManager downButtonManager;
+    public LeftButtonManager leftButtonManager;
+    public RightButtonManager rightButtonManager;
 
     // Start is called before the first frame update
     void Start()
@@ -31,77 +34,32 @@ public class CubeTiltController : MonoBehaviour
         cubeRotateTowardsZNeg = GameObject.Find("RotateTowardsZNeg");
         cubeRotateTowardsZPos = GameObject.Find("RotateTowardsZPos");
 
-        upButton = GameObject.Find("UpButton").GetComponent<Button>();
-        leftButton = GameObject.Find("LeftButton").GetComponent<Button>();
-        rightButton = GameObject.Find("RightButton").GetComponent<Button>();
-        downButton = GameObject.Find("DownButton").GetComponent<Button>();
-
-        upButtonTrigger = GameObject.Find("UpButton").GetComponent<EventTrigger>();
-       
-
-
-        upButton.onClick.AddListener(UpButton);
-        downButton.onClick.AddListener(DownButton);
-        leftButton.onClick.AddListener(LeftButton);
-        rightButton.onClick.AddListener(RightButton);
-    }
-
-
-    public void UpButton()
-    {
-        if (cube.transform.rotation.x <= 0.20)
-        {
-            cubeRotateTowardsXPos.transform.eulerAngles = new Vector3(20, 0, cube.transform.eulerAngles.z);
-            cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsXPos.transform.rotation, 1);
-        }
-    }
-
-    public void DownButton()
-    {
-        if (cube.transform.rotation.x >= -0.20)
-        {
-            cubeRotateTowardsXNeg.transform.eulerAngles = new Vector3(-20, 0, cube.transform.eulerAngles.z);
-            cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsXNeg.transform.rotation, 1);
-        }
-    }
-
-    public void LeftButton()
-    {
-        if (cube.transform.rotation.z <= 0.20)
-        {
-            cubeRotateTowardsZPos.transform.eulerAngles = new Vector3(cube.transform.eulerAngles.x, 0, 20);
-            cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsZPos.transform.rotation, 1);
-        }
-    }
-
-    public void RightButton()
-    {
-        if (cube.transform.rotation.z >= -0.20)
-        {
-            cubeRotateTowardsZNeg.transform.eulerAngles = new Vector3(cube.transform.eulerAngles.x, 0, -20);
-            cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsZNeg.transform.rotation, 1);
-        }
+        upButtonManager = GameObject.Find("UpButton").GetComponent<UpButtonManager>();
+        rightButtonManager = GameObject.Find("RightButton").GetComponent<RightButtonManager>();
+        leftButtonManager = GameObject.Find("LeftButton").GetComponent<LeftButtonManager>();
+        downButtonManager = GameObject.Find("DownButton").GetComponent<DownButtonManager>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.S) && cube.transform.rotation.x >= -0.20)
+
+        if (Input.GetKey(KeyCode.S) || downButtonManager.downButtonPressed && cube.transform.rotation.x >= -0.20)
         {
             cubeRotateTowardsXNeg.transform.eulerAngles = new Vector3(-20, 0, cube.transform.eulerAngles.z);
             cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsXNeg.transform.rotation, 1);
         }
-        if (Input.GetKey(KeyCode.W) && cube.transform.rotation.x <= 0.20)
+        if (Input.GetKey(KeyCode.W) || upButtonManager.upButtonPressed && cube.transform.rotation.x <= 0.20)
         {
             cubeRotateTowardsXPos.transform.eulerAngles = new Vector3(20, 0, cube.transform.eulerAngles.z);
             cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsXPos.transform.rotation, 1);
         }
-        if (Input.GetKey(KeyCode.A) && cube.transform.rotation.z <= 0.20)
+        if (Input.GetKey(KeyCode.A) || leftButtonManager.leftButtonPressed && cube.transform.rotation.z <= 0.20)
         {
             cubeRotateTowardsZPos.transform.eulerAngles = new Vector3(cube.transform.eulerAngles.x, 0, 20);
             cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsZPos.transform.rotation, 1);
         }
-        if (Input.GetKey(KeyCode.D) && cube.transform.rotation.z >= -0.20)
+        if (Input.GetKey(KeyCode.D) || rightButtonManager.rightButtonPressed && cube.transform.rotation.z >= -0.20)
         {
             cubeRotateTowardsZNeg.transform.eulerAngles = new Vector3(cube.transform.eulerAngles.x, 0, -20);
             cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsZNeg.transform.rotation, 1);
