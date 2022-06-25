@@ -14,15 +14,10 @@ public class CubeTiltController : MonoBehaviour
     private GameObject cubeRotateTowardsZNeg;
     private GameObject cubeRotateTowardsZPos;
 
-    public bool upButtonPressed;
-    public bool downButtonPressed;
-    public bool leftButtonPressed;
-    public bool rightButtonPressed;
-
-    public UpButtonManager upButtonManager;
-    public DownButtonManager downButtonManager;
-    public LeftButtonManager leftButtonManager;
-    public RightButtonManager rightButtonManager;
+    private UpButtonManager upButtonManager;
+    private DownButtonManager downButtonManager;
+    private LeftButtonManager leftButtonManager;
+    private RightButtonManager rightButtonManager;
 
     // Start is called before the first frame update
     void Start()
