@@ -46,67 +46,67 @@ public class WinTriggerMaster : MonoBehaviour
         Time.timeScale = 0;
 
         Scene scene = SceneManager.GetActiveScene();
-
         switch (scene.name)
         {
-            case "Level 1":
+            case "Level1":
                 gameDataManager.UnlockLevel2();
                 Debug.Log("Unlocking level 2");
                 break;
-            case "Level 2":
+            case "Level2":
                 gameDataManager.UnlockLevel3();
                 break;
-            case "Level 3":
+            case "Level3":
                 gameDataManager.UnlockLevel4();
                 break;
-            case "Level 4":
+            case "Level4":
                 gameDataManager.UnlockLevel5();
                 break;
-            case "Level 5":
+            case "Level5":
                 gameDataManager.UnlockLevel6();
                 break;
-            case "Level 6":
+            case "Level6":
                 gameDataManager.UnlockLevel7();
                 break;
-            case "Level 7":
+            case "Level7":
                 gameDataManager.UnlockLevel8();
                 break;
-            case "Level 8":
+            case "Level8":
                 gameDataManager.UnlockLevel9();
                 break;
-            case "Level 9":
+            case "Level9":
                 gameDataManager.UnlockLevel10();
                 break;
-            case "Level 10":
+            case "Level10":
                 gameDataManager.UnlockLevel11();
                 break;
-            case "Level 11":
+            case "Level11":
                 gameDataManager.UnlockLevel12();
                 break;
-            case "Level 12":
+            case "Level12":
                 gameDataManager.UnlockLevel13();
                 break;
-            case "Level 13":
+            case "Level13":
                 gameDataManager.UnlockLevel14();
                 break;
-            case "Level 14":
+            case "Level14":
                 gameDataManager.UnlockLevel15();
                 break;
-            case "Level 15":
+            case "Level15":
                 gameDataManager.UnlockLevel16();
                 break;
-            case "Level 16":
+            case "Level16":
                 gameDataManager.UnlockLevel17();
                 break;
-            case "Level 17":
+            case "Level17":
                 gameDataManager.UnlockLevel18();
                 break;
-            case "Level 18":
+            case "Level18":
                 gameDataManager.UnlockLevel19();
                 break;
-            case "Level 19":
+            case "Level19":
                 gameDataManager.UnlockLevel20();
                 break;
+                
         }
     }
 
