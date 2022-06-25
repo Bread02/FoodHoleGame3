@@ -63,17 +63,20 @@ public class LevelNumberUI : MonoBehaviour
             case "Level16":
                 levelNumber.text = "Level 16";
                 break;
-            case "Level 17":
+            case "Level17":
                 levelNumber.text = "Level 17";
                 break;
-            case "Level 18":
+            case "Level18":
                 levelNumber.text = "Level 18";
                 break;
-            case "Level 19":
+            case "Level19":
                 levelNumber.text = "Level 19";
                 break;
-            case "Level 20":
+            case "Level20":
                 levelNumber.text = "Level 20";
+                break;
+            default:
+                levelNumber.text = "RAN OUT OF LEVELS TO DISPLAY";
                 break;
 
         }
