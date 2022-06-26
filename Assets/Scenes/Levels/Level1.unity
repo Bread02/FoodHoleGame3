@@ -1585,6 +1585,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1126002584649147831, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2352275671276635357, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1621,6 +1625,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -45
       objectReference: {fileID: 0}
+    - target: {fileID: 3043389696064178422, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_Name
+      value: ControlsButtonCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 3286867534864017792, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Name
       value: RetryButton
@@ -1629,77 +1637,9 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
-    - target: {fileID: 5894873847551715117, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894873847551715117, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_Pivot.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894873847551715117, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894873847551715117, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894873847551715117, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894873847551715117, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894873847551715117, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894873847551715117, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 379
-      objectReference: {fileID: 0}
-    - target: {fileID: 6054825934761267517, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_Pivot.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6054825934761267517, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_Pivot.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6054825934761267517, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6054825934761267517, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6054825934761267517, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6054825934761267517, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6054825934761267517, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 201
-      objectReference: {fileID: 0}
-    - target: {fileID: 6054825934761267517, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 51
-      objectReference: {fileID: 0}
-    - target: {fileID: 6054825934761267517, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -6.999939
-      objectReference: {fileID: 0}
-    - target: {fileID: 6054825934761267517, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -11
+    - target: {fileID: 6054825934761267514, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6054825936224576820, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_RootOrder
