@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 public class MainMenuManager : LoadingMaster
 {
     // Start is called before the first frame update
