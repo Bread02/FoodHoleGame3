@@ -1593,6 +1593,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1153463694717296509, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158381349211617018, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_text
+      value: Level 155
+      objectReference: {fileID: 0}
     - target: {fileID: 2158381349211617018, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_fontSizeBase
       value: 30
@@ -1641,13 +1649,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RetryButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4513108376300830924, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_Name
+      value: ItemsRemainingBG
+      objectReference: {fileID: 0}
     - target: {fileID: 5186482152705674660, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6054825934761267514, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_text
-      value: 2 / 2 Items Remaining
+      value: 255 / 2 Items Remaining
       objectReference: {fileID: 0}
     - target: {fileID: 6054825934761267514, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_fontSizeBase

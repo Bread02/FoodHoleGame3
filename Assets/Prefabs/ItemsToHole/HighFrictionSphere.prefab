@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 158164801476293618}
   - component: {fileID: 158164801476293619}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: HighFrictionSphere
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
