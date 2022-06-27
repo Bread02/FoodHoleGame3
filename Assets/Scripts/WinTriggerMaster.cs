@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using GoogleMobileAds.Api;
 
 public class WinTriggerMaster : MonoBehaviour
 {
+    [Header("Game Data Manager")]
     private GameDataManager gameDataManager;
 
+    [Header("Lists")]
     public List<GameObject> playerObjects = new List<GameObject>();
 
+    [Header("Canvas")]
     private GameObject winCanvas;
-
     private TextMeshProUGUI itemsRemaining;
 
     [Header("Ints")]
@@ -19,6 +22,45 @@ public class WinTriggerMaster : MonoBehaviour
     private int totalItemsInt;
     private int objectsTriggered;
 
+    [Header("Mobile Ads")]
+    private InterstitialAd interstitial;
+
+    // https://developers.google.com/admob/unity/interstitial
+    // view this documentation on how to create an ad
+    // Look at Ad Events next.
+    private void RequestInterstitial()
+    {
+        // test ad IDs
+#if UNITY_ANDROID
+        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
+#elif UNITY_IPHONE
+        string adUnitId = "ca-app-pub-3940256099942544/4411468910";
+#else
+        string adUnitId = "unexpected_platform";
+#endif
+
+        // REAL ad IDs DO NOT USE IN TEST
+        /*
+#if UNITY_ANDROID
+        string adUnitId = "ca-app-pub-6859020072079255~1820319644";
+#elif UNITY_IPHONE
+        string adUnitId = "ca-app-pub-6859020072079255~9124094598";
+#else
+        string adUnitId = "unexpected_platform";
+#endif
+        */
+        // Initialize an InterstitialAd.
+        this.interstitial = new InterstitialAd(adUnitId);
+
+        // Create empty ad request
+        AdRequest request = new AdRequest.Builder().Build();
+
+        // Load the interstitial with the request
+        this.interstitial.LoadAd(request);
+
+        // on IOS a NEW interstitial ad object needs to be created
+        // each time an interstitial is used.
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +99,11 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
             case "Level3":
                 gameDataManager.UnlockLevel4();
+
+                if (this.interstitial.IsLoaded())
+                {
+                    this.interstitial.Show();
+                }
                 break;
             case "Level4":
                 gameDataManager.UnlockLevel5();
@@ -66,6 +113,11 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
             case "Level6":
                 gameDataManager.UnlockLevel7();
+
+                if (this.interstitial.IsLoaded())
+                {
+                    this.interstitial.Show();
+                }
                 break;
             case "Level7":
                 gameDataManager.UnlockLevel8();
@@ -75,6 +127,11 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
             case "Level9":
                 gameDataManager.UnlockLevel10();
+
+                if (this.interstitial.IsLoaded())
+                {
+                    this.interstitial.Show();
+                }
                 break;
             case "Level10":
                 gameDataManager.UnlockLevel11();
@@ -84,6 +141,11 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
             case "Level12":
                 gameDataManager.UnlockLevel13();
+
+                if (this.interstitial.IsLoaded())
+                {
+                    this.interstitial.Show();
+                }
                 break;
             case "Level13":
                 gameDataManager.UnlockLevel14();
@@ -93,6 +155,11 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
             case "Level15":
                 gameDataManager.UnlockLevel16();
+
+                if (this.interstitial.IsLoaded())
+                {
+                    this.interstitial.Show();
+                }
                 break;
             case "Level16":
                 gameDataManager.UnlockLevel17();
@@ -102,6 +169,11 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
             case "Level18":
                 gameDataManager.UnlockLevel19();
+
+                if (this.interstitial.IsLoaded())
+                {
+                    this.interstitial.Show();
+                }
                 break;
             case "Level19":
                 gameDataManager.UnlockLevel20();
