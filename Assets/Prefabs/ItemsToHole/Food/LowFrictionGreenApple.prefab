@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 7858079942145784640}
   - component: {fileID: 7858079942145784641}
   m_Layer: 0
-  m_Name: GreenApple
+  m_Name: LowFrictionGreenApple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
