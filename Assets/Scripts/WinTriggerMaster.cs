@@ -24,10 +24,15 @@ public class WinTriggerMaster : MonoBehaviour
     private int objectsTriggered;
     private int starsRewarded;
 
-    [Header("Stars")]
+    [Header("Ending Screen Stars")]
     private GameObject starOne;
     private GameObject starTwo;
     private GameObject starThree;
+
+    [Header("LevelUITop Stars")]
+    private GameObject UIStarOne;
+    private GameObject UIStarTwo;
+    private GameObject UIStarThree;
 
     public bool levelComplete;
 
@@ -97,6 +102,13 @@ public class WinTriggerMaster : MonoBehaviour
         timerMaster = GameObject.Find("TimerMaster").GetComponent<TimerMaster>();
     }
 
+    public void ToggleAllUIStars()
+    {
+        UIStarOne.SetActive(true);
+        UIStarTwo.SetActive(true);
+        UIStarThree.SetActive(true);
+    }
+
     public void CheckWinCondition()
     {
         if (objectsTriggered == totalItemsInt)
@@ -160,10 +172,27 @@ public class WinTriggerMaster : MonoBehaviour
         }
     }
 
+    public void StarCheck(float timer, float threeStarTime, float twoStarTime)
+    {
+        if (timer <= threeStarTime)
+        {
+            UIStarOne.SetActive(false);
+        }
+        else if (timer <= twoStarTime)
+        {
+            UIStarTwo.SetActive(false);
+        }
+    }
+
 
     public void CheckTimeScoreLevel1(float timer)
     {
         CheckTimeScore(timer, 10f, 15f);
+    }
+
+    public void StarCheckLevel1(float timer)
+    {
+        StarCheck(timer, 10f, 15f);
     }
 
     public void CheckTimeScoreLevel2(float timer)
