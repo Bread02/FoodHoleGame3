@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using GoogleMobileAds.Api;
+using UnityEngine.Audio;
 
 public class WinTriggerMaster : MonoBehaviour
 {
@@ -23,14 +24,18 @@ public class WinTriggerMaster : MonoBehaviour
     private int objectsTriggered;
     private int starsRewarded;
 
-    public GameObject starOne;
-    public GameObject starTwo;
-    public GameObject starThree;
+    [Header("Stars")]
+    private GameObject starOne;
+    private GameObject starTwo;
+    private GameObject starThree;
 
     public bool levelComplete;
 
     [Header("Mobile Ads")]
     private InterstitialAd interstitial;
+
+    [Header("SFX")]
+    [SerializeField] private AudioClip winSoundEffect;
 
     // https://developers.google.com/admob/unity/interstitial
     // view this documentation on how to create an ad
@@ -69,6 +74,13 @@ public class WinTriggerMaster : MonoBehaviour
         // each time an interstitial is used.
     }
 
+    private void Awake()
+    {
+        starOne = GameObject.Find("WinStar1").gameObject;
+        starTwo = GameObject.Find("WinStar2").gameObject;
+        starThree = GameObject.Find("WinStar3").gameObject;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,6 +91,7 @@ public class WinTriggerMaster : MonoBehaviour
         totalItemsInt = playerObjects.Count;
         ItemsRemaining();
         DisableAllStars();
+        levelComplete = false;
     }
 
     public void CheckWinCondition()
@@ -86,6 +99,9 @@ public class WinTriggerMaster : MonoBehaviour
         if (objectsTriggered == totalItemsInt)
         {
             Invoke("WinTrigger", 0f);
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.clip = winSoundEffect;
+            audio.Play();
         }
     }
 
@@ -127,14 +143,17 @@ public class WinTriggerMaster : MonoBehaviour
         if (timer <= 10f)
         {
             ThreeStars();
+            Debug.Log("Three Stars!");
         }
         else if (timer <= 15f)
         {
             TwoStars();
+            Debug.Log("Two Stars!");
         }
         else
         {
             OneStar();
+            Debug.Log("One Star!");
         }
     }
 
@@ -143,6 +162,7 @@ public class WinTriggerMaster : MonoBehaviour
         winCanvas.SetActive(true);
         Debug.Log("Win condition achieved");
         Time.timeScale = 0;
+        levelComplete = true;
 
         Scene scene = SceneManager.GetActiveScene();
         switch (scene.name)

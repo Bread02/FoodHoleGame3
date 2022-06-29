@@ -2788,6 +2788,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 32991943393641466, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_Name
+      value: WinStar1
+      objectReference: {fileID: 0}
     - target: {fileID: 218591030367460446, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Name
       value: LevelNumberBG
@@ -2795,6 +2799,10 @@ PrefabInstance:
     - target: {fileID: 819330778169830008, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 905024013140391086, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_Name
+      value: WinStar2
       objectReference: {fileID: 0}
     - target: {fileID: 1126002584649147831, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2951,6 +2959,10 @@ PrefabInstance:
     - target: {fileID: 8511211812363252450, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_LocalPosition.y
       value: 58.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8624321240104960990, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_Name
+      value: WinStar3
       objectReference: {fileID: 0}
     - target: {fileID: 8860070105122466090, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_IsActive

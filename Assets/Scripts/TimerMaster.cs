@@ -8,6 +8,9 @@ public class TimerMaster : MonoBehaviour
 {
     public float timer;
     public float timerSimplified;
+    public float endTime;
+
+    public bool completeCheck;
 
     public WinTriggerMaster winTriggerMaster;
 
@@ -16,11 +19,7 @@ public class TimerMaster : MonoBehaviour
     void Start()
     {
         winTriggerMaster = GameObject.Find("WinTrigger").GetComponent<WinTriggerMaster>();
-    }
-
-    public void LevelOneCompleteTimer()
-    {
-
+        completeCheck = false;
     }
 
     // Update is called once per frame
@@ -30,6 +29,18 @@ public class TimerMaster : MonoBehaviour
         timerSimplified = Mathf.Round(timer * 100f) / 100f;
 
         timerText.text = timerSimplified.ToString();
-        Debug.Log(timer);
+
+        WinCheck();
+    }
+
+    private void WinCheck()
+    {
+        if (winTriggerMaster.levelComplete == true && completeCheck == false)
+        {
+            completeCheck = true;
+            endTime = timer;
+            Debug.Log("Timer master script");
+            winTriggerMaster.CheckTimeScoreLevel1(timer);
+        }
     }
 }
