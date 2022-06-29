@@ -21,6 +21,13 @@ public class WinTriggerMaster : MonoBehaviour
     private int itemsRemainingInt;
     private int totalItemsInt;
     private int objectsTriggered;
+    private int starsRewarded;
+
+    public GameObject starOne;
+    public GameObject starTwo;
+    public GameObject starThree;
+
+    public bool levelComplete;
 
     [Header("Mobile Ads")]
     private InterstitialAd interstitial;
@@ -71,6 +78,7 @@ public class WinTriggerMaster : MonoBehaviour
         winCanvas.SetActive(false);
         totalItemsInt = playerObjects.Count;
         ItemsRemaining();
+        DisableAllStars();
     }
 
     public void CheckWinCondition()
@@ -78,6 +86,55 @@ public class WinTriggerMaster : MonoBehaviour
         if (objectsTriggered == totalItemsInt)
         {
             Invoke("WinTrigger", 0f);
+        }
+    }
+
+    public void CheckTimeScore(string levelNumber)
+    {
+        
+    }
+
+    public void DisableAllStars()
+    {
+        starOne.SetActive(false);
+        starTwo.SetActive(false);
+        starThree.SetActive(false);
+    }
+
+    public void ThreeStars()
+    {
+        starOne.SetActive(true);
+        starTwo.SetActive(true);
+        starThree.SetActive(true);
+        starsRewarded = 3;
+    }
+
+    public void TwoStars()
+    {
+        starOne.SetActive(true);
+        starTwo.SetActive(true);
+        starsRewarded = 2;
+    }
+
+    public void OneStar()
+    {
+        starOne.SetActive(true);
+        starsRewarded = 1;
+    }
+
+    public void CheckTimeScoreLevel1(float timer)
+    {
+        if (timer <= 10f)
+        {
+            ThreeStars();
+        }
+        else if (timer <= 15f)
+        {
+            TwoStars();
+        }
+        else
+        {
+            OneStar();
         }
     }
 
@@ -92,7 +149,9 @@ public class WinTriggerMaster : MonoBehaviour
         {
             case "Level1":
                 gameDataManager.UnlockLevel2();
+                
                 Debug.Log("Unlocking level 2");
+
                 break;
             case "Level2":
                 gameDataManager.UnlockLevel3();
