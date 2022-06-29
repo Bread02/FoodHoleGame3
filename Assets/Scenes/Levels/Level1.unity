@@ -2197,8 +2197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8af6821b51b6b448317445d4341115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cannotUseColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
-  readyColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!4 &1789559234
 Transform:
   m_ObjectHideFlags: 0
@@ -2818,6 +2816,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1653967122595555733, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2158381349211617018, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_text
       value: Level 155
@@ -2921,6 +2923,14 @@ PrefabInstance:
     - target: {fileID: 7527026902821300741, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_LocalPosition.x
       value: -268.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7583512690627698223, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -81
+      objectReference: {fileID: 0}
+    - target: {fileID: 7583512690627698223, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 8402579728400578915, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Interactable
