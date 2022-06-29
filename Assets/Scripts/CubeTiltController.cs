@@ -19,10 +19,6 @@ public class CubeTiltController : MonoBehaviour
     private Image rightButton;
     private Image downButton;
 
-    [SerializeField] private Color cannotUseColor;
-    [SerializeField] private Color readyColor;
-
-
     private UpButtonManager upButtonManager;
     private DownButtonManager downButtonManager;
     private LeftButtonManager leftButtonManager;
@@ -47,12 +43,6 @@ public class CubeTiltController : MonoBehaviour
         rightButton = GameObject.Find("RightButton").GetComponent<Image>();
         leftButton = GameObject.Find("LeftButton").GetComponent<Image>();
         downButton = GameObject.Find("DownButton").GetComponent<Image>();
-
-        downButton.color = readyColor;
-        upButton.color = readyColor;
-        leftButton.color = readyColor;
-        rightButton.color = readyColor;
-
     }
 
     // Update is called once per frame
