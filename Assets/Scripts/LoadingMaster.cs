@@ -18,7 +18,7 @@ public class LoadingMaster : MonoBehaviour
     public virtual void Awake()
     {
         loadingCanvas = GameObject.Find("LoadingCanvas");
-        loadingCanvas.SetActive(false);
+        loadingCanvas?.SetActive(false);
         Time.timeScale = 1;
     }
 

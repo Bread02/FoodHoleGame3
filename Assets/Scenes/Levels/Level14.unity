@@ -446,8 +446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8af6821b51b6b448317445d4341115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cannotUseColor: {r: 0, g: 0, b: 0, a: 0}
-  readyColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &719681238
 Transform:
   m_ObjectHideFlags: 0
@@ -768,6 +766,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 854126609802027825, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 854126609802027825, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 854126609802027825, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7
+      objectReference: {fileID: 0}
     - target: {fileID: 2352275671276635357, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

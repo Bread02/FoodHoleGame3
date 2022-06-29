@@ -15,6 +15,8 @@ public class TimerMaster : MonoBehaviour
     public WinTriggerMaster winTriggerMaster;
 
     public TextMeshProUGUI timerText;
+
+    public TextMeshProUGUI winScreenTimeComplete;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,9 +40,15 @@ public class TimerMaster : MonoBehaviour
         if (winTriggerMaster.levelComplete == true && completeCheck == false)
         {
             completeCheck = true;
-            endTime = timer;
+            endTime = timerSimplified;
             Debug.Log("Timer master script");
-            winTriggerMaster.CheckTimeScoreLevel1(timer);
+            winTriggerMaster.CheckTimeScoreLevel1(endTime);
+            winScreenTimeComplete.text = "Time: " + endTime.ToString();
         }
+    }
+
+    public float ReturnTime()
+    {
+        return endTime;
     }
 }

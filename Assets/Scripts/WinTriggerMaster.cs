@@ -31,6 +31,8 @@ public class WinTriggerMaster : MonoBehaviour
 
     public bool levelComplete;
 
+    public TimerMaster timerMaster;
+
     [Header("Mobile Ads")]
     private InterstitialAd interstitial;
 
@@ -92,6 +94,7 @@ public class WinTriggerMaster : MonoBehaviour
         ItemsRemaining();
         DisableAllStars();
         levelComplete = false;
+        timerMaster = GameObject.Find("TimerMaster").GetComponent<TimerMaster>();
     }
 
     public void CheckWinCondition()
@@ -138,14 +141,14 @@ public class WinTriggerMaster : MonoBehaviour
         starsRewarded = 1;
     }
 
-    public void CheckTimeScoreLevel1(float timer)
+    public void CheckTimeScore(float timer, float threeStarTime, float twoStarTime)
     {
-        if (timer <= 10f)
+        if (timer <= threeStarTime)
         {
             ThreeStars();
             Debug.Log("Three Stars!");
         }
-        else if (timer <= 15f)
+        else if (timer <= twoStarTime)
         {
             TwoStars();
             Debug.Log("Two Stars!");
@@ -156,6 +159,115 @@ public class WinTriggerMaster : MonoBehaviour
             Debug.Log("One Star!");
         }
     }
+
+
+    public void CheckTimeScoreLevel1(float timer)
+    {
+        CheckTimeScore(timer, 10f, 15f);
+    }
+
+    public void CheckTimeScoreLevel2(float timer)
+    {
+        CheckTimeScore(timer, 13f, 17f);
+    }
+
+    public void CheckTimeScoreLevel3(float timer)
+    {
+        CheckTimeScore(timer, 13f, 17f);
+
+    }
+
+    public void CheckTimeScoreLevel4(float timer)
+    {
+        CheckTimeScore(timer, 9f, 13f);
+    }
+
+    public void CheckTimeScoreLevel5(float timer)
+    {
+        CheckTimeScore(timer, 7f, 14f);
+
+    }
+
+    public void CheckTimeScoreLevel6(float timer)
+    {
+        CheckTimeScore(timer, 12f, 17f);
+    }
+
+    public void CheckTimeScoreLevel7(float timer)
+    {
+        CheckTimeScore(timer, 13f, 18f);
+    }
+
+    public void CheckTimeScoreLevel8(float timer)
+    {
+        CheckTimeScore(timer, 12f, 17f);
+    }
+
+    public void CheckTimeScoreLevel9(float timer)
+    {
+        CheckTimeScore(timer, 12f, 17f);
+    }
+
+    public void CheckTimeScoreLevel10(float timer)
+    {
+        CheckTimeScore(timer, 40f, 60f);
+
+    }
+
+    public void CheckTimeScoreLevel11(float timer)
+    {
+        CheckTimeScore(timer, 15f, 22f);
+    }
+
+    public void CheckTimeScoreLevel12(float timer)
+    {
+
+        CheckTimeScore(timer, 15f, 22f);
+
+    }
+
+    public void CheckTimeScoreLevel13(float timer)
+    {
+        CheckTimeScore(timer, 10f, 18f);
+    }
+
+    public void CheckTimeScoreLevel14(float timer)
+    {
+        CheckTimeScore(timer, 12f, 17f);
+    }
+
+    public void CheckTimeScoreLevel15(float timer)
+    {
+        CheckTimeScore(timer, 9f, 13f);
+    }
+
+    public void CheckTimeScoreLevel16(float timer)
+    {
+        CheckTimeScore(timer, 17f, 25f);
+    }
+
+
+    public void CheckTimeScoreLevel17(float timer)
+    {
+        CheckTimeScore(timer, 30f, 40f);
+    }
+
+    public void CheckTimeScoreLevel18(float timer)
+    {
+        CheckTimeScore(timer, 9f, 13f);
+    }
+
+    public void CheckTimeScoreLevel19(float timer)
+    {
+        CheckTimeScore(timer, 6f, 10f);
+    }
+
+
+    public void CheckTimeScoreLevel20(float timer)
+    {
+        CheckTimeScore(timer, 10f, 20f);
+    }
+
 
     public void WinTrigger()
     {
@@ -169,7 +281,7 @@ public class WinTriggerMaster : MonoBehaviour
         {
             case "Level1":
                 gameDataManager.UnlockLevel2();
-                
+                CheckTimeScoreLevel1(timerMaster.ReturnTime());
                 Debug.Log("Unlocking level 2");
 
                 break;
