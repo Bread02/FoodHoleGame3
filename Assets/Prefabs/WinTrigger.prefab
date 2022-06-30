@@ -130,7 +130,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObjects: []
   levelComplete: 0
-  winSoundEffect: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
+  levelCompleteSaveProgress: 0
+  timerMaster: {fileID: 0}
+  newRecordText: {fileID: 0}
+  oneStarWinSoundEffect: {fileID: 8300000, guid: a0ca8964c08d54c5dbebf245bdc474ca, type: 3}
+  twoStarWinSoundEffect: {fileID: 8300000, guid: 7bd6b897eb5ca4b7d88a205c4a51640c, type: 3}
+  threeStarWinSoundEffect: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
 --- !u!82 &5228160333825367818
 AudioSource:
   m_ObjectHideFlags: 0

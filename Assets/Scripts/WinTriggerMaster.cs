@@ -40,11 +40,16 @@ public class WinTriggerMaster : MonoBehaviour
 
     public GameObject newRecordText;
 
+    public bool timeScoreChecked;
+
     [Header("Mobile Ads")]
   //  private InterstitialAd interstitial;
 
     [Header("SFX")]
-    [SerializeField] private AudioClip winSoundEffect;
+    [SerializeField] private AudioClip oneStarWinSoundEffect;
+    [SerializeField] private AudioClip twoStarWinSoundEffect;
+    [SerializeField] private AudioClip threeStarWinSoundEffect;
+
 
     // https://developers.google.com/admob/unity/interstitial
     // view this documentation on how to create an ad
@@ -71,18 +76,18 @@ public class WinTriggerMaster : MonoBehaviour
         string adUnitId = "unexpected_platform";
 #endif
         */
-        // Initialize an InterstitialAd.
+    // Initialize an InterstitialAd.
     //    this.interstitial = new InterstitialAd(adUnitId);
 
-        // Create empty ad request
+    // Create empty ad request
     //    AdRequest request = new AdRequest.Builder().Build();
 
-        // Load the interstitial with the request
+    // Load the interstitial with the request
     //    this.interstitial.LoadAd(request);
 
-        // on IOS a NEW interstitial ad object needs to be created
-        // each time an interstitial is used.
-   // }
+    // on IOS a NEW interstitial ad object needs to be created
+    // each time an interstitial is used.
+    // }
 
 
     private void Awake()
@@ -101,6 +106,7 @@ public class WinTriggerMaster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timeScoreChecked = false;
         gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
         winCanvas = GameObject.Find("WinCanvas");
         itemsRemaining = GameObject.Find("ItemsRemainingText").GetComponent<TextMeshProUGUI>();
@@ -125,9 +131,6 @@ public class WinTriggerMaster : MonoBehaviour
         if (objectsTriggered == totalItemsInt)
         {
             Invoke("WinTrigger", 0f);
-            AudioSource audio = GetComponent<AudioSource>();
-            audio.clip = winSoundEffect;
-            audio.Play();
         }
     }
 
@@ -158,20 +161,34 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void CheckTimeScore(float timer, float threeStarTime, float twoStarTime)
     {
-        if (timer <= threeStarTime)
+        if (!timeScoreChecked)
         {
-            ThreeStars();
-            Debug.Log("Three Stars!");
-        }
-        else if (timer <= twoStarTime)
-        {
-            TwoStars();
-            Debug.Log("Two Stars!");
-        }
-        else
-        {
-            OneStar();
-            Debug.Log("One Star!");
+            timeScoreChecked = true;
+
+            if (timer <= threeStarTime)
+            {
+                ThreeStars();
+                AudioSource audio = GetComponent<AudioSource>();
+                audio.clip = threeStarWinSoundEffect;
+                audio.Play();
+                Debug.Log("Three Stars!");
+            }
+            else if (timer <= twoStarTime)
+            {
+                TwoStars();
+                AudioSource audio = GetComponent<AudioSource>();
+                audio.clip = twoStarWinSoundEffect;
+                audio.Play();
+                Debug.Log("Two Stars!");
+            }
+            else
+            {
+                OneStar();
+                AudioSource audio = GetComponent<AudioSource>();
+                audio.clip = oneStarWinSoundEffect;
+                audio.Play();
+                Debug.Log("One Star!");
+            }
         }
     }
 
