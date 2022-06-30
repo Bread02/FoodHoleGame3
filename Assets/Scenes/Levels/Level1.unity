@@ -2796,6 +2796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelNumberBG
       objectReference: {fileID: 0}
+    - target: {fileID: 462891302445718404, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 819330778169830008, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2924,6 +2928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeCompleted
       objectReference: {fileID: 0}
+    - target: {fileID: 5087774345162300400, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5186482152705674660, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
@@ -2931,6 +2939,10 @@ PrefabInstance:
     - target: {fileID: 5291829737877217747, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Name
       value: NewRecordText
+      objectReference: {fileID: 0}
+    - target: {fileID: 5301196471728910325, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_text
+      value: 1000.22
       objectReference: {fileID: 0}
     - target: {fileID: 6054825934761267514, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_text
@@ -2968,6 +2980,14 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6265642831964461567, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 151.20001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265642831964461567, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.099975586
+      objectReference: {fileID: 0}
     - target: {fileID: 6416076723241776693, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Name
       value: UIStar1
@@ -2983,6 +3003,14 @@ PrefabInstance:
     - target: {fileID: 7527026902821300741, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_LocalPosition.x
       value: -268.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995286002322732622, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.19995117
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995286002322732622, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.099975586
       objectReference: {fileID: 0}
     - target: {fileID: 8402579728400578915, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Interactable
@@ -3002,7 +3030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8509957581273233445, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 13
+      value: 13.000015
       objectReference: {fileID: 0}
     - target: {fileID: 8511211812363252450, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_LocalPosition.y
