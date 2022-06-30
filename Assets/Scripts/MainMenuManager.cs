@@ -16,6 +16,8 @@ public class MainMenuManager : LoadingMaster
     public GameObject levelSelectCanvas2;
     public GameObject levelSelectCanvas3;
     public GameObject levelSelectCanvas4;
+    public GameObject levelSelectCanvas5;
+    public GameObject levelSelectCanvas6;
 
     public GameDataManager gameDataManager;
 
@@ -65,13 +67,61 @@ public class MainMenuManager : LoadingMaster
     public GameObject level19LockedButton;
     public GameObject level20LockedButton;
 
+
     void Start()
     {
+        FindButtons();
         gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
         mainMainCanvas.SetActive(true);
         HideAllLevelSelectCanvas();
         gameDataManager.ReadGame();
         Debug.Log(gameDataManager.ReturnLevel1Time());
+    }
+
+    private void FindButtons()
+    {
+        level1Button = GameObject.Find("Level1Button").gameObject;
+        level2Button = GameObject.Find("Level2Button").gameObject;
+        level3Button = GameObject.Find("Level3Button").gameObject;
+        level4Button = GameObject.Find("Level4Button").gameObject;
+        level5Button = GameObject.Find("Level5Button").gameObject;
+        level6Button = GameObject.Find("Level6Button").gameObject;
+        level7Button = GameObject.Find("Level7Button").gameObject;
+        level8Button = GameObject.Find("Level8Button").gameObject;
+        level9Button = GameObject.Find("Level9Button").gameObject;
+        level10Button = GameObject.Find("Level10Button").gameObject;
+        level11Button = GameObject.Find("Level11Button").gameObject;
+        level12Button = GameObject.Find("Level12Button").gameObject;
+        level13Button = GameObject.Find("Level13Button").gameObject;
+        level14Button = GameObject.Find("Level14Button").gameObject;
+        level15Button = GameObject.Find("Level15Button").gameObject;
+        level16Button = GameObject.Find("Level16Button").gameObject;
+        level17Button = GameObject.Find("Level17Button").gameObject;
+        level18Button = GameObject.Find("Level18Button").gameObject;
+        level19Button = GameObject.Find("Level19Button").gameObject;
+        level20Button = GameObject.Find("Level20Button").gameObject;
+
+        level2LockedButton = GameObject.Find("Level2LockedButton").gameObject;
+        level3LockedButton = GameObject.Find("Level3LockedButton").gameObject;
+        level4LockedButton = GameObject.Find("Level4LockedButton").gameObject;
+        level5LockedButton = GameObject.Find("Level5LockedButton").gameObject;
+        level6LockedButton = GameObject.Find("Level6LockedButton").gameObject;
+        level7LockedButton = GameObject.Find("Level7LockedButton").gameObject;
+        level8LockedButton = GameObject.Find("Level8LockedButton").gameObject;
+        level9LockedButton = GameObject.Find("Level9LockedButton").gameObject;
+        level10LockedButton = GameObject.Find("Level10LockedButton").gameObject;
+        level11LockedButton = GameObject.Find("Level11LockedButton").gameObject;
+        level12LockedButton = GameObject.Find("Level12LockedButton").gameObject;
+        level13LockedButton = GameObject.Find("Level13LockedButton").gameObject;
+        level14LockedButton = GameObject.Find("Level14LockedButton").gameObject;
+        level15LockedButton = GameObject.Find("Level15LockedButton").gameObject;
+        level16LockedButton = GameObject.Find("Level16LockedButton").gameObject;
+        level17LockedButton = GameObject.Find("Level17LockedButton").gameObject;
+        level18LockedButton = GameObject.Find("Level18LockedButton").gameObject;
+        level19LockedButton = GameObject.Find("Level19LockedButton").gameObject;
+        level20LockedButton = GameObject.Find("Level20LockedButton").gameObject;
+
+
     }
 
     public void ClickPlay()
@@ -88,6 +138,8 @@ public class MainMenuManager : LoadingMaster
         levelSelectCanvas2.SetActive(false);
         levelSelectCanvas3.SetActive(false);
         levelSelectCanvas4.SetActive(false);
+        levelSelectCanvas5.SetActive(false);
+        levelSelectCanvas6.SetActive(false);
     }
 
     #region Click Pages
@@ -114,6 +166,19 @@ public class MainMenuManager : LoadingMaster
         HideAllLevelSelectCanvas();
         levelSelectCanvas4.SetActive(true);
     }
+
+    public void ClickPage5()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas5.SetActive(true);
+    }
+
+    public void ClickPage6()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas6.SetActive(true);
+    }
+
     #endregion
     // level stars
     public void LevelStars(GameObject star1, GameObject star2, GameObject star3, int numberOfStars)
@@ -156,6 +221,7 @@ public class MainMenuManager : LoadingMaster
         }
     }
 
+    #region Check Level Time and Stars
     public void CheckLevel1TimeAndStars()
     {
         int level1Stars = gameDataManager.ReturnLevel1Stars();
@@ -434,6 +500,7 @@ public class MainMenuManager : LoadingMaster
 
         LevelTimeText(levelTime, levelTimeText);
     }
+    #endregion
 
     public void CheckUnlockedLevels()
     {

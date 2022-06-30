@@ -22,7 +22,6 @@ public class WinTriggerMaster : MonoBehaviour
     private int itemsRemainingInt;
     private int totalItemsInt;
     private int objectsTriggered;
-    private int starsRewarded;
 
     [Header("Ending Screen Stars")]
     private GameObject starOne;
@@ -142,20 +141,17 @@ public class WinTriggerMaster : MonoBehaviour
         starOne.SetActive(true);
         starTwo.SetActive(true);
         starThree.SetActive(true);
-        starsRewarded = 3;
     }
 
     public void TwoStars()
     {
         starOne.SetActive(true);
         starTwo.SetActive(true);
-        starsRewarded = 2;
     }
 
     public void OneStar()
     {
         starOne.SetActive(true);
-        starsRewarded = 1;
     }
 
     public void CheckTimeScore(float timer, float threeStarTime, float twoStarTime)
