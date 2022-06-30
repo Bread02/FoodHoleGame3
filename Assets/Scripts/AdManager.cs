@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GoogleMobileAds.Api;
+// using GoogleMobileAds.Api;
 public class AdManager : MonoBehaviour
 {
+    /*
     public static AdManager adManagerInstance;
 
     private void Awake()
@@ -32,4 +33,5 @@ public class AdManager : MonoBehaviour
     {
         
     }
+    */
 }

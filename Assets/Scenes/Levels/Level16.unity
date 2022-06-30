@@ -962,11 +962,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 854126609802027825, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_LocalScale.x
-      value: 125.43334
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 854126609802027825, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_LocalScale.z
-      value: 139.41
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 854126609802027825, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_LocalPosition.y
