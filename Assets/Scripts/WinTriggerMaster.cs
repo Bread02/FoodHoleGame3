@@ -35,8 +35,11 @@ public class WinTriggerMaster : MonoBehaviour
     private GameObject UIStarThree;
 
     public bool levelComplete;
+    public bool levelCompleteSaveProgress;
 
     public TimerMaster timerMaster;
+
+    public GameObject newRecordText;
 
     [Header("Mobile Ads")]
     private InterstitialAd interstitial;
@@ -90,6 +93,8 @@ public class WinTriggerMaster : MonoBehaviour
         UIStarOne = GameObject.Find("UIStar1").gameObject;
         UIStarTwo = GameObject.Find("UIStar2").gameObject;
         UIStarThree = GameObject.Find("UIStar3").gameObject;
+
+        newRecordText = GameObject.Find("NewRecordText").gameObject;
     }
 
     // Start is called before the first frame update
@@ -103,6 +108,7 @@ public class WinTriggerMaster : MonoBehaviour
         ItemsRemaining();
         DisableAllStars();
         levelComplete = false;
+        newRecordText.SetActive(false);
         timerMaster = GameObject.Find("TimerMaster").GetComponent<TimerMaster>();
     }
 
@@ -174,10 +180,29 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void CheckTimeScoreLevel1(float timer)
     {
-        StarCheck(timer, 10f, 15f);
-        if (levelComplete)
+        float threeStarTime = 10f;
+        float twoStarTime = 15f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 10f, 15f);
+            levelCompleteSaveProgress = true;
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel1Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel1Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel1Stars(1);
+            }
         }
     }
 
@@ -439,6 +464,11 @@ public class WinTriggerMaster : MonoBehaviour
             case "Level1":
                 gameDataManager.UnlockLevel2();
                 CheckTimeScoreLevel1(timerMaster.ReturnTime());
+                if (gameDataManager.ReturnLevel1Time() > timerMaster.endTime)
+                {
+                    gameDataManager.SetLevel1Time(timerMaster.endTime);
+                    newRecordText.SetActive(true);
+                }
                 Debug.Log("Unlocking level 2");
                 break;
             case "Level2":

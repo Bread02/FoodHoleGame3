@@ -112,6 +112,11 @@ public class GameDataManager : MonoBehaviour
         }
     }
 
+    public void ReadGame()
+    {
+        ReadFromSave();
+    }
+
     public void SaveGame()
     {
         Debug.Log("Saving game");
@@ -489,89 +494,110 @@ public class GameDataManager : MonoBehaviour
     public void SetLevel1Stars(int stars)
     {
         starsPerLevel1.level1Stars = stars;
+        SaveGame();
     }
 
     public void SetLevel2Stars(int stars)
     {
         starsPerLevel1.level2Stars = stars;
+        SaveGame();
     }
 
     public void SetLevel3Stars(int stars)
     {
         starsPerLevel1.level3Stars = stars;
+        SaveGame();
     }
 
     public void SetLevel4Stars(int stars)
     {
         starsPerLevel1.level4Stars = stars;
+        SaveGame();
     }
 
     public void SetLevel5Stars(int stars)
     {
         starsPerLevel1.level5Stars = stars;
+        SaveGame();
+
     }
 
     public void SetLevel6Stars(int stars)
     {
         starsPerLevel1.level6Stars = stars;
+        SaveGame();
     }
     public void SetLevel7Stars(int stars)
     {
         starsPerLevel1.level7Stars = stars;
+        SaveGame();
     }
     public void SetLevel8Stars(int stars)
     {
         starsPerLevel1.level8Stars = stars;
+        SaveGame();
     }
     public void SetLevel9Stars(int stars)
     {
         starsPerLevel1.level9Stars = stars;
+        SaveGame();
     }
     public void SetLevel10Stars(int stars)
     {
         starsPerLevel1.level10Stars = stars;
+        SaveGame();
     }
     public void SetLevel11Stars(int stars)
     {
         starsPerLevel1.level11Stars = stars;
+        SaveGame();
     }
     public void SetLevel12Stars(int stars)
     {
         starsPerLevel1.level12Stars = stars;
+        SaveGame();
     }
     public void SetLevel13Stars(int stars)
     {
         starsPerLevel1.level13Stars = stars;
+        SaveGame();
     }
     public void SetLevel14Stars(int stars)
     {
         starsPerLevel1.level14Stars = stars;
+        SaveGame();
     }
     public void SetLevel15Stars(int stars)
     {
         starsPerLevel1.level15Stars = stars;
+        SaveGame();
     }
     public void SetLevel16Stars(int stars)
     {
         starsPerLevel1.level16Stars = stars;
+        SaveGame();
     }
     public void SetLevel17Stars(int stars)
     {
         starsPerLevel1.level17Stars = stars;
+        SaveGame();
     }
     public void SetLevel18Stars(int stars)
     {
         starsPerLevel1.level18Stars = stars;
+        SaveGame();
     }
 
     public void SetLevel19Stars(int stars)
     {
         starsPerLevel1.level19Stars = stars;
+        SaveGame();
     }
 
     public void SetLevel20Stars(int stars)
     {
         starsPerLevel1.level20Stars = stars;
+        SaveGame();
     }
 
 
@@ -684,205 +710,225 @@ public class GameDataManager : MonoBehaviour
     #endregion
 
     #region Set Time Per Level
-    public void SetLevel1Time(string time)
+    public void SetLevel1Time(float? time)
     {
         timeLevelCompleted1.level1Time = time;
+        SaveGame();
     }
 
-    public void SetLevel2Time(string time)
+    public void SetLevel2Time(float? time)
     {
         timeLevelCompleted1.level2Time = time;
+        SaveGame();
     }
 
-    public void SetLevel3Time(string time)
+    public void SetLevel3Time(float? time)
     {
         timeLevelCompleted1.level3Time = time;
+        SaveGame();
     }
 
-    public void SetLevel4Time(string time)
+    public void SetLevel4Time(float? time)
     {
         timeLevelCompleted1.level4Time = time;
+        SaveGame();
     }
 
-    public void SetLevel5Time(string time)
+    public void SetLevel5Time(float? time)
     {
         timeLevelCompleted1.level5Time = time;
+        SaveGame();
     }
 
-    public void SetLevel6Time(string time)
+    public void SetLevel6Time(float? time)
     {
         timeLevelCompleted1.level6Time = time;
+        SaveGame();
     }
 
-    public void SetLevel7Time(string time)
+    public void SetLevel7Time(float? time)
     {
         timeLevelCompleted1.level7Time = time;
+        SaveGame();
     }
 
-    public void SetLevel8Time(string time)
+    public void SetLevel8Time(float? time)
     {
         timeLevelCompleted1.level8Time = time;
+        SaveGame();
     }
 
-    public void SetLevel9Time(string time)
+    public void SetLevel9Time(float? time)
     {
         timeLevelCompleted1.level9Time = time;
+        SaveGame();
     }
 
-    public void SetLevel10Time(string time)
+    public void SetLevel10Time(float? time)
     {
         timeLevelCompleted1.level10Time = time;
+        SaveGame();
     }
 
-    public void SetLevel11Time(string time)
+    public void SetLevel11Time(float? time)
     {
         timeLevelCompleted1.level11Time = time;
+        SaveGame();
     }
 
-    public void SetLevel12Time(string time)
+    public void SetLevel12Time(float? time)
     {
         timeLevelCompleted1.level12Time = time;
+        SaveGame();
     }
 
-    public void SetLevel13Time(string time)
+    public void SetLevel13Time(float? time)
     {
         timeLevelCompleted1.level13Time = time;
+        SaveGame();
     }
 
-    public void SetLevel14Time(string time)
+    public void SetLevel14Time(float? time)
     {
         timeLevelCompleted1.level14Time = time;
+        SaveGame();
     }
 
-    public void SetLevel15Time(string time)
+    public void SetLevel15Time(float? time)
     {
         timeLevelCompleted1.level15Time = time;
+        SaveGame();
     }
 
-    public void SetLevel16Time(string time)
+    public void SetLevel16Time(float? time)
     {
         timeLevelCompleted1.level16Time = time;
+        SaveGame();
     }
-    public void SetLevel17Time(string time)
+    public void SetLevel17Time(float? time)
     {
         timeLevelCompleted1.level17Time = time;
+        SaveGame();
     }
 
-    public void SetLevel18Time(string time)
+    public void SetLevel18Time(float? time)
     {
         timeLevelCompleted1.level18Time = time;
+        SaveGame();
     }
 
-    public void SetLevel19Time(string time)
+    public void SetLevel19Time(float? time)
     {
         timeLevelCompleted1.level19Time = time;
+        SaveGame();
     }
 
-    public void SetLevel20Time(string time)
+    public void SetLevel20Time(float? time)
     {
         timeLevelCompleted1.level20Time = time;
+        SaveGame();
     }
 
     #endregion
 
     #region Return Time Per Level
 
-    public string ReturnLevel1Time()
+    public float? ReturnLevel1Time()
     {
         return timeLevelCompleted1.level1Time;
     }
 
-    public string ReturnLevel2Time()
+    public float? ReturnLevel2Time()
     {
         return timeLevelCompleted1.level2Time;
     }
 
-    public string ReturnLevel3Time()
+    public float? ReturnLevel3Time()
     {
         return timeLevelCompleted1.level3Time;
     }
 
-    public string ReturnLevel4Time()
+    public float? ReturnLevel4Time()
     {
         return timeLevelCompleted1.level4Time;
     }
 
-    public string ReturnLevel5Time()
+    public float? ReturnLevel5Time()
     {
         return timeLevelCompleted1.level5Time;
     }
 
-    public string ReturnLevel6Time()
+    public float? ReturnLevel6Time()
     {
         return timeLevelCompleted1.level6Time;
     }
 
-    public string ReturnLevel7Time()
+    public float? ReturnLevel7Time()
     {
         return timeLevelCompleted1.level7Time;
     }
 
-    public string ReturnLevel8Time()
+    public float? ReturnLevel8Time()
     {
         return timeLevelCompleted1.level8Time;
     }
 
-    public string ReturnLevel9Time()
+    public float? ReturnLevel9Time()
     {
         return timeLevelCompleted1.level9Time;
     }
 
-    public string ReturnLevel10Time()
+    public float? ReturnLevel10Time()
     {
         return timeLevelCompleted1.level10Time;
     }
 
-    public string ReturnLevel11Time()
+    public float? ReturnLevel11Time()
     {
         return timeLevelCompleted1.level11Time;
     }
 
-    public string ReturnLevel12Time()
+    public float? ReturnLevel12Time()
     {
         return timeLevelCompleted1.level12Time;
     }
 
-    public string ReturnLevel13Time()
+    public float? ReturnLevel13Time()
     {
         return timeLevelCompleted1.level13Time;
     }
 
-    public string ReturnLevel14Time()
+    public float? ReturnLevel14Time()
     {
         return timeLevelCompleted1.level14Time;
     }
 
-    public string ReturnLevel15Time()
+    public float? ReturnLevel15Time()
     {
         return timeLevelCompleted1.level15Time;
     }
 
-    public string ReturnLevel16Time()
+    public float? ReturnLevel16Time()
     {
         return timeLevelCompleted1.level16Time;
     }
 
-    public string ReturnLevel17Time()
+    public float? ReturnLevel17Time()
     {
         return timeLevelCompleted1.level17Time;
     }
 
-    public string ReturnLevel18Time()
+    public float? ReturnLevel18Time()
     {
         return timeLevelCompleted1.level18Time;
     }
 
-    public string ReturnLevel19Time()
+    public float? ReturnLevel19Time()
     {
         return timeLevelCompleted1.level19Time;
     }
 
-    public string ReturnLevel20Time()
+    public float? ReturnLevel20Time()
     {
         return timeLevelCompleted1.level20Time;
     }
@@ -892,7 +938,7 @@ public class GameDataManager : MonoBehaviour
 [SerializeField]
 public class UnlockedLevels
 {
-    public bool level2Unlocked;
+        public bool level2Unlocked;
         public bool level3Unlocked;
         public bool level4Unlocked;
         public bool level5Unlocked;
@@ -1043,30 +1089,30 @@ public class StarsPerLevel
 [SerializeField]
 public class TimeLevelCompleted
 {
-    public string level1Time;
-    public string level2Time;
-    public string level3Time;
-    public string level4Time;
-    public string level5Time;
-    public string level6Time;
-    public string level7Time;
-    public string level8Time;
-    public string level9Time;
-    public string level10Time;
-    public string level11Time;
-    public string level12Time;
-    public string level13Time;
-    public string level14Time;
-    public string level15Time;
-    public string level16Time;
-    public string level17Time;
-    public string level18Time;
-    public string level19Time;
-    public string level20Time;
+    public float? level1Time;
+    public float? level2Time;
+    public float? level3Time;
+    public float? level4Time;
+    public float? level5Time;
+    public float? level6Time;
+    public float? level7Time;
+    public float? level8Time;
+    public float? level9Time;
+    public float? level10Time;
+    public float? level11Time;
+    public float? level12Time;
+    public float? level13Time;
+    public float? level14Time;
+    public float? level15Time;
+    public float? level16Time;
+    public float? level17Time;
+    public float? level18Time;
+    public float? level19Time;
+    public float? level20Time;
 
-    public TimeLevelCompleted(string level1Time, string level2Time, string level3Time, string level4Time, string level5Time, string level6Time, string level7Time,
-        string level8Time, string level9Time, string level10Time, string level11Time, string level12Time, string level13Time, string level14Time, string level15Time,
-        string level16Time, string level17Time, string level18Time, string level19Time, string level20Time)
+    public TimeLevelCompleted(float? level1Time, float? level2Time, float? level3Time, float? level4Time, float? level5Time, float? level6Time, float? level7Time,
+        float? level8Time, float? level9Time, float? level10Time, float? level11Time, float? level12Time, float? level13Time, float? level14Time, float? level15Time,
+        float? level16Time, float? level17Time, float? level18Time, float? level19Time, float? level20Time)
     {
         this.level1Time = level1Time;
         this.level2Time = level2Time;

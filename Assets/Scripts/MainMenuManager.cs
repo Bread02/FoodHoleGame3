@@ -70,6 +70,7 @@ public class MainMenuManager : LoadingMaster
         gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
         mainMainCanvas.SetActive(true);
         HideAllLevelSelectCanvas();
+        gameDataManager.ReadGame();
     }
 
     public void ClickPlay()
@@ -77,6 +78,7 @@ public class MainMenuManager : LoadingMaster
         mainMainCanvas.SetActive(false);
         levelSelectCanvas1.SetActive(true);
         CheckUnlockedLevels();
+        CheckLevelTimeAndStars();
     }
 
     public void HideAllLevelSelectCanvas()
@@ -87,6 +89,7 @@ public class MainMenuManager : LoadingMaster
         levelSelectCanvas4.SetActive(false);
     }
 
+    #region Click Pages
     public void ClickPage1()
     {
         HideAllLevelSelectCanvas();
@@ -110,7 +113,7 @@ public class MainMenuManager : LoadingMaster
         HideAllLevelSelectCanvas();
         levelSelectCanvas4.SetActive(true);
     }
-
+    #endregion
     // level stars
     public void LevelStars(GameObject star1, GameObject star2, GameObject star3, int numberOfStars)
     {
@@ -143,7 +146,7 @@ public class MainMenuManager : LoadingMaster
     public void CheckLevelTimeAndStars()
     {
         int level1Stars = gameDataManager.ReturnLevel1Stars();
-        string level1Time = gameDataManager.ReturnLevel1Time();
+        float? level1Time = gameDataManager.ReturnLevel1Time();
         GameObject level1Star1 = GameObject.Find("Level1Star1");
         GameObject level1Star2 = GameObject.Find("Level1Star2");
         GameObject level1Star3 = GameObject.Find("Level1Star3");
@@ -151,7 +154,7 @@ public class MainMenuManager : LoadingMaster
 
         LevelStars(level1Star1, level1Star2, level1Star3, level1Stars);
         TextMeshProUGUI level1TimeText = GameObject.Find("Level1Time").GetComponent<TextMeshProUGUI>();
-        level1TimeText.text = level1Time;
+        level1TimeText.text = level1Time.ToString();
     }
 
     public void CheckUnlockedLevels()
@@ -365,7 +368,7 @@ public class MainMenuManager : LoadingMaster
         }
     }
 
-    // Update is called once per frame
+    #region Click Levels
     public void ClickLevel1()
     {
         StartCoroutine(LoadAsynchronously("Level1"));
@@ -459,5 +462,5 @@ public class MainMenuManager : LoadingMaster
     {
         StartCoroutine(LoadAsynchronously("Level20"));
     }
-
+    #endregion
 }
