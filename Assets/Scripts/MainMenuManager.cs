@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class MainMenuManager : LoadingMaster
 {
@@ -39,6 +40,9 @@ public class MainMenuManager : LoadingMaster
     public GameObject level18Button;
     public GameObject level19Button;
     public GameObject level20Button;
+
+    [Header("LevelStars")]
+    public int level1Star1;
 
     [Header("LevelLockedButtons")]
     public GameObject level2LockedButton;
@@ -107,9 +111,51 @@ public class MainMenuManager : LoadingMaster
         levelSelectCanvas4.SetActive(true);
     }
 
+    // level stars
+    public void LevelStars(GameObject star1, GameObject star2, GameObject star3, int numberOfStars)
+    {
+        if (numberOfStars == 3)
+        {
+            star1.SetActive(true);
+            star2.SetActive(true);
+            star3.SetActive(true);
+        }
+        if (numberOfStars == 2)
+        {
+            star1.SetActive(true);
+            star2.SetActive(true);
+            star3.SetActive(false);
+        }
+        if (numberOfStars == 1)
+        {
+            star1.SetActive(true);
+            star2.SetActive(false);
+            star3.SetActive(false);
+        }
+        if (numberOfStars == 0)
+        {
+            star1.SetActive(false);
+            star2.SetActive(false);
+            star3.SetActive(false);
+        }
+    }
+
+    public void CheckLevelTimeAndStars()
+    {
+        int level1Stars = gameDataManager.ReturnLevel1Stars();
+        string level1Time = gameDataManager.ReturnLevel1Time();
+        GameObject level1Star1 = GameObject.Find("Level1Star1");
+        GameObject level1Star2 = GameObject.Find("Level1Star2");
+        GameObject level1Star3 = GameObject.Find("Level1Star3");
+
+
+        LevelStars(level1Star1, level1Star2, level1Star3, level1Stars);
+        TextMeshProUGUI level1TimeText = GameObject.Find("Level1Time").GetComponent<TextMeshProUGUI>();
+        level1TimeText.text = level1Time;
+    }
+
     public void CheckUnlockedLevels()
     {
-        
         if (gameDataManager.Level2UnlockedCheck())
         {
             level2Button.SetActive(true);
