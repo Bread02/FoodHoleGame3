@@ -463,14 +463,14 @@ public class WinTriggerMaster : MonoBehaviour
             case "Level1":
                 gameDataManager.UnlockLevel2();
                 CheckTimeScoreLevel1(timerMaster.timerSimplified);
-                if (gameDataManager.ReturnLevel1Time() == null)
+                if (gameDataManager.ReturnLevel1Time() == 111111)
                 {
                     gameDataManager.SetLevel1Time(timerMaster.timerSimplified);
                     Debug.Log("Timer master end time is " + timerMaster.timerSimplified);
                     newRecordText.SetActive(true);
                     gameDataManager.SaveGame();
                 }
-                if (gameDataManager.ReturnLevel1Time() != null && (gameDataManager.ReturnLevel1Time() > timerMaster.timerSimplified))
+                if (gameDataManager.ReturnLevel1Time() != 111111 && (gameDataManager.ReturnLevel1Time() > timerMaster.timerSimplified))
                 {
                     gameDataManager.SetLevel1Time(timerMaster.timerSimplified);
                     Debug.Log("Timer master end time is " + timerMaster.timerSimplified);
@@ -484,11 +484,6 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
             case "Level3":
                 gameDataManager.UnlockLevel4();
-
-                if (this.interstitial.IsLoaded())
-                {
-                    this.interstitial.Show();
-                }
                 break;
             case "Level4":
                 gameDataManager.UnlockLevel5();
@@ -498,11 +493,6 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
             case "Level6":
                 gameDataManager.UnlockLevel7();
-
-                if (this.interstitial.IsLoaded())
-                {
-                    this.interstitial.Show();
-                }
                 break;
             case "Level7":
                 gameDataManager.UnlockLevel8();

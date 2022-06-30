@@ -79,7 +79,7 @@ public class MainMenuManager : LoadingMaster
         mainMainCanvas.SetActive(false);
         levelSelectCanvas1.SetActive(true);
         CheckUnlockedLevels();
-        CheckLevelTimeAndStars();
+        CheckLevel1TimeAndStars();
     }
 
     public void HideAllLevelSelectCanvas()
@@ -144,26 +144,295 @@ public class MainMenuManager : LoadingMaster
         }
     }
 
-    public void CheckLevelTimeAndStars()
+    public void LevelTimeText(float levelTime, TextMeshProUGUI levelTimeText)
+    {
+        if (levelTime != 111111)
+        {
+            levelTimeText.text = "Time Record: " + levelTime.ToString() + "s";
+        }
+        else
+        {
+            levelTimeText.text = "Level Not Completed";
+        }
+    }
+
+    public void CheckLevel1TimeAndStars()
     {
         int level1Stars = gameDataManager.ReturnLevel1Stars();
-        float? level1Time = gameDataManager.ReturnLevel1Time();
+        float level1Time = gameDataManager.ReturnLevel1Time();
         GameObject level1Star1 = GameObject.Find("Level1Star1");
         GameObject level1Star2 = GameObject.Find("Level1Star2");
         GameObject level1Star3 = GameObject.Find("Level1Star3");
 
-
         LevelStars(level1Star1, level1Star2, level1Star3, level1Stars);
         TextMeshProUGUI level1TimeText = GameObject.Find("Level1Time").GetComponent<TextMeshProUGUI>();
-        if (level1Time != 111111)
-        {
-            level1TimeText.text = level1Time.ToString();
-            Debug.Log(level1Time.ToString());
-        }
-        else
-        {
-            level1TimeText.text = "Level Not Completed";
-        }
+
+        LevelTimeText(level1Time, level1TimeText);
+    }
+
+    public void CheckLevel2TimeAndStars()
+    {
+        int level2Stars = gameDataManager.ReturnLevel2Stars();
+        float level2Time = gameDataManager.ReturnLevel2Time();
+        GameObject level2Star1 = GameObject.Find("Level2Star1");
+        GameObject level2Star2 = GameObject.Find("Level2Star2");
+        GameObject level2Star3 = GameObject.Find("Level2Star3");
+
+        LevelStars(level2Star1, level2Star2, level2Star3, level2Stars);
+        TextMeshProUGUI level2TimeText = GameObject.Find("Level2Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(level2Time, level2TimeText);
+    }
+    public void CheckLevel3TimeAndStars()
+    {
+        int level3Stars = gameDataManager.ReturnLevel3Stars();
+        float level3Time = gameDataManager.ReturnLevel3Time();
+        GameObject level3Star1 = GameObject.Find("Level3Star1");
+        GameObject level3Star2 = GameObject.Find("Level3Star2");
+        GameObject level3Star3 = GameObject.Find("Level3Star3");
+
+        LevelStars(level3Star1, level3Star2, level3Star3, level3Stars);
+        TextMeshProUGUI level3TimeText = GameObject.Find("Level2Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(level3Time, level3TimeText);
+    }
+
+    public void CheckLevel4TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel4Stars();
+        float levelTime = gameDataManager.ReturnLevel4Time();
+        GameObject levelStar1 = GameObject.Find("Level4Star1");
+        GameObject levelStar2 = GameObject.Find("Level4Star2");
+        GameObject levelStar3 = GameObject.Find("Level4Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level4Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel5TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel5Stars();
+        float levelTime = gameDataManager.ReturnLevel5Time();
+        GameObject levelStar1 = GameObject.Find("Level5Star1");
+        GameObject levelStar2 = GameObject.Find("Level5Star2");
+        GameObject levelStar3 = GameObject.Find("Level5Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level5Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel6TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel6Stars();
+        float levelTime = gameDataManager.ReturnLevel6Time();
+        GameObject levelStar1 = GameObject.Find("Level6Star1");
+        GameObject levelStar2 = GameObject.Find("Level6Star2");
+        GameObject levelStar3 = GameObject.Find("Level6Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level6Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel7TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel7Stars();
+        float levelTime = gameDataManager.ReturnLevel7Time();
+        GameObject levelStar1 = GameObject.Find("Level7Star1");
+        GameObject levelStar2 = GameObject.Find("Level7Star2");
+        GameObject levelStar3 = GameObject.Find("Level7Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level7Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel8TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel8Stars();
+        float levelTime = gameDataManager.ReturnLevel8Time();
+        GameObject levelStar1 = GameObject.Find("Level8Star1");
+        GameObject levelStar2 = GameObject.Find("Level8Star2");
+        GameObject levelStar3 = GameObject.Find("Level8Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level8Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel9TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel9Stars();
+        float levelTime = gameDataManager.ReturnLevel9Time();
+        GameObject levelStar1 = GameObject.Find("Level9Star1");
+        GameObject levelStar2 = GameObject.Find("Level9Star2");
+        GameObject levelStar3 = GameObject.Find("Level9Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level9Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel10TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel10Stars();
+        float levelTime = gameDataManager.ReturnLevel10Time();
+        GameObject levelStar1 = GameObject.Find("Level10Star1");
+        GameObject levelStar2 = GameObject.Find("Level10Star2");
+        GameObject levelStar3 = GameObject.Find("Level10Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level10Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel11TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel11Stars();
+        float levelTime = gameDataManager.ReturnLevel11Time();
+        GameObject levelStar1 = GameObject.Find("Level11Star1");
+        GameObject levelStar2 = GameObject.Find("Level11Star2");
+        GameObject levelStar3 = GameObject.Find("Level11Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level11Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel12TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel12Stars();
+        float levelTime = gameDataManager.ReturnLevel12Time();
+        GameObject levelStar1 = GameObject.Find("Level12Star1");
+        GameObject levelStar2 = GameObject.Find("Level12Star2");
+        GameObject levelStar3 = GameObject.Find("Level12Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level12Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel13TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel13Stars();
+        float levelTime = gameDataManager.ReturnLevel13Time();
+        GameObject levelStar1 = GameObject.Find("Level13Star1");
+        GameObject levelStar2 = GameObject.Find("Level13Star2");
+        GameObject levelStar3 = GameObject.Find("Level13Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level13Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel14TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel14Stars();
+        float levelTime = gameDataManager.ReturnLevel14Time();
+        GameObject levelStar1 = GameObject.Find("Level14Star1");
+        GameObject levelStar2 = GameObject.Find("Level14Star2");
+        GameObject levelStar3 = GameObject.Find("Level14Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level14Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel15TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel15Stars();
+        float levelTime = gameDataManager.ReturnLevel15Time();
+        GameObject levelStar1 = GameObject.Find("Level15Star1");
+        GameObject levelStar2 = GameObject.Find("Level15Star2");
+        GameObject levelStar3 = GameObject.Find("Level15Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level15Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel16TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel16Stars();
+        float levelTime = gameDataManager.ReturnLevel16Time();
+        GameObject levelStar1 = GameObject.Find("Level16Star1");
+        GameObject levelStar2 = GameObject.Find("Level16Star2");
+        GameObject levelStar3 = GameObject.Find("Level16Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level16Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel17TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel17Stars();
+        float levelTime = gameDataManager.ReturnLevel17Time();
+        GameObject levelStar1 = GameObject.Find("Level17Star1");
+        GameObject levelStar2 = GameObject.Find("Level17Star2");
+        GameObject levelStar3 = GameObject.Find("Level17Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level17Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel18TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel18Stars();
+        float levelTime = gameDataManager.ReturnLevel18Time();
+        GameObject levelStar1 = GameObject.Find("Level18Star1");
+        GameObject levelStar2 = GameObject.Find("Level18Star2");
+        GameObject levelStar3 = GameObject.Find("Level18Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level18Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel19TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel19Stars();
+        float levelTime = gameDataManager.ReturnLevel19Time();
+        GameObject levelStar1 = GameObject.Find("Level19Star1");
+        GameObject levelStar2 = GameObject.Find("Level19Star2");
+        GameObject levelStar3 = GameObject.Find("Level19Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level19Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    public void CheckLevel20TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel20Stars();
+        float levelTime = gameDataManager.ReturnLevel20Time();
+        GameObject levelStar1 = GameObject.Find("Level20Star1");
+        GameObject levelStar2 = GameObject.Find("Level20Star2");
+        GameObject levelStar3 = GameObject.Find("Level20Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level20Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
     }
 
     public void CheckUnlockedLevels()
