@@ -86,6 +86,10 @@ public class WinTriggerMaster : MonoBehaviour
         starOne = GameObject.Find("WinStar1").gameObject;
         starTwo = GameObject.Find("WinStar2").gameObject;
         starThree = GameObject.Find("WinStar3").gameObject;
+
+        UIStarOne = GameObject.Find("UIStar1").gameObject;
+        UIStarTwo = GameObject.Find("UIStar2").gameObject;
+        UIStarThree = GameObject.Find("UIStar3").gameObject;
     }
 
     // Start is called before the first frame update
@@ -118,11 +122,6 @@ public class WinTriggerMaster : MonoBehaviour
             audio.clip = winSoundEffect;
             audio.Play();
         }
-    }
-
-    public void CheckTimeScore(string levelNumber)
-    {
-        
     }
 
     public void DisableAllStars()
@@ -172,131 +171,260 @@ public class WinTriggerMaster : MonoBehaviour
         }
     }
 
-    public void StarCheck(float timer, float threeStarTime, float twoStarTime)
-    {
-        if (timer <= threeStarTime)
-        {
-            UIStarOne.SetActive(false);
-        }
-        else if (timer <= twoStarTime)
-        {
-            UIStarTwo.SetActive(false);
-        }
-    }
-
 
     public void CheckTimeScoreLevel1(float timer)
     {
-        CheckTimeScore(timer, 10f, 15f);
-    }
-
-    public void StarCheckLevel1(float timer)
-    {
         StarCheck(timer, 10f, 15f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 10f, 15f);
+        }
     }
 
     public void CheckTimeScoreLevel2(float timer)
     {
-        CheckTimeScore(timer, 13f, 17f);
+        StarCheck(timer, 13f, 17f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 13f, 17f);
+        }
     }
 
     public void CheckTimeScoreLevel3(float timer)
     {
-        CheckTimeScore(timer, 13f, 17f);
+        StarCheck(timer, 13f, 17f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 13f, 17f);
+        }
 
     }
 
     public void CheckTimeScoreLevel4(float timer)
     {
-        CheckTimeScore(timer, 9f, 13f);
+        StarCheck(timer, 9f, 13f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 9f, 13f);
+        }
     }
 
     public void CheckTimeScoreLevel5(float timer)
     {
-        CheckTimeScore(timer, 7f, 14f);
+        StarCheck(timer, 7f, 14f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 7f, 14f);
+        }
 
     }
 
     public void CheckTimeScoreLevel6(float timer)
     {
-        CheckTimeScore(timer, 12f, 17f);
+        StarCheck(timer, 12f, 17f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 12f, 17f);
+        }
     }
 
     public void CheckTimeScoreLevel7(float timer)
-    {
-        CheckTimeScore(timer, 13f, 18f);
+    {StarCheck(timer, 13f, 18f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 13f, 18f);
+        }
     }
 
     public void CheckTimeScoreLevel8(float timer)
-    {
-        CheckTimeScore(timer, 12f, 17f);
+    {StarCheck(timer, 12f, 17f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 12f, 17f);
+        }
     }
 
     public void CheckTimeScoreLevel9(float timer)
-    {
-        CheckTimeScore(timer, 12f, 17f);
+    {StarCheck(timer, 12f, 17f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 12f, 17f);
+        }
     }
 
     public void CheckTimeScoreLevel10(float timer)
-    {
-        CheckTimeScore(timer, 40f, 60f);
+    {StarCheck(timer, 40f, 60f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 40f, 60f);
+        }
 
     }
 
     public void CheckTimeScoreLevel11(float timer)
-    {
-        CheckTimeScore(timer, 15f, 22f);
+    {StarCheck(timer, 15f, 22f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 15f, 22f);
+        }
     }
 
     public void CheckTimeScoreLevel12(float timer)
-    {
-
-        CheckTimeScore(timer, 15f, 22f);
+    {StarCheck(timer, 15f, 22f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 15f, 22f);
+        }
 
     }
 
     public void CheckTimeScoreLevel13(float timer)
-    {
-        CheckTimeScore(timer, 10f, 18f);
+    {StarCheck(timer, 10f, 18f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 10f, 18f);
+        }
     }
 
     public void CheckTimeScoreLevel14(float timer)
-    {
-        CheckTimeScore(timer, 12f, 17f);
+    {StarCheck(timer, 12f, 17f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 12f, 17f);
+        }
     }
 
     public void CheckTimeScoreLevel15(float timer)
-    {
-        CheckTimeScore(timer, 9f, 13f);
+    {StarCheck(timer, 9f, 13f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 9f, 13f);
+        }
     }
 
     public void CheckTimeScoreLevel16(float timer)
-    {
-        CheckTimeScore(timer, 17f, 25f);
+    {StarCheck(timer, 17f, 25f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 17f, 25f);
+        }
     }
 
 
     public void CheckTimeScoreLevel17(float timer)
-    {
-        CheckTimeScore(timer, 30f, 40f);
+    {StarCheck(timer, 30f, 40f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 30f, 40f);
+        }
     }
 
     public void CheckTimeScoreLevel18(float timer)
-    {
-        CheckTimeScore(timer, 9f, 13f);
+    {StarCheck(timer, 9f, 13f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 9f, 13f);
+        }
     }
 
     public void CheckTimeScoreLevel19(float timer)
-    {
-        CheckTimeScore(timer, 6f, 10f);
+    {StarCheck(timer, 6f, 10f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 6f, 10f);
+        }
     }
 
 
     public void CheckTimeScoreLevel20(float timer)
-    {
-        CheckTimeScore(timer, 10f, 20f);
+    {StarCheck(timer, 10f, 20f);
+        if (levelComplete)
+        {
+            CheckTimeScore(timer, 10f, 20f);
+        }
     }
 
+
+    // star check must be done under an update method
+    public void StarCheck(float timer, float threeStarTime, float twoStarTime)
+    {
+        if (timer >= threeStarTime)
+        {
+            UIStarThree.SetActive(false);
+        }
+        if (timer >= twoStarTime)
+        {
+            UIStarTwo.SetActive(false);
+        }
+    }
+
+    public void Update()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        switch (scene.name)
+        {
+            case "Level1":
+                CheckTimeScoreLevel1(timerMaster.timerSimplified);
+                break;
+            case "Level2":
+                CheckTimeScoreLevel2(timerMaster.timerSimplified);
+                break;
+            case "Level3":
+                CheckTimeScoreLevel3(timerMaster.timerSimplified);
+                break;
+            case "Level4":
+                CheckTimeScoreLevel4(timerMaster.timerSimplified);
+                break;
+            case "Level5":
+                CheckTimeScoreLevel5(timerMaster.timerSimplified);
+                break;
+            case "Level6":
+                CheckTimeScoreLevel6(timerMaster.timerSimplified);
+                break;
+            case "Level7":
+                CheckTimeScoreLevel7(timerMaster.timerSimplified);
+                break;
+            case "Level8":
+                CheckTimeScoreLevel8(timerMaster.timerSimplified);
+                break;
+            case "Level9":
+                CheckTimeScoreLevel9(timerMaster.timerSimplified);
+                break;
+            case "Level10":
+                CheckTimeScoreLevel10(timerMaster.timerSimplified);
+                break;
+            case "Level11":
+                CheckTimeScoreLevel11(timerMaster.timerSimplified);
+                break;
+            case "Level12":
+                CheckTimeScoreLevel12(timerMaster.timerSimplified);
+                break;
+            case "Level13":
+                CheckTimeScoreLevel13(timerMaster.timerSimplified);
+                break;
+            case "Level14":
+                CheckTimeScoreLevel14(timerMaster.timerSimplified);
+                break;
+            case "Level15":
+                CheckTimeScoreLevel15(timerMaster.timerSimplified);
+                break;
+            case "Level16":
+                CheckTimeScoreLevel16(timerMaster.timerSimplified);
+                break;
+            case "Level17":
+                CheckTimeScoreLevel17(timerMaster.timerSimplified);
+                break;
+            case "Level18":
+                CheckTimeScoreLevel18(timerMaster.timerSimplified);
+                break;
+            case "Level19":
+                CheckTimeScoreLevel19(timerMaster.timerSimplified);
+                break;
+            case "Level20":
+                CheckTimeScoreLevel20(timerMaster.timerSimplified);
+                break;
+        }
+    }
 
     public void WinTrigger()
     {
@@ -312,7 +440,6 @@ public class WinTriggerMaster : MonoBehaviour
                 gameDataManager.UnlockLevel2();
                 CheckTimeScoreLevel1(timerMaster.ReturnTime());
                 Debug.Log("Unlocking level 2");
-
                 break;
             case "Level2":
                 gameDataManager.UnlockLevel3();

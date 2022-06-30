@@ -14,13 +14,14 @@ public class TimerMaster : MonoBehaviour
 
     public WinTriggerMaster winTriggerMaster;
 
-    public TextMeshProUGUI timerText;
+    private TextMeshProUGUI timerText;
 
     public TextMeshProUGUI winScreenTimeComplete;
     // Start is called before the first frame update
     void Start()
     {
         winTriggerMaster = GameObject.Find("WinTrigger").GetComponent<WinTriggerMaster>();
+        timerText = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
         completeCheck = false;
     }
 
