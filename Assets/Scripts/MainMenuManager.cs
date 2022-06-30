@@ -67,15 +67,27 @@ public class MainMenuManager : LoadingMaster
     public GameObject level19LockedButton;
     public GameObject level20LockedButton;
 
+    [Header("Level 20 stars")]
+    public GameObject level20Star1;
+    public GameObject level20Star2;
+    public GameObject level20Star3;
+
+    public override void Awake()
+    {
+        FindButtons();
+        CheckTimeAndLocks();
+
+        loadingCanvas = GameObject.Find("LoadingCanvas");
+        loadingCanvas?.SetActive(false);
+        Time.timeScale = 1;
+    }
 
     void Start()
     {
-        FindButtons();
         gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
         mainMainCanvas.SetActive(true);
         HideAllLevelSelectCanvas();
         gameDataManager.ReadGame();
-        Debug.Log(gameDataManager.ReturnLevel1Time());
     }
 
     private void FindButtons()
@@ -128,8 +140,32 @@ public class MainMenuManager : LoadingMaster
     {
         mainMainCanvas.SetActive(false);
         levelSelectCanvas1.SetActive(true);
-        CheckUnlockedLevels();
+    }
+
+    private void CheckTimeAndLocks()
+    {
+        CheckLevel20TimeAndStars();
         CheckLevel1TimeAndStars();
+        CheckLevel2TimeAndStars();
+        CheckLevel3TimeAndStars();
+        CheckLevel4TimeAndStars();
+        CheckLevel5TimeAndStars();
+        CheckLevel6TimeAndStars();
+        CheckLevel7TimeAndStars();
+        CheckLevel8TimeAndStars();
+        CheckLevel9TimeAndStars();
+        CheckLevel10TimeAndStars();
+        CheckLevel11TimeAndStars();
+        CheckLevel12TimeAndStars();
+        CheckLevel13TimeAndStars();
+        CheckLevel14TimeAndStars();
+        CheckLevel15TimeAndStars();
+        CheckLevel16TimeAndStars();
+        CheckLevel17TimeAndStars();
+        CheckLevel18TimeAndStars();
+        CheckLevel19TimeAndStars();
+        CheckLevel20TimeAndStars();
+        CheckUnlockedLevels();
     }
 
     public void HideAllLevelSelectCanvas()
@@ -222,7 +258,7 @@ public class MainMenuManager : LoadingMaster
     }
 
     #region Check Level Time and Stars
-    public void CheckLevel1TimeAndStars()
+    private void CheckLevel1TimeAndStars()
     {
         int level1Stars = gameDataManager.ReturnLevel1Stars();
         float level1Time = gameDataManager.ReturnLevel1Time();
@@ -236,7 +272,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(level1Time, level1TimeText);
     }
 
-    public void CheckLevel2TimeAndStars()
+    private void CheckLevel2TimeAndStars()
     {
         int level2Stars = gameDataManager.ReturnLevel2Stars();
         float level2Time = gameDataManager.ReturnLevel2Time();
@@ -249,7 +285,7 @@ public class MainMenuManager : LoadingMaster
 
         LevelTimeText(level2Time, level2TimeText);
     }
-    public void CheckLevel3TimeAndStars()
+    private void CheckLevel3TimeAndStars()
     {
         int level3Stars = gameDataManager.ReturnLevel3Stars();
         float level3Time = gameDataManager.ReturnLevel3Time();
@@ -263,7 +299,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(level3Time, level3TimeText);
     }
 
-    public void CheckLevel4TimeAndStars()
+    private void CheckLevel4TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel4Stars();
         float levelTime = gameDataManager.ReturnLevel4Time();
@@ -277,7 +313,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel5TimeAndStars()
+    private void CheckLevel5TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel5Stars();
         float levelTime = gameDataManager.ReturnLevel5Time();
@@ -291,7 +327,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel6TimeAndStars()
+    private void CheckLevel6TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel6Stars();
         float levelTime = gameDataManager.ReturnLevel6Time();
@@ -305,7 +341,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel7TimeAndStars()
+    private void CheckLevel7TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel7Stars();
         float levelTime = gameDataManager.ReturnLevel7Time();
@@ -319,7 +355,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel8TimeAndStars()
+    private void CheckLevel8TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel8Stars();
         float levelTime = gameDataManager.ReturnLevel8Time();
@@ -333,7 +369,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel9TimeAndStars()
+    private void CheckLevel9TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel9Stars();
         float levelTime = gameDataManager.ReturnLevel9Time();
@@ -347,7 +383,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel10TimeAndStars()
+    private void CheckLevel10TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel10Stars();
         float levelTime = gameDataManager.ReturnLevel10Time();
@@ -361,7 +397,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel11TimeAndStars()
+    private void CheckLevel11TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel11Stars();
         float levelTime = gameDataManager.ReturnLevel11Time();
@@ -375,7 +411,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel12TimeAndStars()
+    private void CheckLevel12TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel12Stars();
         float levelTime = gameDataManager.ReturnLevel12Time();
@@ -389,7 +425,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel13TimeAndStars()
+    private void CheckLevel13TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel13Stars();
         float levelTime = gameDataManager.ReturnLevel13Time();
@@ -403,7 +439,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel14TimeAndStars()
+    private void CheckLevel14TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel14Stars();
         float levelTime = gameDataManager.ReturnLevel14Time();
@@ -417,7 +453,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel15TimeAndStars()
+    private void CheckLevel15TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel15Stars();
         float levelTime = gameDataManager.ReturnLevel15Time();
@@ -431,7 +467,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel16TimeAndStars()
+    private void CheckLevel16TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel16Stars();
         float levelTime = gameDataManager.ReturnLevel16Time();
@@ -445,7 +481,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel17TimeAndStars()
+    private void CheckLevel17TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel17Stars();
         float levelTime = gameDataManager.ReturnLevel17Time();
@@ -459,7 +495,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel18TimeAndStars()
+    private void CheckLevel18TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel18Stars();
         float levelTime = gameDataManager.ReturnLevel18Time();
@@ -473,7 +509,7 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel19TimeAndStars()
+    private void CheckLevel19TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel19Stars();
         float levelTime = gameDataManager.ReturnLevel19Time();
@@ -487,15 +523,12 @@ public class MainMenuManager : LoadingMaster
         LevelTimeText(levelTime, levelTimeText);
     }
 
-    public void CheckLevel20TimeAndStars()
+    private void CheckLevel20TimeAndStars()
     {
         int levelStars = gameDataManager.ReturnLevel20Stars();
         float levelTime = gameDataManager.ReturnLevel20Time();
-        GameObject levelStar1 = GameObject.Find("Level20Star1");
-        GameObject levelStar2 = GameObject.Find("Level20Star2");
-        GameObject levelStar3 = GameObject.Find("Level20Star3");
 
-        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        LevelStars(level20Star1, level20Star2, level20Star3, levelStars);
         TextMeshProUGUI levelTimeText = GameObject.Find("Level20Time").GetComponent<TextMeshProUGUI>();
 
         LevelTimeText(levelTime, levelTimeText);
