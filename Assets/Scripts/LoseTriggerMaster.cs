@@ -5,17 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class LoseTriggerMaster : MonoBehaviour
 {
-    private GameObject loseTriggerObject;
     private WinTriggerMaster winTriggerMaster;
     public List<GameObject> playerObjects = new List<GameObject>();
     private GameObject loseCanvas;
 
-
+    [Header("SFX")]
+    [SerializeField] private AudioClip loseSoundEffect;
 
     // Start is called before the first frame update
     void Start()
     {
-        loseTriggerObject = this.gameObject;
         loseCanvas = GameObject.Find("LossCanvas");
         loseCanvas.SetActive(false);
         winTriggerMaster = GameObject.Find("WinTrigger").GetComponent<WinTriggerMaster>();
@@ -26,6 +25,9 @@ public class LoseTriggerMaster : MonoBehaviour
     {
         loseCanvas.SetActive(true);
         Time.timeScale = 0;
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = loseSoundEffect;
+        audio.Play();
     }
 
     private void OnTriggerEnter(Collider other)
