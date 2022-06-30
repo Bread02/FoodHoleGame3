@@ -71,6 +71,7 @@ public class MainMenuManager : LoadingMaster
         mainMainCanvas.SetActive(true);
         HideAllLevelSelectCanvas();
         gameDataManager.ReadGame();
+        Debug.Log(gameDataManager.ReturnLevel1Time());
     }
 
     public void ClickPlay()
@@ -154,7 +155,15 @@ public class MainMenuManager : LoadingMaster
 
         LevelStars(level1Star1, level1Star2, level1Star3, level1Stars);
         TextMeshProUGUI level1TimeText = GameObject.Find("Level1Time").GetComponent<TextMeshProUGUI>();
-        level1TimeText.text = level1Time.ToString();
+        if (level1Time != 111111)
+        {
+            level1TimeText.text = level1Time.ToString();
+            Debug.Log(level1Time.ToString());
+        }
+        else
+        {
+            level1TimeText.text = "Level Not Completed";
+        }
     }
 
     public void CheckUnlockedLevels()

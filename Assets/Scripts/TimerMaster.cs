@@ -8,7 +8,6 @@ public class TimerMaster : MonoBehaviour
 {
     public float timer;
     public float timerSimplified;
-    public float endTime;
 
     public bool completeCheck;
 
@@ -41,15 +40,13 @@ public class TimerMaster : MonoBehaviour
         if (winTriggerMaster.levelComplete == true && completeCheck == false)
         {
             completeCheck = true;
-            endTime = timerSimplified;
-            Debug.Log("Timer master script");
-            winTriggerMaster.CheckTimeScoreLevel1(endTime);
-            winScreenTimeComplete.text = "Time: " + endTime.ToString();
+            winTriggerMaster.CheckTimeScoreLevel1(timerSimplified);
+            winScreenTimeComplete.text = "Time: " + timerSimplified.ToString();
         }
     }
 
     public float ReturnTime()
     {
-        return endTime;
+        return timerSimplified;
     }
 }

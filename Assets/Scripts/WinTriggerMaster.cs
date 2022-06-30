@@ -454,7 +454,6 @@ public class WinTriggerMaster : MonoBehaviour
     public void WinTrigger()
     {
         winCanvas.SetActive(true);
-        Debug.Log("Win condition achieved");
         Time.timeScale = 0;
         levelComplete = true;
 
@@ -463,11 +462,20 @@ public class WinTriggerMaster : MonoBehaviour
         {
             case "Level1":
                 gameDataManager.UnlockLevel2();
-                CheckTimeScoreLevel1(timerMaster.ReturnTime());
-                if (gameDataManager.ReturnLevel1Time() > timerMaster.endTime)
+                CheckTimeScoreLevel1(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel1Time() == null)
                 {
-                    gameDataManager.SetLevel1Time(timerMaster.endTime);
+                    gameDataManager.SetLevel1Time(timerMaster.timerSimplified);
+                    Debug.Log("Timer master end time is " + timerMaster.timerSimplified);
                     newRecordText.SetActive(true);
+                    gameDataManager.SaveGame();
+                }
+                if (gameDataManager.ReturnLevel1Time() != null && (gameDataManager.ReturnLevel1Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel1Time(timerMaster.timerSimplified);
+                    Debug.Log("Timer master end time is " + timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                    gameDataManager.SaveGame();
                 }
                 Debug.Log("Unlocking level 2");
                 break;

@@ -41,10 +41,7 @@ public class GameDataManager : MonoBehaviour
 
     private void WriteToSave()
     {
-        Debug.Log("Writing to save");
         BinaryFormatter formatter = new BinaryFormatter();
-
-
         string filePath = $"{Application.persistentDataPath}/unlockedLevels.save";
         FileStream stream = new FileStream(filePath, FileMode.Create);
         string json = JsonUtility.ToJson(unlockedLevels);
@@ -710,120 +707,121 @@ public class GameDataManager : MonoBehaviour
     #endregion
 
     #region Set Time Per Level
-    public void SetLevel1Time(float? time)
+    public void SetLevel1Time(float time)
     {
         timeLevelCompleted1.level1Time = time;
+        Debug.Log(time + " Game Data Manager saving this time");
         SaveGame();
     }
 
-    public void SetLevel2Time(float? time)
+    public void SetLevel2Time(float time)
     {
         timeLevelCompleted1.level2Time = time;
         SaveGame();
     }
 
-    public void SetLevel3Time(float? time)
+    public void SetLevel3Time(float time)
     {
         timeLevelCompleted1.level3Time = time;
         SaveGame();
     }
 
-    public void SetLevel4Time(float? time)
+    public void SetLevel4Time(float time)
     {
         timeLevelCompleted1.level4Time = time;
         SaveGame();
     }
 
-    public void SetLevel5Time(float? time)
+    public void SetLevel5Time(float time)
     {
         timeLevelCompleted1.level5Time = time;
         SaveGame();
     }
 
-    public void SetLevel6Time(float? time)
+    public void SetLevel6Time(float time)
     {
         timeLevelCompleted1.level6Time = time;
         SaveGame();
     }
 
-    public void SetLevel7Time(float? time)
+    public void SetLevel7Time(float time)
     {
         timeLevelCompleted1.level7Time = time;
         SaveGame();
     }
 
-    public void SetLevel8Time(float? time)
+    public void SetLevel8Time(float time)
     {
         timeLevelCompleted1.level8Time = time;
         SaveGame();
     }
 
-    public void SetLevel9Time(float? time)
+    public void SetLevel9Time(float time)
     {
         timeLevelCompleted1.level9Time = time;
         SaveGame();
     }
 
-    public void SetLevel10Time(float? time)
+    public void SetLevel10Time(float time)
     {
         timeLevelCompleted1.level10Time = time;
         SaveGame();
     }
 
-    public void SetLevel11Time(float? time)
+    public void SetLevel11Time(float time)
     {
         timeLevelCompleted1.level11Time = time;
         SaveGame();
     }
 
-    public void SetLevel12Time(float? time)
+    public void SetLevel12Time(float time)
     {
         timeLevelCompleted1.level12Time = time;
         SaveGame();
     }
 
-    public void SetLevel13Time(float? time)
+    public void SetLevel13Time(float time)
     {
         timeLevelCompleted1.level13Time = time;
         SaveGame();
     }
 
-    public void SetLevel14Time(float? time)
+    public void SetLevel14Time(float time)
     {
         timeLevelCompleted1.level14Time = time;
         SaveGame();
     }
 
-    public void SetLevel15Time(float? time)
+    public void SetLevel15Time(float time)
     {
         timeLevelCompleted1.level15Time = time;
         SaveGame();
     }
 
-    public void SetLevel16Time(float? time)
+    public void SetLevel16Time(float time)
     {
         timeLevelCompleted1.level16Time = time;
         SaveGame();
     }
-    public void SetLevel17Time(float? time)
+    public void SetLevel17Time(float time)
     {
         timeLevelCompleted1.level17Time = time;
         SaveGame();
     }
 
-    public void SetLevel18Time(float? time)
+    public void SetLevel18Time(float time)
     {
         timeLevelCompleted1.level18Time = time;
         SaveGame();
     }
 
-    public void SetLevel19Time(float? time)
+    public void SetLevel19Time(float time)
     {
         timeLevelCompleted1.level19Time = time;
         SaveGame();
     }
 
-    public void SetLevel20Time(float? time)
+    public void SetLevel20Time(float time)
     {
         timeLevelCompleted1.level20Time = time;
         SaveGame();
@@ -833,102 +831,102 @@ public class GameDataManager : MonoBehaviour
 
     #region Return Time Per Level
 
-    public float? ReturnLevel1Time()
+    public float ReturnLevel1Time()
     {
         return timeLevelCompleted1.level1Time;
     }
 
-    public float? ReturnLevel2Time()
+    public float ReturnLevel2Time()
     {
         return timeLevelCompleted1.level2Time;
     }
 
-    public float? ReturnLevel3Time()
+    public float ReturnLevel3Time()
     {
         return timeLevelCompleted1.level3Time;
     }
 
-    public float? ReturnLevel4Time()
+    public float ReturnLevel4Time()
     {
         return timeLevelCompleted1.level4Time;
     }
 
-    public float? ReturnLevel5Time()
+    public float ReturnLevel5Time()
     {
         return timeLevelCompleted1.level5Time;
     }
 
-    public float? ReturnLevel6Time()
+    public float ReturnLevel6Time()
     {
         return timeLevelCompleted1.level6Time;
     }
 
-    public float? ReturnLevel7Time()
+    public float ReturnLevel7Time()
     {
         return timeLevelCompleted1.level7Time;
     }
 
-    public float? ReturnLevel8Time()
+    public float ReturnLevel8Time()
     {
         return timeLevelCompleted1.level8Time;
     }
 
-    public float? ReturnLevel9Time()
+    public float ReturnLevel9Time()
     {
         return timeLevelCompleted1.level9Time;
     }
 
-    public float? ReturnLevel10Time()
+    public float ReturnLevel10Time()
     {
         return timeLevelCompleted1.level10Time;
     }
 
-    public float? ReturnLevel11Time()
+    public float ReturnLevel11Time()
     {
         return timeLevelCompleted1.level11Time;
     }
 
-    public float? ReturnLevel12Time()
+    public float ReturnLevel12Time()
     {
         return timeLevelCompleted1.level12Time;
     }
 
-    public float? ReturnLevel13Time()
+    public float ReturnLevel13Time()
     {
         return timeLevelCompleted1.level13Time;
     }
 
-    public float? ReturnLevel14Time()
+    public float ReturnLevel14Time()
     {
         return timeLevelCompleted1.level14Time;
     }
 
-    public float? ReturnLevel15Time()
+    public float ReturnLevel15Time()
     {
         return timeLevelCompleted1.level15Time;
     }
 
-    public float? ReturnLevel16Time()
+    public float ReturnLevel16Time()
     {
         return timeLevelCompleted1.level16Time;
     }
 
-    public float? ReturnLevel17Time()
+    public float ReturnLevel17Time()
     {
         return timeLevelCompleted1.level17Time;
     }
 
-    public float? ReturnLevel18Time()
+    public float ReturnLevel18Time()
     {
         return timeLevelCompleted1.level18Time;
     }
 
-    public float? ReturnLevel19Time()
+    public float ReturnLevel19Time()
     {
         return timeLevelCompleted1.level19Time;
     }
 
-    public float? ReturnLevel20Time()
+    public float ReturnLevel20Time()
     {
         return timeLevelCompleted1.level20Time;
     }
@@ -1089,30 +1087,30 @@ public class StarsPerLevel
 [SerializeField]
 public class TimeLevelCompleted
 {
-    public float? level1Time;
-    public float? level2Time;
-    public float? level3Time;
-    public float? level4Time;
-    public float? level5Time;
-    public float? level6Time;
-    public float? level7Time;
-    public float? level8Time;
-    public float? level9Time;
-    public float? level10Time;
-    public float? level11Time;
-    public float? level12Time;
-    public float? level13Time;
-    public float? level14Time;
-    public float? level15Time;
-    public float? level16Time;
-    public float? level17Time;
-    public float? level18Time;
-    public float? level19Time;
-    public float? level20Time;
+    public float level1Time;
+    public float level2Time;
+    public float level3Time;
+    public float level4Time;
+    public float level5Time;
+    public float level6Time;
+    public float level7Time;
+    public float level8Time;
+    public float level9Time;
+    public float level10Time;
+    public float level11Time;
+    public float level12Time;
+    public float level13Time;
+    public float level14Time;
+    public float level15Time;
+    public float level16Time;
+    public float level17Time;
+    public float level18Time;
+    public float level19Time;
+    public float level20Time;
 
-    public TimeLevelCompleted(float? level1Time, float? level2Time, float? level3Time, float? level4Time, float? level5Time, float? level6Time, float? level7Time,
-        float? level8Time, float? level9Time, float? level10Time, float? level11Time, float? level12Time, float? level13Time, float? level14Time, float? level15Time,
-        float? level16Time, float? level17Time, float? level18Time, float? level19Time, float? level20Time)
+    public TimeLevelCompleted(float level1Time, float level2Time, float level3Time, float level4Time, float level5Time, float level6Time, float level7Time,
+        float level8Time, float level9Time, float level10Time, float level11Time, float level12Time, float level13Time, float level14Time, float level15Time,
+        float level16Time, float level17Time, float level18Time, float level19Time, float level20Time)
     {
         this.level1Time = level1Time;
         this.level2Time = level2Time;
@@ -1136,28 +1134,30 @@ public class TimeLevelCompleted
         this.level20Time = level20Time;
     }
 
+    // 111111 is a very high number that is set as the default value.
+    // nullables caused problems with saving.
     public TimeLevelCompleted()
     {
-        level1Time = null;
-        level2Time = null;
-        level3Time = null;
-        level4Time = null;
-        level5Time = null;
-        level6Time = null;
-        level7Time = null;
-        level8Time = null;
-        level9Time = null;
-        level10Time = null;
-        level11Time = null;
-        level12Time = null;
-        level13Time = null;
-        level14Time = null;
-        level15Time = null;
-        level16Time = null;
-        level17Time = null;
-        level18Time = null;
-        level19Time = null;
-        level20Time = null;
+        level1Time = 111111;
+        level2Time = 111111;
+        level3Time = 111111;
+        level4Time = 111111;
+        level5Time = 111111;
+        level6Time = 111111;
+        level7Time = 111111;
+        level8Time = 111111;
+        level9Time = 111111;
+        level10Time = 111111;
+        level11Time = 111111;
+        level12Time = 111111;
+        level13Time = 111111;
+        level14Time = 111111;
+        level15Time = 111111;
+        level16Time = 111111;
+        level17Time = 111111;
+        level18Time = 111111;
+        level19Time = 111111;
+        level20Time = 111111;
     }
 
 }

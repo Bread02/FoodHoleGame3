@@ -1152,11 +1152,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8404814600543790949, guid: 5aa52e3f4ca540c47bec22b2055b3eb6, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8404814600543790949, guid: 5aa52e3f4ca540c47bec22b2055b3eb6, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8404814600680708353, guid: 5aa52e3f4ca540c47bec22b2055b3eb6, type: 3}
       propertyPath: m_Name
@@ -1164,7 +1164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8404814600680708353, guid: 5aa52e3f4ca540c47bec22b2055b3eb6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8404814600680708357, guid: 5aa52e3f4ca540c47bec22b2055b3eb6, type: 3}
       propertyPath: m_Pivot.x
@@ -1252,15 +1252,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8404814601237111279, guid: 5aa52e3f4ca540c47bec22b2055b3eb6, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8404814601237111279, guid: 5aa52e3f4ca540c47bec22b2055b3eb6, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8404814601237111279, guid: 5aa52e3f4ca540c47bec22b2055b3eb6, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aa52e3f4ca540c47bec22b2055b3eb6, type: 3}
@@ -6646,8 +6646,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
