@@ -22,7 +22,17 @@ public class MainMainMenuManager : MonoBehaviour
         audioToggled = true;
         audioOn.SetActive(true);
         audioOff.SetActive(false);
-        audioMixer.SetFloat("Master", 0);
+        audioMixer.SetFloat("Master", -10);
+
+        if (!Application.isMobilePlatform)
+        {
+            Screen.fullScreen = false;
+        }
+    }
+
+    public void QuitButton()
+    {
+        Application.Quit();
     }
 
     public void youTubeButton()
@@ -37,7 +47,7 @@ public class MainMainMenuManager : MonoBehaviour
 
     public void AudioToggleOn()
     {
-        audioMixer.SetFloat("Master", 0);
+        audioMixer.SetFloat("Master", -10);
         audioToggled = true;
         audioOff.SetActive(false);
         audioOn.SetActive(true);
