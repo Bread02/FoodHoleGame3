@@ -72,6 +72,10 @@ public class MainMenuManager : LoadingMaster
     public GameObject level20Star2;
     public GameObject level20Star3;
 
+    [Header("Click Level SFX")]
+    public AudioClip clickPlayButton;
+    public AudioClip clickLevelSFX;
+
     public override void Awake()
     {
         gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
@@ -143,6 +147,9 @@ public class MainMenuManager : LoadingMaster
     {
         mainMainCanvas.SetActive(false);
         levelSelectCanvas1.SetActive(true);
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickPlayButton;
+        audio.Play();
     }
 
     private void CheckTimeAndLocks()
@@ -756,95 +763,155 @@ public class MainMenuManager : LoadingMaster
     #region Click Levels
     public void ClickLevel1()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level1"));
     }
     public void ClickLevel2()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level2"));
     }
     public void ClickLevel3()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level3"));
     }
     public void ClickLevel4()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level4"));
     }
 
     public void ClickLevel5()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level5"));
     }
 
     public void ClickLevel6()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level6"));
     }
 
     public void ClickLevel7()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level7"));
     }
     public void ClickLevel8()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level8"));
     }
     public void ClickLevel9()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level9"));
     }
     public void ClickLevel10()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level10"));
     }
 
     public void ClickLevel11()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level11"));
     }
 
     public void ClickLevel12()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level12"));
     }
 
     public void ClickLevel13()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level13"));
     }
 
     public void ClickLevel14()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level14"));
     }
 
     public void ClickLevel15()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level15"));
     }
 
     public void ClickLevel16()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level16"));
     }
 
     public void ClickLevel17()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level17"));
     }
 
     public void ClickLevel18()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level18"));
     }
 
     public void ClickLevel19()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level19"));
     }
 
     public void ClickLevel20()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
         StartCoroutine(LoadAsynchronously("Level20"));
     }
     #endregion
