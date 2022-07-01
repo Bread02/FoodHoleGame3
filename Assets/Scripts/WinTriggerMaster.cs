@@ -50,6 +50,8 @@ public class WinTriggerMaster : MonoBehaviour
     [SerializeField] private AudioClip twoStarWinSoundEffect;
     [SerializeField] private AudioClip threeStarWinSoundEffect;
 
+    public GameObject winSFX;
+
 
     // https://developers.google.com/admob/unity/interstitial
     // view this documentation on how to create an ad
@@ -100,7 +102,11 @@ public class WinTriggerMaster : MonoBehaviour
         UIStarTwo = GameObject.Find("UIStar2").gameObject;
         UIStarThree = GameObject.Find("UIStar3").gameObject;
 
+        winSFX = GameObject.Find("WinParticles").gameObject;
+
         newRecordText = GameObject.Find("NewRecordText").gameObject;
+
+        winSFX.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -172,6 +178,7 @@ public class WinTriggerMaster : MonoBehaviour
                 audio.clip = threeStarWinSoundEffect;
                 audio.Play();
                 Debug.Log("Three Stars!");
+                winSFX.SetActive(true);
             }
             else if (timer <= twoStarTime)
             {
