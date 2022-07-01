@@ -28,6 +28,7 @@ public class LoseTriggerMaster : MonoBehaviour
         AudioSource audio = GetComponent<AudioSource>();
         audio.clip = loseSoundEffect;
         audio.Play();
+        Debug.Log("Lose triggered");
     }
 
     private void OnTriggerEnter(Collider other)
