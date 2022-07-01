@@ -86,9 +86,6 @@ public class MainMenuManager : LoadingMaster
         loadingCanvas = GameObject.Find("LoadingCanvas");
         loadingCanvas?.SetActive(false);
         Time.timeScale = 1;
-
-        Debug.Log(gameDataManager.ReturnLevel3Time() + " Level 3 time");
-        Debug.Log(gameDataManager.ReturnLevel3Stars() + " level 3 stars");
     }
 
     void Start()
@@ -150,6 +147,12 @@ public class MainMenuManager : LoadingMaster
         AudioSource audio = GetComponent<AudioSource>();
         audio.clip = clickPlayButton;
         audio.Play();
+    }
+
+    public void ClickMainMenu()
+    {
+        mainMainCanvas.SetActive(true);
+        HideAllLevelSelectCanvas();
     }
 
     private void CheckTimeAndLocks()
@@ -293,7 +296,6 @@ public class MainMenuManager : LoadingMaster
         GameObject level2Star3 = GameObject.Find("Level2Star3");
 
         LevelStars(level2Star1, level2Star2, level2Star3, level2Stars);
-        Debug.Log("Level 2 data Time:" + level2Time);
         TextMeshProUGUI levelTimeText = GameObject.Find("Level2Time").GetComponent<TextMeshProUGUI>();
 
         LevelTimeText(level2Time, levelTimeText);
