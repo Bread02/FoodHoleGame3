@@ -43928,7 +43928,7 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: 483c60e63e160ef4f813c2aa8345c6f7, type: 2}
   audioOn: {fileID: 941405913}
   audioOff: {fileID: 2133046871}
-  soundOnSFX: {fileID: 8300000, guid: 79180f511d89441b9aa23ccae1992fe0, type: 3}
+  soundOnSFX: {fileID: 8300000, guid: cf6c0e7fbef9449c98a0cdb5ea0c4d9f, type: 3}
 --- !u!4 &2137956878
 Transform:
   m_ObjectHideFlags: 0
