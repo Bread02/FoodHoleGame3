@@ -799,10 +799,10 @@ public class WinTriggerMaster : MonoBehaviour
             {
                 if (obj?.GetComponent<PlayerGuideObjects>().endTriggered == false)
                 {
-                    Debug.Log("Player object fell through hole");
+           //         Debug.Log("Player object fell through hole");
                     objectsTriggered++;
                     obj.GetComponent<PlayerGuideObjects>().endTriggered = true;
-                    Debug.Log(objectsTriggered);
+//                    Debug.Log(objectsTriggered);
                     Invoke("CheckWinCondition", 1f);
                     ItemsRemaining();
                 }

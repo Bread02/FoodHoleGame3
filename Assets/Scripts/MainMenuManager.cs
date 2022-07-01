@@ -74,6 +74,8 @@ public class MainMenuManager : LoadingMaster
 
     public override void Awake()
     {
+        gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
+        gameDataManager.ReadGame();
         FindButtons();
         CheckTimeAndLocks();
 
@@ -84,10 +86,8 @@ public class MainMenuManager : LoadingMaster
 
     void Start()
     {
-        gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
         mainMainCanvas.SetActive(true);
         HideAllLevelSelectCanvas();
-        gameDataManager.ReadGame();
     }
 
     private void FindButtons()

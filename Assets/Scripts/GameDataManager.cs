@@ -111,6 +111,7 @@ public class GameDataManager : MonoBehaviour
 
     public void ReadGame()
     {
+        Debug.Log("Reading Game");
         ReadFromSave();
     }
 
