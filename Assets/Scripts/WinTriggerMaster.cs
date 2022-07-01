@@ -230,164 +230,569 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void CheckTimeScoreLevel2(float timer)
     {
-        StarCheck(timer, 13f, 17f);
-        if (levelComplete)
+        float threeStarTime = 13f;
+        float twoStarTime = 17f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 13f, 17f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel2Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel2Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel2Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel3(float timer)
     {
-        StarCheck(timer, 13f, 17f);
-        if (levelComplete)
+        float threeStarTime = 13f;
+        float twoStarTime = 17f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 13f, 17f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel3Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel3Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel3Stars(1);
+            }
         }
+
 
     }
 
     public void CheckTimeScoreLevel4(float timer)
     {
-        StarCheck(timer, 9f, 13f);
-        if (levelComplete)
+        float threeStarTime = 9f;
+        float twoStarTime = 13f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 9f, 13f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel4Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel4Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel4Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel5(float timer)
     {
-        StarCheck(timer, 7f, 14f);
-        if (levelComplete)
+        float threeStarTime = 7f;
+        float twoStarTime = 14f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 7f, 14f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel5Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel5Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel5Stars(1);
+            }
         }
 
     }
 
     public void CheckTimeScoreLevel6(float timer)
     {
-        StarCheck(timer, 12f, 17f);
-        if (levelComplete)
+        float threeStarTime = 12f;
+        float twoStarTime = 17f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 12f, 17f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel6Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel6Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel6Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel7(float timer)
-    {StarCheck(timer, 13f, 18f);
-        if (levelComplete)
+    {
+        float threeStarTime = 13f;
+        float twoStarTime = 18f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 13f, 18f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel7Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel7Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel7Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel8(float timer)
-    {StarCheck(timer, 12f, 17f);
-        if (levelComplete)
+    {
+
+        float threeStarTime = 12f;
+        float twoStarTime = 17f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 12f, 17f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel8Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel8Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel8Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel9(float timer)
-    {StarCheck(timer, 12f, 17f);
-        if (levelComplete)
+    {
+
+        float threeStarTime = 12f;
+        float twoStarTime = 17f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 12f, 17f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel9Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel9Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel9Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel10(float timer)
-    {StarCheck(timer, 40f, 60f);
-        if (levelComplete)
+    {
+
+        float threeStarTime = 40f;
+        float twoStarTime = 60f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 40f, 60f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel10Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel10Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel10Stars(1);
+            }
         }
 
     }
 
     public void CheckTimeScoreLevel11(float timer)
-    {StarCheck(timer, 15f, 22f);
-        if (levelComplete)
+    {
+
+        float threeStarTime = 15f;
+        float twoStarTime = 22f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 15f, 22f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel11Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel11Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel11Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel12(float timer)
-    {StarCheck(timer, 15f, 22f);
-        if (levelComplete)
+    {
+        float threeStarTime = 15f;
+        float twoStarTime = 22f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 15f, 22f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel12Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel12Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel12Stars(1);
+            }
         }
 
     }
 
     public void CheckTimeScoreLevel13(float timer)
-    {StarCheck(timer, 10f, 18f);
-        if (levelComplete)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 18f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 10f, 18f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel13Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel13Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel13Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel14(float timer)
-    {StarCheck(timer, 12f, 17f);
-        if (levelComplete)
+    {
+
+        float threeStarTime = 12f;
+        float twoStarTime = 17f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 12f, 17f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel14Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel14Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel14Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel15(float timer)
-    {StarCheck(timer, 9f, 13f);
-        if (levelComplete)
+    {
+
+        float threeStarTime = 9f;
+        float twoStarTime = 13f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 9f, 13f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel15Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel15Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel15Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel16(float timer)
-    {StarCheck(timer, 17f, 25f);
-        if (levelComplete)
+    {
+
+        float threeStarTime = 17f;
+        float twoStarTime = 25f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 17f, 25f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel16Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel16Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel16Stars(1);
+            }
         }
     }
 
 
     public void CheckTimeScoreLevel17(float timer)
-    {StarCheck(timer, 30f, 40f);
-        if (levelComplete)
+    {
+
+        float threeStarTime = 30f;
+        float twoStarTime = 40f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 30f, 40f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel17Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel17Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel17Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel18(float timer)
-    {StarCheck(timer, 9f, 13f);
-        if (levelComplete)
+    {
+
+        float threeStarTime = 9f;
+        float twoStarTime = 13f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 9f, 13f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel18Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel18Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel18Stars(1);
+            }
         }
     }
 
     public void CheckTimeScoreLevel19(float timer)
-    {StarCheck(timer, 6f, 10f);
-        if (levelComplete)
+    {
+
+        float threeStarTime = 6f;
+        float twoStarTime = 10f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 6f, 10f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel19Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel19Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel19Stars(1);
+            }
         }
     }
 
 
     public void CheckTimeScoreLevel20(float timer)
-    {StarCheck(timer, 10f, 20f);
-        if (levelComplete)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
         {
-            CheckTimeScore(timer, 10f, 20f);
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel20Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel20Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel20Stars(1);
+            }
         }
     }
 

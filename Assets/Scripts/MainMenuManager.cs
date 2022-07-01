@@ -82,6 +82,9 @@ public class MainMenuManager : LoadingMaster
         loadingCanvas = GameObject.Find("LoadingCanvas");
         loadingCanvas?.SetActive(false);
         Time.timeScale = 1;
+
+        Debug.Log(gameDataManager.ReturnLevel2Time() + " Level 2 time");
+        Debug.Log(gameDataManager.ReturnLevel2Stars() + " level 2 stars");
     }
 
     void Start()
