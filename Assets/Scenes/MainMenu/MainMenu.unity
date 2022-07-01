@@ -22102,7 +22102,7 @@ MonoBehaviour:
   level20Star2: {fileID: 579096103}
   level20Star3: {fileID: 1871454306}
   clickPlayButton: {fileID: 8300000, guid: 79180f511d89441b9aa23ccae1992fe0, type: 3}
-  clickLevelSFX: {fileID: 8300000, guid: 657578e4be6b64dbf9b09deada272e55, type: 3}
+  clickLevelSFX: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
 --- !u!4 &1062323559
 Transform:
   m_ObjectHideFlags: 0
