@@ -921,7 +921,7 @@ public class WinTriggerMaster : MonoBehaviour
                 gameDataManager.UnlockLevel4();
 
                 CheckTimeScoreLevel3(timerMaster.timerSimplified);
-                if (gameDataManager.ReturnLevel1Time() == 111111)
+                if (gameDataManager.ReturnLevel3Time() == 111111)
                 {
                     gameDataManager.SetLevel3Time(timerMaster.timerSimplified);
                     newRecordText.SetActive(true);

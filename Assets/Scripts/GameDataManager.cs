@@ -610,7 +610,6 @@ public class GameDataManager : MonoBehaviour
 
     public int ReturnLevel2Stars()
     {
-
         return starsPerLevel1.level2Stars;
     }
 
@@ -839,7 +838,7 @@ public class GameDataManager : MonoBehaviour
 
     public float ReturnLevel2Time()
     {
-        return timeLevelCompleted1.level2Time;
+        return timeLevelCompleted.level2Time;
     }
 
     public float ReturnLevel3Time()

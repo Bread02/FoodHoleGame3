@@ -83,8 +83,8 @@ public class MainMenuManager : LoadingMaster
         loadingCanvas?.SetActive(false);
         Time.timeScale = 1;
 
-        Debug.Log(gameDataManager.ReturnLevel2Time() + " Level 2 time");
-        Debug.Log(gameDataManager.ReturnLevel2Stars() + " level 2 stars");
+        Debug.Log(gameDataManager.ReturnLevel3Time() + " Level 3 time");
+        Debug.Log(gameDataManager.ReturnLevel3Stars() + " level 3 stars");
     }
 
     void Start()
@@ -250,13 +250,15 @@ public class MainMenuManager : LoadingMaster
 
     public void LevelTimeText(float levelTime, TextMeshProUGUI levelTimeText)
     {
-        if (levelTime != 111111)
+        if (levelTime == 111111)
         {
-            levelTimeText.text = "Time Record: " + levelTime.ToString() + "s";
+            levelTimeText.text = "Level Not Completed";
+            return;
         }
         else
         {
-            levelTimeText.text = "Level Not Completed";
+            levelTimeText.text = "Time Record: " + levelTime.ToString() + "s";
+            return;
         }
     }
 
@@ -284,9 +286,11 @@ public class MainMenuManager : LoadingMaster
         GameObject level2Star3 = GameObject.Find("Level2Star3");
 
         LevelStars(level2Star1, level2Star2, level2Star3, level2Stars);
-        TextMeshProUGUI level2TimeText = GameObject.Find("Level2Time").GetComponent<TextMeshProUGUI>();
+        Debug.Log("Level 2 data Time:" + level2Time);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level2Time").GetComponent<TextMeshProUGUI>();
 
-        LevelTimeText(level2Time, level2TimeText);
+        LevelTimeText(level2Time, levelTimeText);
+
     }
     private void CheckLevel3TimeAndStars()
     {
@@ -297,7 +301,7 @@ public class MainMenuManager : LoadingMaster
         GameObject level3Star3 = GameObject.Find("Level3Star3");
 
         LevelStars(level3Star1, level3Star2, level3Star3, level3Stars);
-        TextMeshProUGUI level3TimeText = GameObject.Find("Level2Time").GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI level3TimeText = GameObject.Find("Level3Time").GetComponent<TextMeshProUGUI>();
 
         LevelTimeText(level3Time, level3TimeText);
     }

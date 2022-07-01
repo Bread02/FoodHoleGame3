@@ -56,7 +56,7 @@ public class LoadingMaster : MonoBehaviour
     protected IEnumerator LoadAsynchronously(int sceneIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
-        loadingCanvas.SetActive(true);
+        loadingCanvas?.SetActive(true);
 
         while (!operation.isDone)
         {
