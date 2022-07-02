@@ -19,7 +19,16 @@ public class MainMenuManager : LoadingMaster
     public GameObject levelSelectCanvas5;
     public GameObject levelSelectCanvas6;
 
-    public GameDataManager gameDataManager;
+    public GameObject levelSelectCanvas7;
+    public GameObject levelSelectCanvas8;
+    public GameObject levelSelectCanvas9;
+    public GameObject levelSelectCanvas10;
+    public GameObject levelSelectCanvas11;
+    public GameObject levelSelectCanvas12;
+    public GameObject levelSelectCanvas13;
+
+
+
 
     [Header("LevelButtons")]
     public GameObject level1Button;
@@ -42,6 +51,40 @@ public class MainMenuManager : LoadingMaster
     public GameObject level18Button;
     public GameObject level19Button;
     public GameObject level20Button;
+
+    /*
+    public GameObject level21Button;
+    public GameObject level22Button;
+    public GameObject level23Button;
+    public GameObject level24Button;
+    public GameObject level25Button;
+    public GameObject level26Button;
+    public GameObject level27Button;
+    public GameObject level28Button;
+    public GameObject level29Button;
+    public GameObject level30Button;
+    public GameObject level31Button;
+    public GameObject level32Button;
+    public GameObject level33Button;
+    public GameObject level34Button;
+    public GameObject level35Button;
+    public GameObject level36Button;
+    public GameObject level37Button;
+    public GameObject level38Button;
+    public GameObject level39Button;
+    public GameObject level40Button;
+    public GameObject level41Button;
+    public GameObject level42Button;
+    public GameObject level43Button;
+    public GameObject level44Button;
+    public GameObject level45Button;
+    public GameObject level46Button;
+    public GameObject level47Button;
+    public GameObject level48Button;
+    public GameObject level49Button;
+    public GameObject level50Button;
+    */
+
 
     [Header("LevelStars")]
     public int level1Star1;
@@ -66,6 +109,39 @@ public class MainMenuManager : LoadingMaster
     public GameObject level18LockedButton;
     public GameObject level19LockedButton;
     public GameObject level20LockedButton;
+
+    /*
+    public GameObject level21LockedButton;
+    public GameObject level22LockedButton;
+    public GameObject level23LockedButton;
+    public GameObject level24LockedButton;
+    public GameObject level25LockedButton;
+    public GameObject level26LockedButton;
+    public GameObject level27LockedButton;
+    public GameObject level28LockedButton;
+    public GameObject level29LockedButton;
+    public GameObject level30LockedButton;
+    public GameObject level31LockedButton;
+    public GameObject level32LockedButton;
+    public GameObject level33LockedButton;
+    public GameObject level34LockedButton;
+    public GameObject level35LockedButton;
+    public GameObject level36LockedButton;
+    public GameObject level37LockedButton;
+    public GameObject level38LockedButton;
+    public GameObject level39LockedButton;
+    public GameObject level40LockedButton;
+    public GameObject level41LockedButton;
+    public GameObject level42LockedButton;
+    public GameObject level43LockedButton;
+    public GameObject level44LockedButton;
+    public GameObject level45LockedButton;
+    public GameObject level46LockedButton;
+    public GameObject level47LockedButton;
+    public GameObject level48LockedButton;
+    public GameObject level49LockedButton;
+    public GameObject level50LockedButton;
+    */
 
     [Header("Level 20 stars")]
     public GameObject level20Star1;
@@ -117,6 +193,40 @@ public class MainMenuManager : LoadingMaster
         level19Button = GameObject.Find("Level19Button").gameObject;
         level20Button = GameObject.Find("Level20Button").gameObject;
 
+        /*
+        level21Button = GameObject.Find("Level21Button").gameObject;
+        level22Button = GameObject.Find("Level22Button").gameObject;
+        level23Button = GameObject.Find("Level23Button").gameObject;
+        level24Button = GameObject.Find("Level24Button").gameObject;
+        level25Button = GameObject.Find("Level25Button").gameObject;
+        level26Button = GameObject.Find("Level26Button").gameObject;
+        level27Button = GameObject.Find("Level27Button").gameObject;
+        level28Button = GameObject.Find("Level28Button").gameObject;
+        level29Button = GameObject.Find("Level29Button").gameObject;
+        level30Button = GameObject.Find("Level30Button").gameObject;
+        level31Button = GameObject.Find("Level31Button").gameObject;
+        level32Button = GameObject.Find("Level32Button").gameObject;
+        level33Button = GameObject.Find("Level33Button").gameObject;
+        level34Button = GameObject.Find("Level34Button").gameObject;
+        level35Button = GameObject.Find("Level35Button").gameObject;
+        level36Button = GameObject.Find("Level36Button").gameObject;
+        level37Button = GameObject.Find("Level37Button").gameObject;
+        level38Button = GameObject.Find("Level38Button").gameObject;
+        level39Button = GameObject.Find("Level39Button").gameObject;
+        level40Button = GameObject.Find("Level40Button").gameObject;
+        level41Button = GameObject.Find("Level41Button").gameObject;
+        level42Button = GameObject.Find("Level42Button").gameObject;
+        level43Button = GameObject.Find("Level43Button").gameObject;
+        level44Button = GameObject.Find("Level44Button").gameObject;
+        level45Button = GameObject.Find("Level45Button").gameObject;
+        level46Button = GameObject.Find("Level46Button").gameObject;
+        level47Button = GameObject.Find("Level47Button").gameObject;
+        level48Button = GameObject.Find("Level48Button").gameObject;
+        level49Button = GameObject.Find("Level49Button").gameObject;
+        level50Button = GameObject.Find("Level50Button").gameObject;
+
+        /*
+
         level2LockedButton = GameObject.Find("Level2LockedButton").gameObject;
         level3LockedButton = GameObject.Find("Level3LockedButton").gameObject;
         level4LockedButton = GameObject.Find("Level4LockedButton").gameObject;
@@ -137,7 +247,38 @@ public class MainMenuManager : LoadingMaster
         level19LockedButton = GameObject.Find("Level19LockedButton").gameObject;
         level20LockedButton = GameObject.Find("Level20LockedButton").gameObject;
 
-
+        /*
+        level21LockedButton = GameObject.Find("Level21LockedButton").gameObject;
+        level22LockedButton = GameObject.Find("Level22LockedButton").gameObject;
+        level23LockedButton = GameObject.Find("Level23LockedButton").gameObject;
+        level24LockedButton = GameObject.Find("Level24LockedButton").gameObject;
+        level25LockedButton = GameObject.Find("Level25LockedButton").gameObject;
+        level26LockedButton = GameObject.Find("Level26LockedButton").gameObject;
+        level27LockedButton = GameObject.Find("Level27LockedButton").gameObject;
+        level28LockedButton = GameObject.Find("Level28LockedButton").gameObject;
+        level29LockedButton = GameObject.Find("Level29LockedButton").gameObject;
+        level30LockedButton = GameObject.Find("Level30LockedButton").gameObject;
+        level31LockedButton = GameObject.Find("Level31LockedButton").gameObject;
+        level32LockedButton = GameObject.Find("Level32LockedButton").gameObject;
+        level33LockedButton = GameObject.Find("Level33LockedButton").gameObject;
+        level34LockedButton = GameObject.Find("Level34LockedButton").gameObject;
+        level35LockedButton = GameObject.Find("Level35LockedButton").gameObject;
+        level36LockedButton = GameObject.Find("Level36LockedButton").gameObject;
+        level37LockedButton = GameObject.Find("Level37LockedButton").gameObject;
+        level38LockedButton = GameObject.Find("Level38LockedButton").gameObject;
+        level39LockedButton = GameObject.Find("Level39LockedButton").gameObject;
+        level40LockedButton = GameObject.Find("Level40LockedButton").gameObject;
+        level41LockedButton = GameObject.Find("Level41LockedButton").gameObject;
+        level42LockedButton = GameObject.Find("Level42LockedButton").gameObject;
+        level43LockedButton = GameObject.Find("Level43LockedButton").gameObject;
+        level44LockedButton = GameObject.Find("Level44LockedButton").gameObject;
+        level45LockedButton = GameObject.Find("Level45LockedButton").gameObject;
+        level46LockedButton = GameObject.Find("Level46LockedButton").gameObject;
+        level47LockedButton = GameObject.Find("Level47LockedButton").gameObject;
+        level48LockedButton = GameObject.Find("Level48LockedButton").gameObject;
+        level49LockedButton = GameObject.Find("Level49LockedButton").gameObject;
+        level50LockedButton = GameObject.Find("Level50LockedButton").gameObject;
+        */
     }
 
     public void ClickPlay()
@@ -178,6 +319,41 @@ public class MainMenuManager : LoadingMaster
         CheckLevel18TimeAndStars();
         CheckLevel19TimeAndStars();
         CheckLevel20TimeAndStars();
+
+        // Ungreen the following lines of code once these levels are added in.
+        /*
+        CheckLevel21TimeAndStars();
+        CheckLevel22TimeAndStars();
+        CheckLevel23TimeAndStars();
+        CheckLevel24TimeAndStars();
+        CheckLevel25TimeAndStars();
+        CheckLevel26TimeAndStars();
+        CheckLevel27TimeAndStars();
+        CheckLevel28TimeAndStars();
+        CheckLevel29TimeAndStars();
+        CheckLevel30TimeAndStars();
+        CheckLevel31TimeAndStars();
+        CheckLevel32TimeAndStars();
+        CheckLevel33TimeAndStars();
+        CheckLevel34TimeAndStars();
+        CheckLevel35TimeAndStars();
+        CheckLevel36TimeAndStars();
+        CheckLevel37TimeAndStars();
+        CheckLevel38TimeAndStars();
+        CheckLevel39TimeAndStars();
+        CheckLevel40TimeAndStars();
+        CheckLevel41TimeAndStars();
+        CheckLevel42TimeAndStars();
+        CheckLevel43TimeAndStars();
+        CheckLevel44TimeAndStars();
+        CheckLevel45TimeAndStars();
+        CheckLevel46TimeAndStars();
+        CheckLevel47TimeAndStars();
+        CheckLevel48TimeAndStars();
+        CheckLevel49TimeAndStars();
+        CheckLevel50TimeAndStars();
+        */
+
         CheckUnlockedLevels();
     }
 
@@ -189,6 +365,15 @@ public class MainMenuManager : LoadingMaster
         levelSelectCanvas4.SetActive(false);
         levelSelectCanvas5.SetActive(false);
         levelSelectCanvas6.SetActive(false);
+
+        levelSelectCanvas7.SetActive(false);
+        levelSelectCanvas8.SetActive(false);
+        levelSelectCanvas9.SetActive(false);
+        levelSelectCanvas10.SetActive(false);
+        levelSelectCanvas11.SetActive(false);
+        levelSelectCanvas12.SetActive(false);
+        levelSelectCanvas13.SetActive(false);
+
     }
 
     #region Click Pages
@@ -226,6 +411,48 @@ public class MainMenuManager : LoadingMaster
     {
         HideAllLevelSelectCanvas();
         levelSelectCanvas6.SetActive(true);
+    }
+
+    public void ClickPage7()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas7.SetActive(true);
+    }
+
+    public void ClickPage8()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas8.SetActive(true);
+    }
+
+    public void ClickPage9()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas9.SetActive(true);
+    }
+
+    public void ClickPage10()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas10.SetActive(true);
+    }
+
+    public void ClickPage11()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas11.SetActive(true);
+    }
+
+    public void ClickPage12()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas12.SetActive(true);
+    }
+
+    public void ClickPage13()
+    {
+        HideAllLevelSelectCanvas();
+        levelSelectCanvas13.SetActive(true);
     }
 
     #endregion
@@ -549,6 +776,427 @@ public class MainMenuManager : LoadingMaster
 
         LevelTimeText(levelTime, levelTimeText);
     }
+
+    private void CheckLevel21TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel21Stars();
+        float levelTime = gameDataManager.ReturnLevel21Time();
+        GameObject levelStar1 = GameObject.Find("Level21Star1");
+        GameObject levelStar2 = GameObject.Find("Level21Star2");
+        GameObject levelStar3 = GameObject.Find("Level21Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level21Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel22TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel2Stars();
+        float levelTime = gameDataManager.ReturnLevel22Time();
+        GameObject levelStar1 = GameObject.Find("Level22Star1");
+        GameObject levelStar2 = GameObject.Find("Level22Star2");
+        GameObject levelStar3 = GameObject.Find("Level22Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level22Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel23TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel23Stars();
+        float levelTime = gameDataManager.ReturnLevel23Time();
+        GameObject levelStar1 = GameObject.Find("Level23Star1");
+        GameObject levelStar2 = GameObject.Find("Level23Star2");
+        GameObject levelStar3 = GameObject.Find("Level23Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level23Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel24TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel24Stars();
+        float levelTime = gameDataManager.ReturnLevel24Time();
+        GameObject levelStar1 = GameObject.Find("Level24Star1");
+        GameObject levelStar2 = GameObject.Find("Level24Star2");
+        GameObject levelStar3 = GameObject.Find("Level24Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level24Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel25TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel25Stars();
+        float levelTime = gameDataManager.ReturnLevel25Time();
+        GameObject levelStar1 = GameObject.Find("Level25Star1");
+        GameObject levelStar2 = GameObject.Find("Level25Star2");
+        GameObject levelStar3 = GameObject.Find("Level25Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level25Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel26TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel26Stars();
+        float levelTime = gameDataManager.ReturnLevel26Time();
+        GameObject levelStar1 = GameObject.Find("Level26Star1");
+        GameObject levelStar2 = GameObject.Find("Level26Star2");
+        GameObject levelStar3 = GameObject.Find("Level26Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level26Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel27TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel27Stars();
+        float levelTime = gameDataManager.ReturnLevel27Time();
+        GameObject levelStar1 = GameObject.Find("Level27Star1");
+        GameObject levelStar2 = GameObject.Find("Level27Star2");
+        GameObject levelStar3 = GameObject.Find("Level27Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level27Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel28TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel28Stars();
+        float levelTime = gameDataManager.ReturnLevel28Time();
+        GameObject levelStar1 = GameObject.Find("Level28Star1");
+        GameObject levelStar2 = GameObject.Find("Level28Star2");
+        GameObject levelStar3 = GameObject.Find("Level28Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level28Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel29TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel29Stars();
+        float levelTime = gameDataManager.ReturnLevel29Time();
+        GameObject levelStar1 = GameObject.Find("Level29Star1");
+        GameObject levelStar2 = GameObject.Find("Level29Star2");
+        GameObject levelStar3 = GameObject.Find("Level29Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level29Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel30TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel30Stars();
+        float levelTime = gameDataManager.ReturnLevel30Time();
+        GameObject levelStar1 = GameObject.Find("Level30Star1");
+        GameObject levelStar2 = GameObject.Find("Level30Star2");
+        GameObject levelStar3 = GameObject.Find("Level30Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level30Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel31TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel31Stars();
+        float levelTime = gameDataManager.ReturnLevel31Time();
+        GameObject levelStar1 = GameObject.Find("Level31Star1");
+        GameObject levelStar2 = GameObject.Find("Level31Star2");
+        GameObject levelStar3 = GameObject.Find("Level31Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level31Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel32TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel32Stars();
+        float levelTime = gameDataManager.ReturnLevel32Time();
+        GameObject levelStar1 = GameObject.Find("Level32Star1");
+        GameObject levelStar2 = GameObject.Find("Level32Star2");
+        GameObject levelStar3 = GameObject.Find("Level32Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level32Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel33TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel33Stars();
+        float levelTime = gameDataManager.ReturnLevel33Time();
+        GameObject levelStar1 = GameObject.Find("Level33Star1");
+        GameObject levelStar2 = GameObject.Find("Level33Star2");
+        GameObject levelStar3 = GameObject.Find("Level33Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level33Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel34TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel34Stars();
+        float levelTime = gameDataManager.ReturnLevel34Time();
+        GameObject levelStar1 = GameObject.Find("Level34Star1");
+        GameObject levelStar2 = GameObject.Find("Level34Star2");
+        GameObject levelStar3 = GameObject.Find("Level34Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level34Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel35TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel35Stars();
+        float levelTime = gameDataManager.ReturnLevel35Time();
+        GameObject levelStar1 = GameObject.Find("Level35Star1");
+        GameObject levelStar2 = GameObject.Find("Level35Star2");
+        GameObject levelStar3 = GameObject.Find("Level35Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level35Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel36TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel36Stars();
+        float levelTime = gameDataManager.ReturnLevel36Time();
+        GameObject levelStar1 = GameObject.Find("Level36Star1");
+        GameObject levelStar2 = GameObject.Find("Level36Star2");
+        GameObject levelStar3 = GameObject.Find("Level36Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level36Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel37TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel37Stars();
+        float levelTime = gameDataManager.ReturnLevel37Time();
+        GameObject levelStar1 = GameObject.Find("Level37Star1");
+        GameObject levelStar2 = GameObject.Find("Level37Star2");
+        GameObject levelStar3 = GameObject.Find("Level37Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level37Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel38TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel38Stars();
+        float levelTime = gameDataManager.ReturnLevel38Time();
+        GameObject levelStar1 = GameObject.Find("Level38Star1");
+        GameObject levelStar2 = GameObject.Find("Level38Star2");
+        GameObject levelStar3 = GameObject.Find("Level38Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level38Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel39TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel39Stars();
+        float levelTime = gameDataManager.ReturnLevel39Time();
+        GameObject levelStar1 = GameObject.Find("Level39Star1");
+        GameObject levelStar2 = GameObject.Find("Level39Star2");
+        GameObject levelStar3 = GameObject.Find("Level39Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level39Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel40TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel40Stars();
+        float levelTime = gameDataManager.ReturnLevel40Time();
+        GameObject levelStar1 = GameObject.Find("Level40Star1");
+        GameObject levelStar2 = GameObject.Find("Level40Star2");
+        GameObject levelStar3 = GameObject.Find("Level40Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level40Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel41TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel41Stars();
+        float levelTime = gameDataManager.ReturnLevel41Time();
+        GameObject levelStar1 = GameObject.Find("Level41Star1");
+        GameObject levelStar2 = GameObject.Find("Level41Star2");
+        GameObject levelStar3 = GameObject.Find("Level41Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level41Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel42TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel42Stars();
+        float levelTime = gameDataManager.ReturnLevel42Time();
+        GameObject levelStar1 = GameObject.Find("Level42Star1");
+        GameObject levelStar2 = GameObject.Find("Level42Star2");
+        GameObject levelStar3 = GameObject.Find("Level42Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level42Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel43TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel43Stars();
+        float levelTime = gameDataManager.ReturnLevel43Time();
+        GameObject levelStar1 = GameObject.Find("Level43Star1");
+        GameObject levelStar2 = GameObject.Find("Level43Star2");
+        GameObject levelStar3 = GameObject.Find("Level43Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level43Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel44TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel44Stars();
+        float levelTime = gameDataManager.ReturnLevel44Time();
+        GameObject levelStar1 = GameObject.Find("Level44Star1");
+        GameObject levelStar2 = GameObject.Find("Level44Star2");
+        GameObject levelStar3 = GameObject.Find("Level44Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level44Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel45TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel45Stars();
+        float levelTime = gameDataManager.ReturnLevel45Time();
+        GameObject levelStar1 = GameObject.Find("Level45Star1");
+        GameObject levelStar2 = GameObject.Find("Level45Star2");
+        GameObject levelStar3 = GameObject.Find("Level45Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level45Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel46TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel46Stars();
+        float levelTime = gameDataManager.ReturnLevel46Time();
+        GameObject levelStar1 = GameObject.Find("Level46Star1");
+        GameObject levelStar2 = GameObject.Find("Level46Star2");
+        GameObject levelStar3 = GameObject.Find("Level46Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level46Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel47TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel47Stars();
+        float levelTime = gameDataManager.ReturnLevel47Time();
+        GameObject levelStar1 = GameObject.Find("Level47Star1");
+        GameObject levelStar2 = GameObject.Find("Level47Star2");
+        GameObject levelStar3 = GameObject.Find("Level47Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level47Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel48TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel48Stars();
+        float levelTime = gameDataManager.ReturnLevel48Time();
+        GameObject levelStar1 = GameObject.Find("Level48Star1");
+        GameObject levelStar2 = GameObject.Find("Level48Star2");
+        GameObject levelStar3 = GameObject.Find("Level48Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level48Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel49TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel49Stars();
+        float levelTime = gameDataManager.ReturnLevel49Time();
+        GameObject levelStar1 = GameObject.Find("Level49Star1");
+        GameObject levelStar2 = GameObject.Find("Level49Star2");
+        GameObject levelStar3 = GameObject.Find("Level49Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level19Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
+    private void CheckLevel50TimeAndStars()
+    {
+        int levelStars = gameDataManager.ReturnLevel50Stars();
+        float levelTime = gameDataManager.ReturnLevel50Time();
+        GameObject levelStar1 = GameObject.Find("Level50Star1");
+        GameObject levelStar2 = GameObject.Find("Level50Star2");
+        GameObject levelStar3 = GameObject.Find("Level50Star3");
+
+        LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level50Time").GetComponent<TextMeshProUGUI>();
+
+        LevelTimeText(levelTime, levelTimeText);
+    }
+
     #endregion
 
     public void CheckUnlockedLevels()
@@ -909,6 +1557,7 @@ public class MainMenuManager : LoadingMaster
         StartCoroutine(LoadAsynchronously("Level19"));
     }
 
+
     public void ClickLevel20()
     {
         AudioSource audio = GetComponent<AudioSource>();
@@ -916,5 +1565,222 @@ public class MainMenuManager : LoadingMaster
         audio.Play();
         StartCoroutine(LoadAsynchronously("Level20"));
     }
+
+
+    public void ClickLevel21()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level21"));
+    }
+
+    public void ClickLevel22()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level22"));
+    }
+
+    public void ClickLevel23()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level23"));
+    }
+
+    public void ClickLevel24()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level24"));
+    }
+    public void ClickLevel25()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level25"));
+    }
+    public void ClickLevel26()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level26"));
+    }
+
+    public void ClickLevel27()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level27"));
+    }
+    public void ClickLevel28()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level28"));
+    }
+    public void ClickLevel29()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level29"));
+    }
+    public void ClickLevel30()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level30"));
+    }
+    public void ClickLevel31()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level31"));
+    }
+    public void ClickLevel32()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level32"));
+    }
+    public void ClickLevel33()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level33"));
+    }
+    public void ClickLevel34()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level34"));
+    }
+    public void ClickLevel35()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level35"));
+    }
+    public void ClickLevel36()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level36"));
+    }
+    public void ClickLevel37()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level37"));
+    }
+    public void ClickLevel38()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level38"));
+    }
+    public void ClickLevel39()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level39"));
+    }
+    public void ClickLevel40()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level40"));
+    }
+    public void ClickLevel41()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level41"));
+    }
+    public void ClickLevel42()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level42"));
+    }
+    public void ClickLevel43()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level43"));
+    }
+    public void ClickLevel44()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level44"));
+    }
+    public void ClickLevel45()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level45"));
+    }
+    public void ClickLevel46()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level46"));
+    }
+    public void ClickLevel47()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level47"));
+    }
+    public void ClickLevel48()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level48"));
+    }
+    public void ClickLevel49()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level49"));
+    }
+    public void ClickLevel50()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clickLevelSFX;
+        audio.Play();
+        StartCoroutine(LoadAsynchronously("Level50"));
+    }
+
     #endregion
 }

@@ -75,16 +75,101 @@ public class LevelNumberUI : MonoBehaviour
             case "Level20":
                 levelNumber.text = "Level 20";
                 break;
+            case "Level21":
+                levelNumber.text = "Level 21";
+                break;
+            case "Level22":
+                levelNumber.text = "Level 22";
+                break;
+            case "Level23":
+                levelNumber.text = "Level 23";
+                break;
+            case "Level24":
+                levelNumber.text = "Level 24";
+                break;
+            case "Level25":
+                levelNumber.text = "Level 25";
+                break;
+            case "Level26":
+                levelNumber.text = "Level 26";
+                break;
+            case "Level27":
+                levelNumber.text = "Level 27";
+                break;
+            case "Level28":
+                levelNumber.text = "Level 28";
+                break;
+            case "Level29":
+                levelNumber.text = "Level 29";
+                break;
+            case "Level30":
+                levelNumber.text = "Level 30";
+                break;
+            case "Level31":
+                levelNumber.text = "Level 31";
+                break;
+            case "Level32":
+                levelNumber.text = "Level 32";
+                break;
+            case "Level33":
+                levelNumber.text = "Level 33";
+                break;
+            case "Level34":
+                levelNumber.text = "Level 34";
+                break;
+            case "Level35":
+                levelNumber.text = "Level 35";
+                break;
+            case "Level36":
+                levelNumber.text = "Level 36";
+                break;
+            case "Level37":
+                levelNumber.text = "Level 37";
+                break;
+            case "Level38":
+                levelNumber.text = "Level 38";
+                break;
+            case "Level39":
+                levelNumber.text = "Level 39";
+                break;
+            case "Level40":
+                levelNumber.text = "Level 40";
+                break;
+            case "Level41":
+                levelNumber.text = "Level 41";
+                break;
+            case "Level42":
+                levelNumber.text = "Level 42";
+                break;
+            case "Level43":
+                levelNumber.text = "Level 43";
+                break;
+            case "Level44":
+                levelNumber.text = "Level 44";
+                break;
+            case "Level45":
+                levelNumber.text = "Level 45";
+                break;
+            case "Level46":
+                levelNumber.text = "Level 46";
+                break;
+            case "Level47":
+                levelNumber.text = "Level 47";
+                break;
+            case "Level48":
+                levelNumber.text = "Level 48";
+                break;
+            case "Level49":
+                levelNumber.text = "Level 49";
+                break;
+            case "Level50":
+                levelNumber.text = "Level 50";
+                break;
+
             default:
                 levelNumber.text = "RAN OUT OF LEVELS TO DISPLAY";
                 break;
 
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

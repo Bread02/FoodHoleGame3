@@ -201,7 +201,7 @@ public class WinTriggerMaster : MonoBehaviour
         }
     }
 
-
+    #region Check Time Score Levels
     public void CheckTimeScoreLevel1(float timer)
     {
         float threeStarTime = 10f;
@@ -798,6 +798,876 @@ public class WinTriggerMaster : MonoBehaviour
         }
     }
 
+    public void CheckTimeScoreLevel21(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel21Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel21Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel21Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel22(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel22Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel22Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel22Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel23(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel23Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel23Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel23Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel24(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel24Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel24Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel24Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel25(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel25Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel25Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel25Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel26(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel26Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel26Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel26Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel27(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel27Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel27Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel27Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel28(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel28Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel28Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel28Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel29(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel29Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel29Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel29Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel30(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel30Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel30Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel30Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel31(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel31Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel31Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel31Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel32(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel32Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel32Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel32Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel33(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel33Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel33Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel33Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel34(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel34Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel34Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel34Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel35(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel35Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel35Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel35Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel36(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel36Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel36Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel36Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel37(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel37Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel37Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel37Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel38(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel38Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel38Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel38Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel39(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel39Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel39Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel39Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel40(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel40Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel40Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel40Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel41(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel41Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel41Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel41Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel42(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel42Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel42Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel42Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel43(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel43Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel43Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel43Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel44(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel44Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel44Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel44Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel45(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel45Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel45Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel45Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel46(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel46Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel46Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel46Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel47(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel47Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel47Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel47Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel48(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel48Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel48Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel48Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel49(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel49Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel49Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel49Stars(1);
+            }
+        }
+    }
+
+    public void CheckTimeScoreLevel50(float timer)
+    {
+        float threeStarTime = 10f;
+        float twoStarTime = 20f;
+
+        StarCheck(timer, threeStarTime, twoStarTime);
+        if (levelComplete && !levelCompleteSaveProgress)
+        {
+            CheckTimeScore(timer, threeStarTime, twoStarTime);
+
+            levelCompleteSaveProgress = true;
+
+            if (timer <= threeStarTime)
+            {
+                gameDataManager.SetLevel50Stars(3);
+                return;
+            }
+            else if (timer <= twoStarTime)
+            {
+                gameDataManager.SetLevel50Stars(2);
+                return;
+            }
+            else if (timer > twoStarTime)
+            {
+                gameDataManager.SetLevel50Stars(1);
+            }
+        }
+    }
+    #endregion
 
     // star check must be done under an update method
     public void StarCheck(float timer, float threeStarTime, float twoStarTime)
@@ -817,6 +1687,11 @@ public class WinTriggerMaster : MonoBehaviour
     }
 
     public void Update()
+    {
+        CheckTimeScoreScene();
+    }
+
+    public void CheckTimeScoreScene()
     {
         Scene scene = SceneManager.GetActiveScene();
         switch (scene.name)
@@ -880,6 +1755,96 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
             case "Level20":
                 CheckTimeScoreLevel20(timerMaster.timerSimplified);
+                break;
+            case "Level21":
+                CheckTimeScoreLevel21(timerMaster.timerSimplified);
+                break;
+            case "Level22":
+                CheckTimeScoreLevel22(timerMaster.timerSimplified);
+                break;
+            case "Level23":
+                CheckTimeScoreLevel23(timerMaster.timerSimplified);
+                break;
+            case "Level24":
+                CheckTimeScoreLevel24(timerMaster.timerSimplified);
+                break;
+            case "Level25":
+                CheckTimeScoreLevel25(timerMaster.timerSimplified);
+                break;
+            case "Level26":
+                CheckTimeScoreLevel26(timerMaster.timerSimplified);
+                break;
+            case "Level27":
+                CheckTimeScoreLevel27(timerMaster.timerSimplified);
+                break;
+            case "Level28":
+                CheckTimeScoreLevel28(timerMaster.timerSimplified);
+                break;
+            case "Level29":
+                CheckTimeScoreLevel29(timerMaster.timerSimplified);
+                break;
+            case "Level30":
+                CheckTimeScoreLevel30(timerMaster.timerSimplified);
+                break;
+            case "Level31":
+                CheckTimeScoreLevel31(timerMaster.timerSimplified);
+                break;
+            case "Level32":
+                CheckTimeScoreLevel32(timerMaster.timerSimplified);
+                break;
+            case "Level33":
+                CheckTimeScoreLevel33(timerMaster.timerSimplified);
+                break;
+            case "Level34":
+                CheckTimeScoreLevel34(timerMaster.timerSimplified);
+                break;
+            case "Level35":
+                CheckTimeScoreLevel35(timerMaster.timerSimplified);
+                break;
+            case "Level36":
+                CheckTimeScoreLevel36(timerMaster.timerSimplified);
+                break;
+            case "Level37":
+                CheckTimeScoreLevel37(timerMaster.timerSimplified);
+                break;
+            case "Level38":
+                CheckTimeScoreLevel38(timerMaster.timerSimplified);
+                break;
+            case "Level39":
+                CheckTimeScoreLevel39(timerMaster.timerSimplified);
+                break;
+            case "Level40":
+                CheckTimeScoreLevel40(timerMaster.timerSimplified);
+                break;
+            case "Level41":
+                CheckTimeScoreLevel41(timerMaster.timerSimplified);
+                break;
+            case "Level42":
+                CheckTimeScoreLevel42(timerMaster.timerSimplified);
+                break;
+            case "Level43":
+                CheckTimeScoreLevel43(timerMaster.timerSimplified);
+                break;
+            case "Level44":
+                CheckTimeScoreLevel44(timerMaster.timerSimplified);
+                break;
+            case "Level45":
+                CheckTimeScoreLevel45(timerMaster.timerSimplified);
+                break;
+            case "Level46":
+                CheckTimeScoreLevel46(timerMaster.timerSimplified);
+                break;
+            case "Level47":
+                CheckTimeScoreLevel47(timerMaster.timerSimplified);
+                break;
+            case "Level48":
+                CheckTimeScoreLevel48(timerMaster.timerSimplified);
+                break;
+            case "Level49":
+                CheckTimeScoreLevel49(timerMaster.timerSimplified);
+                break;
+            case "Level50":
+                CheckTimeScoreLevel50(timerMaster.timerSimplified);
                 break;
         }
     }
@@ -1178,8 +2143,8 @@ public class WinTriggerMaster : MonoBehaviour
                     newRecordText.SetActive(true);
                 }
                 break;
-            case "Level20":
 
+            case "Level20":
                 CheckTimeScoreLevel20(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel20Time() == 111111)
                 {
@@ -1189,6 +2154,426 @@ public class WinTriggerMaster : MonoBehaviour
                 if (gameDataManager.ReturnLevel20Time() != 111111 && (gameDataManager.ReturnLevel20Time() > timerMaster.timerSimplified))
                 {
                     gameDataManager.SetLevel20Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level21":
+                CheckTimeScoreLevel21(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel21Time() == 111111)
+                {
+                    gameDataManager.SetLevel21Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel21Time() != 111111 && (gameDataManager.ReturnLevel21Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel21Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level22":
+                CheckTimeScoreLevel22(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel22Time() == 111111)
+                {
+                    gameDataManager.SetLevel22Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel22Time() != 111111 && (gameDataManager.ReturnLevel22Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel22Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level23":
+                CheckTimeScoreLevel20(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel23Time() == 111111)
+                {
+                    gameDataManager.SetLevel23Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel23Time() != 111111 && (gameDataManager.ReturnLevel23Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel23Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level24":
+                CheckTimeScoreLevel24(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel24Time() == 111111)
+                {
+                    gameDataManager.SetLevel24Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel24Time() != 111111 && (gameDataManager.ReturnLevel24Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel24Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level25":
+                CheckTimeScoreLevel25(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel25Time() == 111111)
+                {
+                    gameDataManager.SetLevel25Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel25Time() != 111111 && (gameDataManager.ReturnLevel25Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel25Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level26":
+                CheckTimeScoreLevel26(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel26Time() == 111111)
+                {
+                    gameDataManager.SetLevel26Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel26Time() != 111111 && (gameDataManager.ReturnLevel26Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel20Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level27":
+                CheckTimeScoreLevel27(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel27Time() == 111111)
+                {
+                    gameDataManager.SetLevel27Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel27Time() != 111111 && (gameDataManager.ReturnLevel27Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel27Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level28":
+                CheckTimeScoreLevel28(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel28Time() == 111111)
+                {
+                    gameDataManager.SetLevel28Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel28Time() != 111111 && (gameDataManager.ReturnLevel28Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel28Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level29":
+                CheckTimeScoreLevel29(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel29Time() == 111111)
+                {
+                    gameDataManager.SetLevel29Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel29Time() != 111111 && (gameDataManager.ReturnLevel29Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel29Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level30":
+                CheckTimeScoreLevel30(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel30Time() == 111111)
+                {
+                    gameDataManager.SetLevel30Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel30Time() != 111111 && (gameDataManager.ReturnLevel30Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel30Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level31":
+                CheckTimeScoreLevel31(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel31Time() == 111111)
+                {
+                    gameDataManager.SetLevel31Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel31Time() != 111111 && (gameDataManager.ReturnLevel31Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel31Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level32":
+                CheckTimeScoreLevel32(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel32Time() == 111111)
+                {
+                    gameDataManager.SetLevel32Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel32Time() != 111111 && (gameDataManager.ReturnLevel32Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel32Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level33":
+                CheckTimeScoreLevel33(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel33Time() == 111111)
+                {
+                    gameDataManager.SetLevel33Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel33Time() != 111111 && (gameDataManager.ReturnLevel33Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel33Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level34":
+                CheckTimeScoreLevel34(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel34Time() == 111111)
+                {
+                    gameDataManager.SetLevel34Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel34Time() != 111111 && (gameDataManager.ReturnLevel34Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel34Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level35":
+                CheckTimeScoreLevel35(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel35Time() == 111111)
+                {
+                    gameDataManager.SetLevel35Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel35Time() != 111111 && (gameDataManager.ReturnLevel35Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel35Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level36":
+                CheckTimeScoreLevel36(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel36Time() == 111111)
+                {
+                    gameDataManager.SetLevel36Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel36Time() != 111111 && (gameDataManager.ReturnLevel36Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel36Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level37":
+                CheckTimeScoreLevel37(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel37Time() == 111111)
+                {
+                    gameDataManager.SetLevel37Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel37Time() != 111111 && (gameDataManager.ReturnLevel37Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel37Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level38":
+                CheckTimeScoreLevel38(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel38Time() == 111111)
+                {
+                    gameDataManager.SetLevel38Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel38Time() != 111111 && (gameDataManager.ReturnLevel38Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel38Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level39":
+                CheckTimeScoreLevel39(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel39Time() == 111111)
+                {
+                    gameDataManager.SetLevel39Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel39Time() != 111111 && (gameDataManager.ReturnLevel39Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel39Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level40":
+                CheckTimeScoreLevel40(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel40Time() == 111111)
+                {
+                    gameDataManager.SetLevel40Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel40Time() != 111111 && (gameDataManager.ReturnLevel40Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel40Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level41":
+                CheckTimeScoreLevel41(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel41Time() == 111111)
+                {
+                    gameDataManager.SetLevel41Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel41Time() != 111111 && (gameDataManager.ReturnLevel41Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel41Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level42":
+                CheckTimeScoreLevel42(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel42Time() == 111111)
+                {
+                    gameDataManager.SetLevel42Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel42Time() != 111111 && (gameDataManager.ReturnLevel42Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel42Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level43":
+                CheckTimeScoreLevel43(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel43Time() == 111111)
+                {
+                    gameDataManager.SetLevel43Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel43Time() != 111111 && (gameDataManager.ReturnLevel43Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel43Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level44":
+                CheckTimeScoreLevel44(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel44Time() == 111111)
+                {
+                    gameDataManager.SetLevel44Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel44Time() != 111111 && (gameDataManager.ReturnLevel44Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel44Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level45":
+                CheckTimeScoreLevel45(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel45Time() == 111111)
+                {
+                    gameDataManager.SetLevel45Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel45Time() != 111111 && (gameDataManager.ReturnLevel45Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel45Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level46":
+                CheckTimeScoreLevel46(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel46Time() == 111111)
+                {
+                    gameDataManager.SetLevel46Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel46Time() != 111111 && (gameDataManager.ReturnLevel46Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel46Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level47":
+                CheckTimeScoreLevel47(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel47Time() == 111111)
+                {
+                    gameDataManager.SetLevel47Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel47Time() != 111111 && (gameDataManager.ReturnLevel47Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel47Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level48":
+                CheckTimeScoreLevel48(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel48Time() == 111111)
+                {
+                    gameDataManager.SetLevel48Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel48Time() != 111111 && (gameDataManager.ReturnLevel48Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel48Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level49":
+                CheckTimeScoreLevel49(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel49Time() == 111111)
+                {
+                    gameDataManager.SetLevel49Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel49Time() != 111111 && (gameDataManager.ReturnLevel49Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel49Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                break;
+
+            case "Level50":
+                CheckTimeScoreLevel50(timerMaster.timerSimplified);
+                if (gameDataManager.ReturnLevel50Time() == 111111)
+                {
+                    gameDataManager.SetLevel50Time(timerMaster.timerSimplified);
+                    newRecordText.SetActive(true);
+                }
+                if (gameDataManager.ReturnLevel50Time() != 111111 && (gameDataManager.ReturnLevel50Time() > timerMaster.timerSimplified))
+                {
+                    gameDataManager.SetLevel50Time(timerMaster.timerSimplified);
                     newRecordText.SetActive(true);
                 }
                 break;
