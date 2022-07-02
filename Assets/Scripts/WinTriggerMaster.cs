@@ -8,8 +8,9 @@ using UnityEngine.Audio;
 
 public class WinTriggerMaster : MonoBehaviour
 {
-    [Header("Game Data Manager")]
+    [Header("Other Scripts")]
     private GameDataManager gameDataManager;
+    public TimerMaster timerMaster;
 
     [Header("Lists")]
     public List<GameObject> playerObjects = new List<GameObject>();
@@ -17,6 +18,7 @@ public class WinTriggerMaster : MonoBehaviour
     [Header("Canvas")]
     private GameObject winCanvas;
     private TextMeshProUGUI itemsRemaining;
+    public GameObject newRecordText;
 
     [Header("Ints")]
     private int itemsRemainingInt;
@@ -33,23 +35,20 @@ public class WinTriggerMaster : MonoBehaviour
     private GameObject UIStarTwo;
     private GameObject UIStarThree;
 
+    [Header("Bools")]
     public bool levelComplete;
     public bool levelCompleteSaveProgress;
-
-    public TimerMaster timerMaster;
-
-    public GameObject newRecordText;
-
     public bool timeScoreChecked;
 
     [Header("Mobile Ads")]
   //  private InterstitialAd interstitial;
 
-    [Header("SFX")]
+    [Header("Sound Effects")]
     [SerializeField] private AudioClip oneStarWinSoundEffect;
     [SerializeField] private AudioClip twoStarWinSoundEffect;
     [SerializeField] private AudioClip threeStarWinSoundEffect;
 
+    [Header("Special Effects")]
     public GameObject winSFX;
 
 
@@ -111,16 +110,21 @@ public class WinTriggerMaster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindItems();
         timeScoreChecked = false;
-        gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
-        winCanvas = GameObject.Find("WinCanvas");
-        itemsRemaining = GameObject.Find("ItemsRemainingText").GetComponent<TextMeshProUGUI>();
         winCanvas.SetActive(false);
         totalItemsInt = playerObjects.Count;
         ItemsRemaining();
         DisableAllStars();
         levelComplete = false;
         newRecordText.SetActive(false);
+    }
+
+    public void FindItems()
+    {
+        gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
+        winCanvas = GameObject.Find("WinCanvas");
+        itemsRemaining = GameObject.Find("ItemsRemainingText").GetComponent<TextMeshProUGUI>();
         timerMaster = GameObject.Find("TimerMaster").GetComponent<TimerMaster>();
     }
 
@@ -800,8 +804,8 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void CheckTimeScoreLevel21(float timer)
     {
-        float threeStarTime = 10f;
-        float twoStarTime = 20f;
+        float threeStarTime = 22f;
+        float twoStarTime = 30f;
 
         StarCheck(timer, threeStarTime, twoStarTime);
         if (levelComplete && !levelCompleteSaveProgress)
