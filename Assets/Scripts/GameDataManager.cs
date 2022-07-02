@@ -323,7 +323,125 @@ public class GameDataManager : MonoBehaviour
     {
         unlockedLevels1.level30Unlocked = true;
         SaveGame();
+    }
 
+    public void UnlockLevel31()
+    {
+        unlockedLevels1.level31Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel32()
+    {
+        unlockedLevels1.level32Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel33()
+    {
+        unlockedLevels1.level33Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel34()
+    {
+        unlockedLevels1.level34Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel35()
+    {
+        unlockedLevels1.level35Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel36()
+    {
+        unlockedLevels1.level36Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel37()
+    {
+        unlockedLevels1.level37Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel38()
+    {
+        unlockedLevels1.level38Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel39()
+    {
+        unlockedLevels1.level39Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel40()
+    {
+        unlockedLevels1.level40Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel41()
+    {
+        unlockedLevels1.level41Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel42()
+    {
+        unlockedLevels1.level42Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel43()
+    {
+        unlockedLevels1.level43Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel44()
+    {
+        unlockedLevels1.level44Unlocked = true;
+        SaveGame();
+    }
+    public void UnlockLevel45()
+    {
+        unlockedLevels1.level45Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel46()
+    {
+        unlockedLevels1.level46Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel47()
+    {
+        unlockedLevels1.level47Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel48()
+    {
+        unlockedLevels1.level48Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel49()
+    {
+        unlockedLevels1.level49Unlocked = true;
+        SaveGame();
+    }
+
+    public void UnlockLevel50()
+    {
+        unlockedLevels1.level50Unlocked = true;
+        SaveGame();
     }
 
     #endregion
@@ -675,9 +793,248 @@ public class GameDataManager : MonoBehaviour
     }
 
     public bool Level30UnlockedCheck()
-
     {
         if (unlockedLevels1.level30Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level31UnlockedCheck()
+    {
+        if (unlockedLevels1.level31Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level32UnlockedCheck()
+    {
+        if (unlockedLevels1.level32Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level33UnlockedCheck()
+    {
+        if (unlockedLevels1.level33Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level34UnlockedCheck()
+    {
+        if (unlockedLevels1.level34Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level35UnlockedCheck()
+    {
+        if (unlockedLevels1.level35Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level36UnlockedCheck()
+    {
+        if (unlockedLevels1.level36Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level37UnlockedCheck()
+    {
+        if (unlockedLevels1.level37Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level38UnlockedCheck()
+    {
+        if (unlockedLevels1.level38Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level39UnlockedCheck()
+    {
+        if (unlockedLevels1.level39Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level40UnlockedCheck()
+    {
+        if (unlockedLevels1.level40Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level41UnlockedCheck()
+    {
+        if (unlockedLevels1.level41Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level42UnlockedCheck()
+    {
+        if (unlockedLevels1.level42Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level43UnlockedCheck()
+    {
+        if (unlockedLevels1.level43Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level44UnlockedCheck()
+    {
+        if (unlockedLevels1.level44Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level45UnlockedCheck()
+    {
+        if (unlockedLevels1.level45Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level46UnlockedCheck()
+    {
+        if (unlockedLevels1.level46Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level47UnlockedCheck()
+    {
+        if (unlockedLevels1.level47Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level48UnlockedCheck()
+    {
+        if (unlockedLevels1.level48Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level49UnlockedCheck()
+    {
+        if (unlockedLevels1.level49Unlocked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool Level50UnlockedCheck()
+    {
+        if (unlockedLevels1.level50Unlocked == true)
         {
             return true;
         }
@@ -858,7 +1215,125 @@ public class GameDataManager : MonoBehaviour
         SaveGame();
     }
 
+    public void SetLevel31Stars(int stars)
+    {
+        starsPerLevel1.level31Stars = stars;
+        SaveGame();
+    }
 
+    public void SetLevel32Stars(int stars)
+    {
+        starsPerLevel1.level32Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel33Stars(int stars)
+    {
+        starsPerLevel1.level33Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel34Stars(int stars)
+    {
+        starsPerLevel1.level34Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel35Stars(int stars)
+    {
+        starsPerLevel1.level35Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel36Stars(int stars)
+    {
+        starsPerLevel1.level36Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel37Stars(int stars)
+    {
+        starsPerLevel1.level37Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel38Stars(int stars)
+    {
+        starsPerLevel1.level38Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel39Stars(int stars)
+    {
+        starsPerLevel1.level39Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel40Stars(int stars)
+    {
+        starsPerLevel1.level40Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel41Stars(int stars)
+    {
+        starsPerLevel1.level41Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel42Stars(int stars)
+    {
+        starsPerLevel1.level42Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel43Stars(int stars)
+    {
+        starsPerLevel1.level43Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel44Stars(int stars)
+    {
+        starsPerLevel1.level44Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel45Stars(int stars)
+    {
+        starsPerLevel1.level45Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel46Stars(int stars)
+    {
+        starsPerLevel1.level46Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel47Stars(int stars)
+    {
+        starsPerLevel1.level47Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel48Stars(int stars)
+    {
+        starsPerLevel1.level48Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel49Stars(int stars)
+    {
+        starsPerLevel1.level49Stars = stars;
+        SaveGame();
+    }
+
+    public void SetLevel50Stars(int stars)
+    {
+        starsPerLevel1.level50Stars = stars;
+        SaveGame();
+    }
     #endregion
 
     #region Return Stars Per Level
@@ -1021,7 +1496,106 @@ public class GameDataManager : MonoBehaviour
     public int ReturnLevel30Stars()
     {
         return starsPerLevel1.level30Stars;
+    }
 
+    public int ReturnLevel31Stars()
+    {
+        return starsPerLevel1.level31Stars;
+    }
+
+    public int ReturnLevel32Stars()
+    {
+        return starsPerLevel1.level32Stars;
+    }
+
+    public int ReturnLevel33Stars()
+    {
+        return starsPerLevel1.level33Stars;
+    }
+
+    public int ReturnLevel34Stars()
+    {
+        return starsPerLevel1.level34Stars;
+    }
+
+    public int ReturnLevel35Stars()
+    {
+        return starsPerLevel1.level35Stars;
+    }
+
+    public int ReturnLevel36Stars()
+    {
+        return starsPerLevel1.level36Stars;
+    }
+
+    public int ReturnLevel37Stars()
+    {
+        return starsPerLevel1.level37Stars;
+    }
+
+    public int ReturnLevel38Stars()
+    {
+        return starsPerLevel1.level38Stars;
+    }
+
+    public int ReturnLevel39Stars()
+    {
+        return starsPerLevel1.level39Stars;
+    }
+
+    public int ReturnLevel40Stars()
+    {
+        return starsPerLevel1.level40Stars;
+    }
+
+    public int ReturnLevel41Stars()
+    {
+        return starsPerLevel1.level41Stars;
+    }
+
+    public int ReturnLevel42Stars()
+    {
+        return starsPerLevel1.level42Stars;
+    }
+
+    public int ReturnLevel43Stars()
+    {
+        return starsPerLevel1.level43Stars;
+    }
+
+    public int ReturnLevel44Stars()
+    {
+        return starsPerLevel1.level44Stars;
+    }
+
+    public int ReturnLevel45Stars()
+    {
+        return starsPerLevel1.level45Stars;
+    }
+
+    public int ReturnLevel46Stars()
+    {
+        return starsPerLevel1.level46Stars;
+    }
+
+    public int ReturnLevel47Stars()
+    {
+        return starsPerLevel1.level47Stars;
+    }
+
+    public int ReturnLevel48Stars()
+    {
+        return starsPerLevel1.level48Stars;
+    }
+
+    public int ReturnLevel49Stars()
+    {
+        return starsPerLevel1.level49Stars;
+    }
+
+    public int ReturnLevel50Stars()
+    {
+        return starsPerLevel1.level50Stars;
     }
     #endregion
 
@@ -1029,7 +1603,6 @@ public class GameDataManager : MonoBehaviour
     public void SetLevel1Time(float time)
     {
         timeLevelCompleted1.level1Time = time;
-        Debug.Log(time + " Game Data Manager saving this time");
         SaveGame();
     }
 
