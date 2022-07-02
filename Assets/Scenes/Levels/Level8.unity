@@ -1282,6 +1282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RampCube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5724529257061923662, guid: 9f2e584ff1009a74cb8890853d2dc5c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f2e584ff1009a74cb8890853d2dc5c0, type: 3}
 --- !u!4 &1297797291 stripped
