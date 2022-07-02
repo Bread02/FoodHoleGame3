@@ -40163,13 +40163,13 @@ MonoBehaviour:
   levelSelectCanvas4: {fileID: 566137069}
   levelSelectCanvas5: {fileID: 2141166150}
   levelSelectCanvas6: {fileID: 2059383347}
-  levelSelectCanvas7: {fileID: 0}
-  levelSelectCanvas8: {fileID: 0}
-  levelSelectCanvas9: {fileID: 0}
-  levelSelectCanvas10: {fileID: 0}
-  levelSelectCanvas11: {fileID: 0}
-  levelSelectCanvas12: {fileID: 0}
-  levelSelectCanvas13: {fileID: 0}
+  levelSelectCanvas7: {fileID: 713060934}
+  levelSelectCanvas8: {fileID: 1349994880}
+  levelSelectCanvas9: {fileID: 868637548}
+  levelSelectCanvas10: {fileID: 660300774}
+  levelSelectCanvas11: {fileID: 1962707712}
+  levelSelectCanvas12: {fileID: 218149821}
+  levelSelectCanvas13: {fileID: 1193358168}
   level1Button: {fileID: 427204718}
   level2Button: {fileID: 865727756}
   level3Button: {fileID: 1596177877}
