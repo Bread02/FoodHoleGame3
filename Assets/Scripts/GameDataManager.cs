@@ -1206,6 +1206,126 @@ public class GameDataManager : MonoBehaviour
         SaveGame();
     }
 
+    public void SetLevel31Time(float time)
+    {
+        timeLevelCompleted1.level31Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel32Time(float time)
+    {
+        timeLevelCompleted1.level32Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel33Time(float time)
+    {
+        timeLevelCompleted1.level33Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel34Time(float time)
+    {
+        timeLevelCompleted1.level34Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel35Time(float time)
+    {
+        timeLevelCompleted1.level35Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel36Time(float time)
+    {
+        timeLevelCompleted1.level36Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel37Time(float time)
+    {
+        timeLevelCompleted1.level37Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel38Time(float time)
+    {
+        timeLevelCompleted1.level38Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel39Time(float time)
+    {
+        timeLevelCompleted1.level39Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel40Time(float time)
+    {
+        timeLevelCompleted1.level40Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel41Time(float time)
+    {
+        timeLevelCompleted1.level41Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel42Time(float time)
+    {
+        timeLevelCompleted1.level42Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel43Time(float time)
+    {
+        timeLevelCompleted1.level43Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel44Time(float time)
+    {
+        timeLevelCompleted1.level44Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel45Time(float time)
+    {
+        timeLevelCompleted1.level45Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel46Time(float time)
+    {
+        timeLevelCompleted1.level46Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel47Time(float time)
+    {
+        timeLevelCompleted1.level47Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel48Time(float time)
+    {
+        timeLevelCompleted1.level48Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel49Time(float time)
+    {
+        timeLevelCompleted1.level49Time = time;
+        SaveGame();
+    }
+
+    public void SetLevel50Time(float time)
+    {
+        timeLevelCompleted1.level50Time = time;
+        SaveGame();
+    }
+
     #endregion
 
     #region Return Time Per Level
@@ -1359,6 +1479,107 @@ public class GameDataManager : MonoBehaviour
     {
         return timeLevelCompleted1.level30Time;
     }
+
+    public float ReturnLevel31Time()
+    {
+        return timeLevelCompleted1.level31Time;
+    }
+
+    public float ReturnLevel32Time()
+    {
+        return timeLevelCompleted1.level32Time;
+    }
+
+    public float ReturnLevel33Time()
+    {
+        return timeLevelCompleted1.level33Time;
+    }
+
+    public float ReturnLevel34Time()
+    {
+        return timeLevelCompleted1.level34Time;
+    }
+
+    public float ReturnLevel35Time()
+    {
+        return timeLevelCompleted1.level35Time;
+    }
+
+    public float ReturnLevel36Time()
+    {
+        return timeLevelCompleted1.level36Time;
+    }
+
+    public float ReturnLevel37Time()
+    {
+        return timeLevelCompleted1.level37Time;
+    }
+
+    public float ReturnLevel38Time()
+    {
+        return timeLevelCompleted1.level38Time;
+    }
+
+    public float ReturnLevel39Time()
+    {
+        return timeLevelCompleted1.level39Time;
+    }
+
+    public float ReturnLevel40Time()
+    {
+        return timeLevelCompleted1.level40Time;
+    }
+
+    public float ReturnLevel41Time()
+    {
+        return timeLevelCompleted1.level41Time;
+    }
+
+    public float ReturnLevel42Time()
+    {
+        return timeLevelCompleted1.level42Time;
+    }
+
+    public float ReturnLevel43Time()
+    {
+        return timeLevelCompleted1.level43Time;
+    }
+
+    public float ReturnLevel44Time()
+    {
+        return timeLevelCompleted1.level44Time;
+    }
+
+    public float ReturnLevel45Time()
+    {
+        return timeLevelCompleted1.level45Time;
+    }
+
+    public float ReturnLevel46Time()
+    {
+        return timeLevelCompleted1.level46Time;
+    }
+
+    public float ReturnLevel47Time()
+    {
+        return timeLevelCompleted1.level47Time;
+    }
+
+    public float ReturnLevel48Time()
+    {
+        return timeLevelCompleted1.level48Time;
+    }
+
+    public float ReturnLevel49Time()
+    {
+        return timeLevelCompleted1.level49Time;
+    }
+
+    public float ReturnLevel50Time()
+    {
+        return timeLevelCompleted1.level50Time;
+    }
+
     #endregion
 }
 
@@ -1394,11 +1615,37 @@ public class UnlockedLevels
     public bool level28Unlocked;
     public bool level29Unlocked;
     public bool level30Unlocked;
+    public bool level31Unlocked;
+    public bool level32Unlocked;
+    public bool level33Unlocked;
+    public bool level34Unlocked;
+    public bool level35Unlocked;
+    public bool level36Unlocked;
+    public bool level37Unlocked;
+    public bool level38Unlocked;
+    public bool level39Unlocked;
+    public bool level40Unlocked;
+    public bool level41Unlocked;
+    public bool level42Unlocked;
+    public bool level43Unlocked;
+    public bool level44Unlocked;
+    public bool level45Unlocked;
+    public bool level46Unlocked;
+    public bool level47Unlocked;
+    public bool level48Unlocked;
+    public bool level49Unlocked;
+    public bool level50Unlocked;
 
     public UnlockedLevels(bool level2Unlocked, bool level3Unlocked, bool level4Unlocked, bool level5Unlocked,
     bool level6Unlocked, bool level7Unlocked, bool level8Unlocked, bool level9Unlocked, bool level10Unlocked,
     bool level11Unlocked, bool level12Unlocked, bool level13Unlocked, bool level14Unlocked, bool level15Unlocked,
-    bool level16Unlocked, bool level17Unlocked, bool level18Unlocked, bool level19Unlocked, bool level20Unlocked, bool level21Unlocked, bool level22Unlocked, bool level23Unlocked, bool level24Unlocked, bool level25Unlocked, bool level26Unlocked, bool level27Unlocked, bool level28Unlocked, bool level29Unlocked, bool level30Unlocked)
+    bool level16Unlocked, bool level17Unlocked, bool level18Unlocked, bool level19Unlocked, bool level20Unlocked, 
+    bool level21Unlocked, bool level22Unlocked, bool level23Unlocked, bool level24Unlocked, bool level25Unlocked, 
+    bool level26Unlocked, bool level27Unlocked, bool level28Unlocked, bool level29Unlocked, bool level30Unlocked, 
+    bool level31Unlocked, bool level32Unlocked, bool level33Unlocked, bool level34Unlocked, bool level35Unlocked, 
+    bool level36Unlocked, bool level37Unlocked, bool level38Unlocked, bool level39Unlocked, bool level40Unlocked, 
+    bool level41Unlocked, bool level42Unlocked, bool level43Unlocked, bool level44Unlocked, bool level45Unlocked, 
+    bool level46Unlocked, bool level47Unlocked, bool level48Unlocked, bool level49Unlocked, bool level50Unlocked)
     {
         this.level2Unlocked = level2Unlocked;
         this.level3Unlocked = level3Unlocked;
@@ -1429,6 +1676,26 @@ public class UnlockedLevels
         this.level28Unlocked = level28Unlocked;
         this.level29Unlocked = level29Unlocked;
         this.level30Unlocked = level30Unlocked;
+        this.level31Unlocked = level31Unlocked;
+        this.level32Unlocked = level32Unlocked;
+        this.level33Unlocked = level33Unlocked;
+        this.level34Unlocked = level34Unlocked;
+        this.level35Unlocked = level35Unlocked;
+        this.level36Unlocked = level36Unlocked;
+        this.level37Unlocked = level37Unlocked;
+        this.level38Unlocked = level38Unlocked;
+        this.level39Unlocked = level39Unlocked;
+        this.level40Unlocked = level40Unlocked;
+        this.level41Unlocked = level41Unlocked;
+        this.level42Unlocked = level42Unlocked;
+        this.level43Unlocked = level43Unlocked;
+        this.level44Unlocked = level44Unlocked;
+        this.level45Unlocked = level45Unlocked;
+        this.level46Unlocked = level46Unlocked;
+        this.level47Unlocked = level47Unlocked;
+        this.level48Unlocked = level48Unlocked;
+        this.level49Unlocked = level49Unlocked;
+        this.level50Unlocked = level50Unlocked;
     }
 
     public UnlockedLevels()
@@ -1462,6 +1729,26 @@ public class UnlockedLevels
         level28Unlocked = false;
         level29Unlocked = false;
         level30Unlocked = false;
+        level31Unlocked = false;
+        level32Unlocked = false;
+        level33Unlocked = false;
+        level34Unlocked = false;
+        level35Unlocked = false;
+        level36Unlocked = false;
+        level37Unlocked = false;
+        level38Unlocked = false;
+        level39Unlocked = false;
+        level40Unlocked = false;
+        level41Unlocked = false;
+        level42Unlocked = false;
+        level43Unlocked = false;
+        level44Unlocked = false;
+        level45Unlocked = false;
+        level46Unlocked = false;
+        level47Unlocked = false;
+        level48Unlocked = false;
+        level49Unlocked = false;
+        level50Unlocked = false;
     }
 
 }
@@ -1499,11 +1786,35 @@ public class StarsPerLevel
     public int level28Stars;
     public int level29Stars;
     public int level30Stars;
+    public int level31Stars;
+    public int level32Stars;
+    public int level33Stars;
+    public int level34Stars;
+    public int level35Stars;
+    public int level36Stars;
+    public int level37Stars;
+    public int level38Stars;
+    public int level39Stars;
+    public int level40Stars;
+    public int level41Stars;
+    public int level42Stars;
+    public int level43Stars;
+    public int level44Stars;
+    public int level45Stars;
+    public int level46Stars;
+    public int level47Stars;
+    public int level48Stars;
+    public int level49Stars;
+    public int level50Stars;
 
     public StarsPerLevel(int level1Stars, int level2Stars, int level3Stars, int level4Stars, int level5Stars, int level6Stars,
         int level7Stars, int level8Stars, int level9Stars, int level10Stars, int level11Stars, int level12Stars, int level13Stars,
         int level14Stars, int level15Stars, int level16Stars, int level17Stars, int level18Stars, int level19Stars, int level20Stars, 
-        int level21Stars, int level22Stars, int level23Stars, int level24Stars, int level25Stars, int level26Stars, int level27Stars, int level28Stars, int level29Stars, int level30Stars)
+        int level21Stars, int level22Stars, int level23Stars, int level24Stars, int level25Stars, int level26Stars, int level27Stars, 
+        int level28Stars, int level29Stars, int level30Stars, int level31Stars, int level32Stars, int level33Stars, int level34Stars, 
+        int level35Stars, int level36Stars, int level37Stars, int level38Stars, int level39Stars, int level40Stars, int level41Stars, 
+        int level42Stars, int level43Stars, int level44Stars, int level45Stars, int level46Stars, int level47Stars, int level48Stars, 
+        int level49Stars, int level50Stars)
     {
         this.level1Stars = level1Stars;
         this.level2Stars = level2Stars;
@@ -1535,6 +1846,26 @@ public class StarsPerLevel
         this.level28Stars = level28Stars;
         this.level29Stars = level29Stars;
         this.level30Stars = level30Stars;
+        this.level31Stars = level31Stars;
+        this.level32Stars = level32Stars;
+        this.level33Stars = level33Stars;
+        this.level34Stars = level34Stars;
+        this.level35Stars = level35Stars;
+        this.level36Stars = level36Stars;
+        this.level37Stars = level37Stars;
+        this.level38Stars = level38Stars;
+        this.level39Stars = level39Stars;
+        this.level40Stars = level40Stars;
+        this.level41Stars = level41Stars;
+        this.level42Stars = level42Stars;
+        this.level43Stars = level43Stars;
+        this.level44Stars = level44Stars;
+        this.level45Stars = level45Stars;
+        this.level46Stars = level46Stars;
+        this.level47Stars = level47Stars;
+        this.level48Stars = level48Stars;
+        this.level49Stars = level49Stars;
+        this.level50Stars = level50Stars;
     }
 
     public StarsPerLevel()
@@ -1569,6 +1900,26 @@ public class StarsPerLevel
         level28Stars = 0;
         level29Stars = 0;
         level30Stars = 0;
+        level31Stars = 0;
+        level32Stars = 0;
+        level33Stars = 0;
+        level34Stars = 0;
+        level35Stars = 0;
+        level36Stars = 0;
+        level37Stars = 0;
+        level38Stars = 0;
+        level39Stars = 0;
+        level40Stars = 0;
+        level41Stars = 0;
+        level42Stars = 0;
+        level43Stars = 0;
+        level44Stars = 0;
+        level45Stars = 0;
+        level46Stars = 0;
+        level47Stars = 0;
+        level48Stars = 0;
+        level49Stars = 0;
+        level50Stars = 0;
     }
 
 }
@@ -1606,12 +1957,35 @@ public class TimeLevelCompleted
     public float level28Time;
     public float level29Time;
     public float level30Time;
+    public float level31Time;
+    public float level32Time;
+    public float level33Time;
+    public float level34Time;
+    public float level35Time;
+    public float level36Time;
+    public float level37Time;
+    public float level38Time;
+    public float level39Time;
+    public float level40Time;
+    public float level41Time;
+    public float level42Time;
+    public float level43Time;
+    public float level44Time;
+    public float level45Time;
+    public float level46Time;
+    public float level47Time;
+    public float level48Time;
+    public float level49Time;
+    public float level50Time;
 
     public TimeLevelCompleted(float level1Time, float level2Time, float level3Time, float level4Time, float level5Time, float level6Time, float level7Time,
         float level8Time, float level9Time, float level10Time, float level11Time, float level12Time, float level13Time, float level14Time, float level15Time,
         float level16Time, float level17Time, float level18Time, float level19Time, float level20Time, float level21Time, float level22Time,
         float level23Time, float level24Time, float level25Time, float level26Time, float level27Time, float level28Time, float level29Time,
-        float level30Time)
+        float level30Time, float level31Time, float level32Time, float level33Time, float level34Time, float level35Time, 
+        float level36Time, float level37Time, float level38Time, float level39Time, float level40Time, float level41Time, 
+        float level42Time, float level43Time, float level44Time, float level45Time, float level46Time, float level47Time, 
+        float level48Time, float level49Time, float level50Time)
     {
         this.level1Time = level1Time;
         this.level2Time = level2Time;
@@ -1643,6 +2017,26 @@ public class TimeLevelCompleted
         this.level28Time = level28Time;
         this.level29Time = level29Time;
         this.level30Time = level30Time;
+        this.level31Time = level31Time;
+        this.level32Time = level32Time;
+        this.level33Time = level33Time;
+        this.level34Time = level34Time;
+        this.level35Time = level35Time;
+        this.level36Time = level36Time;
+        this.level37Time = level37Time;
+        this.level38Time = level38Time;
+        this.level39Time = level39Time;
+        this.level40Time = level40Time;
+        this.level41Time = level41Time;
+        this.level42Time = level42Time;
+        this.level43Time = level43Time;
+        this.level44Time = level44Time;
+        this.level45Time = level45Time;
+        this.level46Time = level46Time;
+        this.level47Time = level47Time;
+        this.level48Time = level48Time;
+        this.level49Time = level49Time;
+        this.level50Time = level50Time;
     }
 
     // 111111 is a very high number that is set as the default value.
@@ -1679,6 +2073,26 @@ public class TimeLevelCompleted
         level28Time = 111111;
         level29Time = 111111;
         level30Time = 111111;
+        level31Time = 111111;
+        level32Time = 111111;
+        level33Time = 111111;
+        level34Time = 111111;
+        level35Time = 111111;
+        level36Time = 111111;
+        level37Time = 111111;
+        level38Time = 111111;
+        level39Time = 111111;
+        level40Time = 111111;
+        level41Time = 111111;
+        level42Time = 111111;
+        level43Time = 111111;
+        level44Time = 111111;
+        level45Time = 111111;
+        level46Time = 111111;
+        level47Time = 111111;
+        level48Time = 111111;
+        level49Time = 111111;
+        level50Time = 111111;
     }
 
 }

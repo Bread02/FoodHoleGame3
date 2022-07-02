@@ -40,7 +40,6 @@ public class TimerMaster : MonoBehaviour
         if (winTriggerMaster.levelComplete == true && completeCheck == false)
         {
             completeCheck = true;
-            winTriggerMaster.CheckTimeScoreLevel1(timerSimplified);
             winScreenTimeComplete.text = "Time: " + timerSimplified.ToString();
         }
     }

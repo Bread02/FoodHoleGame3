@@ -91,7 +91,6 @@ public class WinTriggerMaster : MonoBehaviour
     // each time an interstitial is used.
     // }
 
-
     private void Awake()
     {
         starOne = GameObject.Find("WinStar1").gameObject;
@@ -139,7 +138,7 @@ public class WinTriggerMaster : MonoBehaviour
             Invoke("WinTrigger", 0f);
         }
     }
-
+    #region Win Star Toggle
     public void DisableAllStars()
     {
         starOne.SetActive(false);
@@ -165,10 +164,13 @@ public class WinTriggerMaster : MonoBehaviour
         starOne.SetActive(true);
     }
 
+    #endregion
+
     public void CheckTimeScore(float timer, float threeStarTime, float twoStarTime)
     {
         if (!timeScoreChecked)
         {
+            Debug.Log("Time score checked is true");
             timeScoreChecked = true;
 
             if (timer <= threeStarTime)
@@ -802,11 +804,15 @@ public class WinTriggerMaster : MonoBehaviour
     {
         if (timer >= threeStarTime)
         {
+        //    Debug.Log("Disabling Star 3");
+         //   Debug.Log("Timer is: " + timer);
+         //   Debug.Log("3 star time is: " + threeStarTime);
             UIStarThree.SetActive(false);
         }
         if (timer >= twoStarTime)
         {
             UIStarTwo.SetActive(false);
+        //    Debug.Log("Two star time is" + twoStarTime);
         }
     }
 
