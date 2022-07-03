@@ -52,7 +52,7 @@ public class MainMenuManager : LoadingMaster
     public GameObject level19Button;
     public GameObject level20Button;
 
-    /*
+    
     public GameObject level21Button;
     public GameObject level22Button;
     public GameObject level23Button;
@@ -63,6 +63,7 @@ public class MainMenuManager : LoadingMaster
     public GameObject level28Button;
     public GameObject level29Button;
     public GameObject level30Button;
+    
     public GameObject level31Button;
     public GameObject level32Button;
     public GameObject level33Button;
@@ -83,7 +84,7 @@ public class MainMenuManager : LoadingMaster
     public GameObject level48Button;
     public GameObject level49Button;
     public GameObject level50Button;
-    */
+    
 
 
     [Header("LevelStars")]
@@ -110,7 +111,7 @@ public class MainMenuManager : LoadingMaster
     public GameObject level19LockedButton;
     public GameObject level20LockedButton;
 
-    /*
+    
     public GameObject level21LockedButton;
     public GameObject level22LockedButton;
     public GameObject level23LockedButton;
@@ -121,6 +122,7 @@ public class MainMenuManager : LoadingMaster
     public GameObject level28LockedButton;
     public GameObject level29LockedButton;
     public GameObject level30LockedButton;
+    
     public GameObject level31LockedButton;
     public GameObject level32LockedButton;
     public GameObject level33LockedButton;
@@ -141,7 +143,7 @@ public class MainMenuManager : LoadingMaster
     public GameObject level48LockedButton;
     public GameObject level49LockedButton;
     public GameObject level50LockedButton;
-    */
+    
 
     [Header("Level 20 stars")]
     public GameObject level20Star1;
@@ -193,7 +195,7 @@ public class MainMenuManager : LoadingMaster
         level19Button = GameObject.Find("Level19Button").gameObject;
         level20Button = GameObject.Find("Level20Button").gameObject;
 
-        /*
+        
         level21Button = GameObject.Find("Level21Button").gameObject;
         level22Button = GameObject.Find("Level22Button").gameObject;
         level23Button = GameObject.Find("Level23Button").gameObject;
@@ -204,6 +206,7 @@ public class MainMenuManager : LoadingMaster
         level28Button = GameObject.Find("Level28Button").gameObject;
         level29Button = GameObject.Find("Level29Button").gameObject;
         level30Button = GameObject.Find("Level30Button").gameObject;
+        
         level31Button = GameObject.Find("Level31Button").gameObject;
         level32Button = GameObject.Find("Level32Button").gameObject;
         level33Button = GameObject.Find("Level33Button").gameObject;
@@ -225,7 +228,7 @@ public class MainMenuManager : LoadingMaster
         level49Button = GameObject.Find("Level49Button").gameObject;
         level50Button = GameObject.Find("Level50Button").gameObject;
 
-        /*
+        
 
         level2LockedButton = GameObject.Find("Level2LockedButton").gameObject;
         level3LockedButton = GameObject.Find("Level3LockedButton").gameObject;
@@ -247,7 +250,7 @@ public class MainMenuManager : LoadingMaster
         level19LockedButton = GameObject.Find("Level19LockedButton").gameObject;
         level20LockedButton = GameObject.Find("Level20LockedButton").gameObject;
 
-        /*
+        
         level21LockedButton = GameObject.Find("Level21LockedButton").gameObject;
         level22LockedButton = GameObject.Find("Level22LockedButton").gameObject;
         level23LockedButton = GameObject.Find("Level23LockedButton").gameObject;
@@ -258,6 +261,8 @@ public class MainMenuManager : LoadingMaster
         level28LockedButton = GameObject.Find("Level28LockedButton").gameObject;
         level29LockedButton = GameObject.Find("Level29LockedButton").gameObject;
         level30LockedButton = GameObject.Find("Level30LockedButton").gameObject;
+
+        
         level31LockedButton = GameObject.Find("Level31LockedButton").gameObject;
         level32LockedButton = GameObject.Find("Level32LockedButton").gameObject;
         level33LockedButton = GameObject.Find("Level33LockedButton").gameObject;
@@ -278,7 +283,7 @@ public class MainMenuManager : LoadingMaster
         level48LockedButton = GameObject.Find("Level48LockedButton").gameObject;
         level49LockedButton = GameObject.Find("Level49LockedButton").gameObject;
         level50LockedButton = GameObject.Find("Level50LockedButton").gameObject;
-        */
+        
     }
 
     public void ClickPlay()
@@ -321,7 +326,7 @@ public class MainMenuManager : LoadingMaster
         CheckLevel20TimeAndStars();
 
         // Ungreen the following lines of code once these levels are added in.
-        /*
+        
         CheckLevel21TimeAndStars();
         CheckLevel22TimeAndStars();
         CheckLevel23TimeAndStars();
@@ -332,6 +337,7 @@ public class MainMenuManager : LoadingMaster
         CheckLevel28TimeAndStars();
         CheckLevel29TimeAndStars();
         CheckLevel30TimeAndStars();
+        /*
         CheckLevel31TimeAndStars();
         CheckLevel32TimeAndStars();
         CheckLevel33TimeAndStars();
@@ -352,8 +358,8 @@ public class MainMenuManager : LoadingMaster
         CheckLevel48TimeAndStars();
         CheckLevel49TimeAndStars();
         CheckLevel50TimeAndStars();
+        
         */
-
         CheckUnlockedLevels();
     }
 
@@ -1407,6 +1413,336 @@ public class MainMenuManager : LoadingMaster
         {
             level20Button.SetActive(false);
             level20LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level21UnlockedCheck())
+        {
+            level21Button.SetActive(true);
+            level21LockedButton.SetActive(false);
+        }
+        else
+        {
+            level21Button.SetActive(false);
+            level21LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level22UnlockedCheck())
+        {
+            level22Button.SetActive(true);
+            level22LockedButton.SetActive(false);
+        }
+        else
+        {
+            level22Button.SetActive(false);
+            level22LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level23UnlockedCheck())
+        {
+            level23Button.SetActive(true);
+            level23LockedButton.SetActive(false);
+        }
+        else
+        {
+            level23Button.SetActive(false);
+            level23LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level24UnlockedCheck())
+        {
+            level24Button.SetActive(true);
+            level24LockedButton.SetActive(false);
+        }
+        else
+        {
+            level24Button.SetActive(false);
+            level24LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level25UnlockedCheck())
+        {
+            level25Button.SetActive(true);
+            level25LockedButton.SetActive(false);
+        }
+        else
+        {
+            level25Button.SetActive(false);
+            level25LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level26UnlockedCheck())
+        {
+            level26Button.SetActive(true);
+            level26LockedButton.SetActive(false);
+        }
+        else
+        {
+            level26Button.SetActive(false);
+            level26LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level27UnlockedCheck())
+        {
+            level27Button.SetActive(true);
+            level27LockedButton.SetActive(false);
+        }
+        else
+        {
+            level27Button.SetActive(false);
+            level27LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level28UnlockedCheck())
+        {
+            level28Button.SetActive(true);
+            level28LockedButton.SetActive(false);
+        }
+        else
+        {
+            level28Button.SetActive(false);
+            level28LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level29UnlockedCheck())
+        {
+            level29Button.SetActive(true);
+            level29LockedButton.SetActive(false);
+        }
+        else
+        {
+            level29Button.SetActive(false);
+            level29LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level30UnlockedCheck())
+        {
+            level30Button.SetActive(true);
+            level30LockedButton.SetActive(false);
+        }
+        else
+        {
+            level30Button.SetActive(false);
+            level30LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level31UnlockedCheck())
+        {
+            level31Button.SetActive(true);
+            level31LockedButton.SetActive(false);
+        }
+        else
+        {
+            level31Button.SetActive(false);
+            level31LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level32UnlockedCheck())
+        {
+            level32Button.SetActive(true);
+            level32LockedButton.SetActive(false);
+        }
+        else
+        {
+            level32Button.SetActive(false);
+            level32LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level33UnlockedCheck())
+        {
+            level33Button.SetActive(true);
+            level33LockedButton.SetActive(false);
+        }
+        else
+        {
+            level33Button.SetActive(false);
+            level33LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level34UnlockedCheck())
+        {
+            level34Button.SetActive(true);
+            level34LockedButton.SetActive(false);
+        }
+        else
+        {
+            level34Button.SetActive(false);
+            level34LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level35UnlockedCheck())
+        {
+            level35Button.SetActive(true);
+            level35LockedButton.SetActive(false);
+        }
+        else
+        {
+            level35Button.SetActive(false);
+            level35LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level36UnlockedCheck())
+        {
+            level36Button.SetActive(true);
+            level36LockedButton.SetActive(false);
+        }
+        else
+        {
+            level36Button.SetActive(false);
+            level36LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level37UnlockedCheck())
+        {
+            level37Button.SetActive(true);
+            level37LockedButton.SetActive(false);
+        }
+        else
+        {
+            level37Button.SetActive(false);
+            level37LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level38UnlockedCheck())
+        {
+            level38Button.SetActive(true);
+            level38LockedButton.SetActive(false);
+        }
+        else
+        {
+            level38Button.SetActive(false);
+            level38LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level39UnlockedCheck())
+        {
+            level39Button.SetActive(true);
+            level39LockedButton.SetActive(false);
+        }
+        else
+        {
+            level39Button.SetActive(false);
+            level39LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level40UnlockedCheck())
+        {
+            level40Button.SetActive(true);
+            level40LockedButton.SetActive(false);
+        }
+        else
+        {
+            level40Button.SetActive(false);
+            level40LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level41UnlockedCheck())
+        {
+            level41Button.SetActive(true);
+            level41LockedButton.SetActive(false);
+        }
+        else
+        {
+            level41Button.SetActive(false);
+            level41LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level42UnlockedCheck())
+        {
+            level42Button.SetActive(true);
+            level42LockedButton.SetActive(false);
+        }
+        else
+        {
+            level42Button.SetActive(false);
+            level42LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level43UnlockedCheck())
+        {
+            level43Button.SetActive(true);
+            level43LockedButton.SetActive(false);
+        }
+        else
+        {
+            level43Button.SetActive(false);
+            level43LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level44UnlockedCheck())
+        {
+            level44Button.SetActive(true);
+            level44LockedButton.SetActive(false);
+        }
+        else
+        {
+            level44Button.SetActive(false);
+            level44LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level45UnlockedCheck())
+        {
+            level45Button.SetActive(true);
+            level45LockedButton.SetActive(false);
+        }
+        else
+        {
+            level45Button.SetActive(false);
+            level45LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level46UnlockedCheck())
+        {
+            level46Button.SetActive(true);
+            level46LockedButton.SetActive(false);
+        }
+        else
+        {
+            level46Button.SetActive(false);
+            level46LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level47UnlockedCheck())
+        {
+            level47Button.SetActive(true);
+            level47LockedButton.SetActive(false);
+        }
+        else
+        {
+            level47Button.SetActive(false);
+            level47LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level48UnlockedCheck())
+        {
+            level48Button.SetActive(true);
+            level48LockedButton.SetActive(false);
+        }
+        else
+        {
+            level48Button.SetActive(false);
+            level48LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level49UnlockedCheck())
+        {
+            level49Button.SetActive(true);
+            level49LockedButton.SetActive(false);
+        }
+        else
+        {
+            level49Button.SetActive(false);
+            level49LockedButton.SetActive(true);
+        }
+
+        if (gameDataManager.Level50UnlockedCheck())
+        {
+            level50Button.SetActive(true);
+            level50LockedButton.SetActive(false);
+        }
+        else
+        {
+            level50Button.SetActive(false);
+            level50LockedButton.SetActive(true);
         }
     }
 
