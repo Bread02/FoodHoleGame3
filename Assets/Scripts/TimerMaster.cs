@@ -16,9 +16,12 @@ public class TimerMaster : MonoBehaviour
     private TextMeshProUGUI timerText;
 
     public TextMeshProUGUI winScreenTimeComplete;
+
+    public bool timeTriggerCheck;
     // Start is called before the first frame update
     void Start()
     {
+        timeTriggerCheck = false;
         winTriggerMaster = GameObject.Find("WinTrigger").GetComponent<WinTriggerMaster>();
         timerText = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
         completeCheck = false;
@@ -27,11 +30,13 @@ public class TimerMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer = Time.timeSinceLevelLoad;
-        timerSimplified = Mathf.Round(timer * 100f) / 100f;
+        if (!timeTriggerCheck)
+        {
+            timer = Time.timeSinceLevelLoad;
+            timerSimplified = Mathf.Round(timer * 100f) / 100f;
 
-        timerText.text = timerSimplified.ToString();
-
+            timerText.text = timerSimplified.ToString();
+        }
         WinCheck();
     }
 

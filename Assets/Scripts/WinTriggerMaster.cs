@@ -142,12 +142,13 @@ public class WinTriggerMaster : MonoBehaviour
         if (objectsTriggered == totalItemsInt)
         {
             // winCanvas.SetActive(true);
-            AudioSource audio2 = GetComponent<AudioSource>();
-            audio2.clip = finalHoledObject;
-            audio2.Play();
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.clip = finalHoledObject;
+            audio.Play();
+            timerMaster.timeTriggerCheck = true;
 
-            Time.timeScale = 0;
-            levelComplete = true;
+         //   Time.timeScale = 0;
+         //     levelComplete = true;
             StartCoroutine(TriggerWinTrigger());
          //   Invoke("WinTrigger", 0f);
         }
@@ -155,7 +156,7 @@ public class WinTriggerMaster : MonoBehaviour
 
     IEnumerator TriggerWinTrigger()
     {
-        yield return new WaitForSecondsRealtime(1);
+        yield return new WaitForSeconds(1.5f);
         WinTrigger();
     }
 
@@ -1869,7 +1870,7 @@ public class WinTriggerMaster : MonoBehaviour
     public void WinTrigger()
     {
         winCanvas.SetActive(true);
-        Time.timeScale = 0;
+       // Time.timeScale = 0;
         levelComplete = true;
 
         Scene scene = SceneManager.GetActiveScene();
@@ -2616,7 +2617,7 @@ public class WinTriggerMaster : MonoBehaviour
                     objectsTriggered++;
                     obj.GetComponent<PlayerGuideObjects>().endTriggered = true;
 //                    Debug.Log(objectsTriggered);
-                    Invoke("CheckWinCondition", 1f);
+                    Invoke("CheckWinCondition", 0f);
                     ItemsRemaining();
                 }
             }
