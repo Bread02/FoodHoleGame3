@@ -10,7 +10,7 @@ public class WinTriggerMaster : MonoBehaviour
 {
     [Header("Other Scripts")]
     private GameDataManager gameDataManager;
-    public TimerMaster timerMaster;
+    private TimerMaster timerMaster;
 
     [Header("Lists")]
     public List<GameObject> playerObjects = new List<GameObject>();
@@ -18,7 +18,7 @@ public class WinTriggerMaster : MonoBehaviour
     [Header("Canvas")]
     private GameObject winCanvas;
     private TextMeshProUGUI itemsRemaining;
-    public GameObject newRecordText;
+    private GameObject newRecordText;
 
     [Header("Ints")]
     private int itemsRemainingInt;
@@ -47,6 +47,8 @@ public class WinTriggerMaster : MonoBehaviour
     [SerializeField] private AudioClip oneStarWinSoundEffect;
     [SerializeField] private AudioClip twoStarWinSoundEffect;
     [SerializeField] private AudioClip threeStarWinSoundEffect;
+    [SerializeField] private AudioClip finalHoledObject;
+
 
     [Header("Special Effects")]
     public GameObject winSFX;
@@ -139,9 +141,24 @@ public class WinTriggerMaster : MonoBehaviour
     {
         if (objectsTriggered == totalItemsInt)
         {
-            Invoke("WinTrigger", 0f);
+            // winCanvas.SetActive(true);
+            AudioSource audio2 = GetComponent<AudioSource>();
+            audio2.clip = finalHoledObject;
+            audio2.Play();
+
+            Time.timeScale = 0;
+            levelComplete = true;
+            StartCoroutine(TriggerWinTrigger());
+         //   Invoke("WinTrigger", 0f);
         }
     }
+
+    IEnumerator TriggerWinTrigger()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        WinTrigger();
+    }
+
     #region Win Star Toggle
     public void DisableAllStars()
     {
