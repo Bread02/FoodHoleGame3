@@ -9,6 +9,8 @@ public class CubeTiltController : MonoBehaviour
     private GameObject cube;
     private Rigidbody cubeRB;
 
+    public bool winTrigger;
+
     private GameObject cubeRotateTowardsXPos;
     private GameObject cubeRotateTowardsXNeg;
     private GameObject cubeRotateTowardsZNeg;
@@ -36,6 +38,7 @@ public class CubeTiltController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        winTrigger = false;
         cube = this.gameObject;
         cubeRB = cube.gameObject.GetComponent<Rigidbody>();
         cubeRotateTowardsXPos = GameObject.Find("RotateTowardsXPos");
@@ -68,25 +71,28 @@ public class CubeTiltController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.S) || downButtonManager.downButtonPressed || downLeftButtonManager.downLeftButtonPressed || downRightButtonManager.downRightButtonPressed && cube.transform.rotation.x >= -0.20)
+        if (!winTrigger)
         {
-            cubeRotateTowardsXNeg.transform.eulerAngles = new Vector3(-20, 0, cube.transform.eulerAngles.z);
-            cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsXNeg.transform.rotation, 1);
-        }
-        if (Input.GetKey(KeyCode.W) || upButtonManager.upButtonPressed || upLeftButtonManager.upLeftButtonPressed || upRightButtonManager.upRightButtonPressed && cube.transform.rotation.x <= 0.20)
-        {
-            cubeRotateTowardsXPos.transform.eulerAngles = new Vector3(20, 0, cube.transform.eulerAngles.z);
-            cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsXPos.transform.rotation, 1);
-        }
-        if (Input.GetKey(KeyCode.A) || leftButtonManager.leftButtonPressed || upLeftButtonManager.upLeftButtonPressed || downLeftButtonManager.downLeftButtonPressed && cube.transform.rotation.z <= 0.20)
-        {
-            cubeRotateTowardsZPos.transform.eulerAngles = new Vector3(cube.transform.eulerAngles.x, 0, 20);
-            cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsZPos.transform.rotation, 1);
-        }
-        if (Input.GetKey(KeyCode.D) || rightButtonManager.rightButtonPressed || downRightButtonManager.downRightButtonPressed || upRightButtonManager.upRightButtonPressed && cube.transform.rotation.z >= -0.20)
-        {
-            cubeRotateTowardsZNeg.transform.eulerAngles = new Vector3(cube.transform.eulerAngles.x, 0, -20);
-            cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsZNeg.transform.rotation, 1);
+            if (Input.GetKey(KeyCode.S) || downButtonManager.downButtonPressed || downLeftButtonManager.downLeftButtonPressed || downRightButtonManager.downRightButtonPressed && cube.transform.rotation.x >= -0.20)
+            {
+                cubeRotateTowardsXNeg.transform.eulerAngles = new Vector3(-20, 0, cube.transform.eulerAngles.z);
+                cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsXNeg.transform.rotation, 1);
+            }
+            if (Input.GetKey(KeyCode.W) || upButtonManager.upButtonPressed || upLeftButtonManager.upLeftButtonPressed || upRightButtonManager.upRightButtonPressed && cube.transform.rotation.x <= 0.20)
+            {
+                cubeRotateTowardsXPos.transform.eulerAngles = new Vector3(20, 0, cube.transform.eulerAngles.z);
+                cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsXPos.transform.rotation, 1);
+            }
+            if (Input.GetKey(KeyCode.A) || leftButtonManager.leftButtonPressed || upLeftButtonManager.upLeftButtonPressed || downLeftButtonManager.downLeftButtonPressed && cube.transform.rotation.z <= 0.20)
+            {
+                cubeRotateTowardsZPos.transform.eulerAngles = new Vector3(cube.transform.eulerAngles.x, 0, 20);
+                cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsZPos.transform.rotation, 1);
+            }
+            if (Input.GetKey(KeyCode.D) || rightButtonManager.rightButtonPressed || downRightButtonManager.downRightButtonPressed || upRightButtonManager.upRightButtonPressed && cube.transform.rotation.z >= -0.20)
+            {
+                cubeRotateTowardsZNeg.transform.eulerAngles = new Vector3(cube.transform.eulerAngles.x, 0, -20);
+                cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsZNeg.transform.rotation, 1);
+            }
         }
     }
 

@@ -21,6 +21,8 @@ public class WinTriggerMaster : MonoBehaviour
     private TextMeshProUGUI itemsRemaining;
     private GameObject newRecordText;
 
+    public GameObject restartButton;
+
     [Header("Ints")]
     private int itemsRemainingInt;
     private int totalItemsInt;
@@ -133,6 +135,7 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void FindItems()
     {
+        restartButton = GameObject.Find("RestartBG");
         gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
         winCanvas = GameObject.Find("WinCanvas");
         itemsRemaining = GameObject.Find("ItemsRemainingText").GetComponent<TextMeshProUGUI>();
@@ -160,6 +163,8 @@ public class WinTriggerMaster : MonoBehaviour
             explosionSFX.SetActive(true);
             fruitSaladController.fruitSaladTrigger = true;
             cubeTiltController.DisableController();
+            restartButton.SetActive(false);
+            cubeTiltController.winTrigger = true;
 
          //   Time.timeScale = 0;
          //     levelComplete = true;

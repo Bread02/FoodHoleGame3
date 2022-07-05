@@ -925,6 +925,14 @@ PrefabInstance:
       value: 0.023529412
       objectReference: {fileID: 0}
     - target: {fileID: 854126609802027825, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 854126609802027825, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 854126609802027825, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_LocalPosition.y
       value: -5
       objectReference: {fileID: 0}
@@ -1096,6 +1104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8af6821b51b6b448317445d4341115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winTrigger: 0
 --- !u!4 &1173675906
 Transform:
   m_ObjectHideFlags: 0
