@@ -54,6 +54,9 @@ public class WinTriggerMaster : MonoBehaviour
     public GameObject winSFX;
     public GameObject explosionSFX;
 
+    [Header("Fruit Salad")]
+    public FruitSaladController fruitSaladController;
+
 
     // https://developers.google.com/admob/unity/interstitial
     // view this documentation on how to create an ad
@@ -133,6 +136,7 @@ public class WinTriggerMaster : MonoBehaviour
         winCanvas = GameObject.Find("WinCanvas");
         itemsRemaining = GameObject.Find("ItemsRemainingText").GetComponent<TextMeshProUGUI>();
         timerMaster = GameObject.Find("TimerMaster").GetComponent<TimerMaster>();
+        fruitSaladController = GameObject.Find("LevelCompleteCanvas").GetComponent<FruitSaladController>();
     }
 
     public void ToggleAllUIStars()
@@ -152,6 +156,7 @@ public class WinTriggerMaster : MonoBehaviour
             audio.Play();
             timerMaster.timeTriggerCheck = true;
             explosionSFX.SetActive(true);
+            fruitSaladController.fruitSaladTrigger = true;
 
          //   Time.timeScale = 0;
          //     levelComplete = true;

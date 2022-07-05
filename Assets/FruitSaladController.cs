@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FruitSaladController : MonoBehaviour
 {
@@ -9,24 +10,38 @@ public class FruitSaladController : MonoBehaviour
     public bool fruitSaladAt0;
     public bool fruitSaladGoUpMore;
 
+    public bool fruitSaladTrigger;
+
     // Start is called before the first frame update
     void Start()
     {
-        fruitSaladAt0 = false;
+        fruitSaladTrigger = false;
+        fruitSalad.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        FruitSaladTrigger();
+        if (fruitSaladTrigger)
+        {
+            FruitSaladTrigger();
+        }
     }
 
     public void FruitSaladTrigger()
     {
-        if (fruitSalad.transform.position.y != 0)
+        Scene scene = SceneManager.GetActiveScene();
+        switch (scene.name)
         {
-            fruitSalad.transform.Translate(0, 300 * Time.deltaTime, 0);
+            case "Level17":
+                fruitSalad.SetActive(true);
+                break;
+            case "Level26":
+                fruitSalad.SetActive(true);
+                break;
+            default: fruitSalad.SetActive(false);
+                break;
+
         }
-     
     }
 }
