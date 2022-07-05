@@ -11,6 +11,7 @@ public class WinTriggerMaster : MonoBehaviour
     [Header("Other Scripts")]
     private GameDataManager gameDataManager;
     private TimerMaster timerMaster;
+    private CubeTiltController cubeTiltController;
 
     [Header("Lists")]
     public List<GameObject> playerObjects = new List<GameObject>();
@@ -137,6 +138,7 @@ public class WinTriggerMaster : MonoBehaviour
         itemsRemaining = GameObject.Find("ItemsRemainingText").GetComponent<TextMeshProUGUI>();
         timerMaster = GameObject.Find("TimerMaster").GetComponent<TimerMaster>();
         fruitSaladController = GameObject.Find("LevelCompleteCanvas").GetComponent<FruitSaladController>();
+        cubeTiltController = GameObject.Find("CubeMaster").GetComponent<CubeTiltController>();
     }
 
     public void ToggleAllUIStars()
@@ -157,6 +159,7 @@ public class WinTriggerMaster : MonoBehaviour
             timerMaster.timeTriggerCheck = true;
             explosionSFX.SetActive(true);
             fruitSaladController.fruitSaladTrigger = true;
+            cubeTiltController.DisableController();
 
          //   Time.timeScale = 0;
          //     levelComplete = true;

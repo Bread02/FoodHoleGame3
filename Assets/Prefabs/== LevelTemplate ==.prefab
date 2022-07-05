@@ -6237,6 +6237,7 @@ GameObject:
   - component: {fileID: 4098336849623882342}
   - component: {fileID: 5224415119569112698}
   - component: {fileID: 4070291957975438139}
+  - component: {fileID: 4994729873073744345}
   m_Layer: 0
   m_Name: LevelCompleteCanvas
   m_TagString: Untagged
@@ -6326,6 +6327,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4994729873073744345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8651177429705830540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a88b52b245acc4b94453648c39c9a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitSalad: {fileID: 8756203590471831933}
+  fruitSaladAt0: 0
+  fruitSaladGoUpMore: 0
+  fruitSaladTrigger: 0
 --- !u!1 &8687634887257828930
 GameObject:
   m_ObjectHideFlags: 0

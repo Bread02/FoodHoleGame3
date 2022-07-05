@@ -14,10 +14,14 @@ public class CubeTiltController : MonoBehaviour
     private GameObject cubeRotateTowardsZNeg;
     private GameObject cubeRotateTowardsZPos;
 
-    private Image upButton;
-    private Image leftButton;
-    private Image rightButton;
-    private Image downButton;
+    private GameObject upButton;
+    private GameObject leftButton;
+    private GameObject rightButton;
+    private GameObject downButton;
+    private GameObject downLeftButton;
+    private GameObject downRightButton;
+    private GameObject upRightButton;
+    private GameObject upLeftButton;
 
     private UpButtonManager upButtonManager;
     private DownButtonManager downButtonManager;
@@ -49,10 +53,16 @@ public class CubeTiltController : MonoBehaviour
         upRightButtonManager = GameObject.Find("UpRightButton").GetComponent<UpRightButtonManager>();
         upLeftButtonManager = GameObject.Find("UpLeftButton").GetComponent<UpLeftButtonManager>();
 
-        upButton = GameObject.Find("UpButton").GetComponent<Image>();
-        rightButton = GameObject.Find("RightButton").GetComponent<Image>();
-        leftButton = GameObject.Find("LeftButton").GetComponent<Image>();
-        downButton = GameObject.Find("DownButton").GetComponent<Image>();
+        upButton = GameObject.Find("UpButton");
+        rightButton = GameObject.Find("RightButton");
+        leftButton = GameObject.Find("LeftButton");
+        downButton = GameObject.Find("DownButton");
+        upLeftButton = GameObject.Find("UpLeftButton");
+        upRightButton = GameObject.Find("UpRightButton");
+        downLeftButton = GameObject.Find("DownLeftButton");
+        downRightButton = GameObject.Find("DownRightButton");
+
+        EnableController();
     }
 
     // Update is called once per frame
@@ -78,5 +88,29 @@ public class CubeTiltController : MonoBehaviour
             cubeRotateTowardsZNeg.transform.eulerAngles = new Vector3(cube.transform.eulerAngles.x, 0, -20);
             cubeRB.transform.rotation = Quaternion.RotateTowards(transform.rotation, cubeRotateTowardsZNeg.transform.rotation, 1);
         }
+    }
+
+    public void DisableController()
+    {
+        upButton.SetActive(false);
+        downButton.SetActive(false);
+        leftButton.SetActive(false);
+        rightButton.SetActive(false);
+        downLeftButton.SetActive(false);
+        downRightButton.SetActive(false);
+        upLeftButton.SetActive(false);
+        upRightButton.SetActive(false);
+    }
+
+    public void EnableController()
+    {
+        upButton.SetActive(true);
+        downButton.SetActive(true);
+        leftButton.SetActive(true);
+        rightButton.SetActive(true);
+        downLeftButton.SetActive(true);
+        downRightButton.SetActive(true);
+        upLeftButton.SetActive(true);
+        upRightButton.SetActive(true);
     }
 }

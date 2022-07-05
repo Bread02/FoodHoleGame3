@@ -1711,11 +1711,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191489842}
   m_CullTransparentMesh: 1
---- !u!1 &1220645337 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8756203590471831933, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-  m_PrefabInstance: {fileID: 6054825935350888782}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1322774432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,11 +2472,6 @@ Rigidbody:
   m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!1 &1934003123 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8651177429705830540, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
-  m_PrefabInstance: {fileID: 6054825935350888782}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1974555147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,19 +2954,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
---- !u!114 &6054825935350888784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934003123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63a88b52b245acc4b94453648c39c9a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fruitSalad: {fileID: 1220645337}
-  fruitSaladAt0: 0
-  fruitSaladGoUpMore: 0
-  fruitSaladTrigger: 0
