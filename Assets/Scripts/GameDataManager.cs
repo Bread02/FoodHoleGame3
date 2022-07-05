@@ -2212,12 +2212,12 @@ public class UnlockedLevels
     public UnlockedLevels(bool level2Unlocked, bool level3Unlocked, bool level4Unlocked, bool level5Unlocked,
     bool level6Unlocked, bool level7Unlocked, bool level8Unlocked, bool level9Unlocked, bool level10Unlocked,
     bool level11Unlocked, bool level12Unlocked, bool level13Unlocked, bool level14Unlocked, bool level15Unlocked,
-    bool level16Unlocked, bool level17Unlocked, bool level18Unlocked, bool level19Unlocked, bool level20Unlocked, 
-    bool level21Unlocked, bool level22Unlocked, bool level23Unlocked, bool level24Unlocked, bool level25Unlocked, 
-    bool level26Unlocked, bool level27Unlocked, bool level28Unlocked, bool level29Unlocked, bool level30Unlocked, 
-    bool level31Unlocked, bool level32Unlocked, bool level33Unlocked, bool level34Unlocked, bool level35Unlocked, 
-    bool level36Unlocked, bool level37Unlocked, bool level38Unlocked, bool level39Unlocked, bool level40Unlocked, 
-    bool level41Unlocked, bool level42Unlocked, bool level43Unlocked, bool level44Unlocked, bool level45Unlocked, 
+    bool level16Unlocked, bool level17Unlocked, bool level18Unlocked, bool level19Unlocked, bool level20Unlocked,
+    bool level21Unlocked, bool level22Unlocked, bool level23Unlocked, bool level24Unlocked, bool level25Unlocked,
+    bool level26Unlocked, bool level27Unlocked, bool level28Unlocked, bool level29Unlocked, bool level30Unlocked,
+    bool level31Unlocked, bool level32Unlocked, bool level33Unlocked, bool level34Unlocked, bool level35Unlocked,
+    bool level36Unlocked, bool level37Unlocked, bool level38Unlocked, bool level39Unlocked, bool level40Unlocked,
+    bool level41Unlocked, bool level42Unlocked, bool level43Unlocked, bool level44Unlocked, bool level45Unlocked,
     bool level46Unlocked, bool level47Unlocked, bool level48Unlocked, bool level49Unlocked, bool level50Unlocked)
     {
         this.level2Unlocked = level2Unlocked;
@@ -2270,7 +2270,7 @@ public class UnlockedLevels
         this.level49Unlocked = level49Unlocked;
         this.level50Unlocked = level50Unlocked;
     }
-
+    
     public UnlockedLevels()
     {
         level2Unlocked = false;
@@ -2323,6 +2323,65 @@ public class UnlockedLevels
         level49Unlocked = false;
         level50Unlocked = false;
     }
+
+    
+   //  All levels unlocked
+    /*
+        public UnlockedLevels()
+    {
+        level2Unlocked = true;
+        level3Unlocked = true;
+        level4Unlocked = true;
+        level5Unlocked = true;
+        level6Unlocked = true;
+        level7Unlocked = true;
+        level8Unlocked = true;
+        level9Unlocked = true;
+        level10Unlocked = true;
+        level11Unlocked = true;
+        level12Unlocked = true;
+        level13Unlocked = true;
+        level14Unlocked = true;
+        level15Unlocked = true;
+        level16Unlocked = true;
+        level17Unlocked = true;
+        level18Unlocked = true;
+        level19Unlocked = true;
+        level20Unlocked = true;
+        level21Unlocked = true;
+        level22Unlocked = true;
+        level23Unlocked = true;
+        level24Unlocked = true;
+        level25Unlocked = true;
+        level26Unlocked = true;
+        level27Unlocked = true;
+        level28Unlocked = true;
+        level29Unlocked = true;
+        level30Unlocked = true;
+        level31Unlocked = true;
+        level32Unlocked = true;
+        level33Unlocked = true;
+        level34Unlocked = true;
+        level35Unlocked = true;
+        level36Unlocked = true;
+        level37Unlocked = true;
+        level38Unlocked = true;
+        level39Unlocked = true;
+        level40Unlocked = true;
+        level41Unlocked = true;
+        level42Unlocked = true;
+        level43Unlocked = true;
+        level44Unlocked = true;
+        level45Unlocked = true;
+        level46Unlocked = true;
+        level47Unlocked = true;
+        level48Unlocked = true;
+        level49Unlocked = true;
+        level50Unlocked = true;
+    }
+    
+   */
+     
 
 }
 
