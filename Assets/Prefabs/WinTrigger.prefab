@@ -1,5 +1,57 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3298096196901161290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6868621182423408396}
+  - component: {fileID: 8060139844081573075}
+  m_Layer: 0
+  m_Name: RealExplosion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6868621182423408396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3298096196901161290}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 0.25, y: 2, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5560690125389957640}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8060139844081573075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3298096196901161290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c3b95088eac0d4699da7f7f118566a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listOfEffects:
+  - {fileID: 6509251466952558274, guid: dc80dc0648b96f448a6308dc4f54b132, type: 3}
+  - {fileID: 7130479301304527047, guid: ea90c74bd4fb31f40a065255e27906fa, type: 3}
+  - {fileID: 2172791892334867343, guid: 60ce6df90377d1d4185b9abdae72108f, type: 3}
+  - {fileID: 590025394798882205, guid: cbce04b6eecdbe541bad796f7578c214, type: 3}
+  - {fileID: 569113324181461956, guid: e20e476cca8eb5b499a2ce31d8d6d467, type: 3}
+  - {fileID: 7739997804295172676, guid: d4c9ee52607d777498b2a9ef8aee295f, type: 3}
+  loopTimeLength: 2.75
 --- !u!1 &5560690125389957644
 GameObject:
   m_ObjectHideFlags: 0
@@ -33,7 +85,8 @@ Transform:
   m_LocalPosition: {x: -4.9599915, y: 2.4100037, z: 1.7099991}
   m_LocalScale: {x: 4, y: 0.5, z: 4}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6868621182423408396}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -128,9 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7069bfef3b530bc4b90d8817d405e08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerMaster: {fileID: 0}
   playerObjects: []
-  newRecordText: {fileID: 0}
   levelComplete: 0
   levelCompleteSaveProgress: 0
   timeScoreChecked: 0
@@ -139,6 +190,7 @@ MonoBehaviour:
   threeStarWinSoundEffect: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
   finalHoledObject: {fileID: 8300000, guid: 7478151cf36724a7dada558f746c3633, type: 3}
   winSFX: {fileID: 0}
+  explosionSFX: {fileID: 0}
 --- !u!82 &5228160333825367818
 AudioSource:
   m_ObjectHideFlags: 0

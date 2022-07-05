@@ -52,6 +52,7 @@ public class WinTriggerMaster : MonoBehaviour
 
     [Header("Special Effects")]
     public GameObject winSFX;
+    public GameObject explosionSFX;
 
 
     // https://developers.google.com/admob/unity/interstitial
@@ -102,10 +103,12 @@ public class WinTriggerMaster : MonoBehaviour
         UIStarTwo = GameObject.Find("UIStar2").gameObject;
         UIStarThree = GameObject.Find("UIStar3").gameObject;
 
-        winSFX = GameObject.Find("WinParticles").gameObject;
+        winSFX = GameObject.Find("ToonConfettiRain").gameObject;
 
         newRecordText = GameObject.Find("NewRecordText").gameObject;
+        explosionSFX = GameObject.Find("RealExplosion").gameObject;
 
+        explosionSFX.SetActive(false);
         winSFX.SetActive(false);
     }
 
@@ -120,6 +123,8 @@ public class WinTriggerMaster : MonoBehaviour
         DisableAllStars();
         levelComplete = false;
         newRecordText.SetActive(false);
+        explosionSFX.SetActive(false);
+
     }
 
     public void FindItems()
@@ -146,6 +151,7 @@ public class WinTriggerMaster : MonoBehaviour
             audio.clip = finalHoledObject;
             audio.Play();
             timerMaster.timeTriggerCheck = true;
+            explosionSFX.SetActive(true);
 
          //   Time.timeScale = 0;
          //     levelComplete = true;
