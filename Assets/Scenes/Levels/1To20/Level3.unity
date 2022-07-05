@@ -918,7 +918,7 @@ GameObject:
   - component: {fileID: 1162932623}
   - component: {fileID: 1162932622}
   m_Layer: 0
-  m_Name: MasterMap
+  m_Name: CubeMaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -952,8 +952,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8af6821b51b6b448317445d4341115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cannotUseColor: {r: 0, g: 0, b: 0, a: 0}
-  readyColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1162932624
 Transform:
   m_ObjectHideFlags: 0

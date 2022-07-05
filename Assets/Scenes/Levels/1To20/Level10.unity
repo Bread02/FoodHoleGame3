@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 859937532}
   - component: {fileID: 859937531}
   m_Layer: 0
-  m_Name: MasterMap
+  m_Name: CubeMaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
