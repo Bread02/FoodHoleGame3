@@ -38,11 +38,22 @@ public class MovingWall : MonoBehaviour
             this.gameObject.transform.Translate(new Vector3(0, 0, Time.deltaTime));
             StartCoroutine(TriggerActionTime());
         }
+        if (scene.name == "Level35")
+        {
+            this.gameObject.transform.Translate(new Vector3(0, 0, Time.deltaTime));
+            StartCoroutine(TriggerActionLongTime());
+        }
     }
 
     IEnumerator TriggerActionTime()
     {
         yield return new WaitForSeconds(5);
+        completeTriggerAction = true;
+    }
+
+    IEnumerator TriggerActionLongTime()
+    {
+        yield return new WaitForSeconds(10);
         completeTriggerAction = true;
     }
 }

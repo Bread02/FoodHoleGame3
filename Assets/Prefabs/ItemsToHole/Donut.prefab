@@ -57629,6 +57629,7 @@ GameObject:
   - component: {fileID: 5178373876776489186}
   - component: {fileID: 2705175815757630905}
   - component: {fileID: 8570205699757878862}
+  - component: {fileID: 1870513173291786713}
   m_Layer: 0
   m_Name: Donut
   m_TagString: Untagged
@@ -57682,6 +57683,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!65 &1870513173291786713
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5518764653013666392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.0413826, y: 1.3159416, z: 3.0958636}
+  m_Center: {x: 0.24435717, y: 0.25797075, z: -0.547931}
 --- !u!1 &5523159599614015383
 GameObject:
   m_ObjectHideFlags: 0
