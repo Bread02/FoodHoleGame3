@@ -53,7 +53,7 @@ public class MovingWall : MonoBehaviour
 
     IEnumerator TriggerActionLongTime()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(15);
         completeTriggerAction = true;
     }
 }

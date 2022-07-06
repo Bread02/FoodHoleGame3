@@ -39,6 +39,9 @@ public class FruitSaladController : MonoBehaviour
             case "Level26":
                 fruitSalad.SetActive(true);
                 break;
+            case "Level35":
+                fruitSalad.SetActive(true);
+                break;
             default: fruitSalad.SetActive(false);
                 break;
 
