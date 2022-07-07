@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class MapButtonMaster : MonoBehaviour
 {
-    public GameObject itemToTrigger;
     private WinTriggerMaster winTriggerMaster;
 
     public bool buttonTriggered;
 
-    public MovingWall movingWall;
+    private MovingWall movingWall;
+
+    public Material activatedMaterial;
 
     [Header("Lists")]
     public List<GameObject> playerObjects = new List<GameObject>();
@@ -33,6 +34,7 @@ public class MapButtonMaster : MonoBehaviour
                     Debug.Log("Button Triggered");
                     buttonTriggered = true;
                     movingWall.triggered = true;
+                    this.gameObject.GetComponent<Renderer>().material = activatedMaterial;
                 }
             }
         }

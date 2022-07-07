@@ -215,6 +215,7 @@ MonoBehaviour:
   itemToTrigger: {fileID: 0}
   buttonTriggered: 0
   movingWall: {fileID: 0}
+  activatedMaterial: {fileID: 2100000, guid: db203ed7ce6ab5d4095331d3ef80e7d2, type: 2}
   playerObjects: []
 --- !u!1 &9044930978437076220
 GameObject:
