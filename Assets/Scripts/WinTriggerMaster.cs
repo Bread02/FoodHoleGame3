@@ -2182,6 +2182,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level20":
+                gameDataManager.UnlockLevel21();
+
                 CheckTimeScoreLevel20(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel20Time() == 111111)
                 {
@@ -2196,6 +2198,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level21":
+                gameDataManager.UnlockLevel22();
+
                 CheckTimeScoreLevel21(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel21Time() == 111111)
                 {
@@ -2210,6 +2214,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level22":
+                gameDataManager.UnlockLevel23();
+
                 CheckTimeScoreLevel22(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel22Time() == 111111)
                 {
@@ -2224,6 +2230,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level23":
+                gameDataManager.UnlockLevel24();
+
                 CheckTimeScoreLevel20(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel23Time() == 111111)
                 {
@@ -2238,6 +2246,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level24":
+                gameDataManager.UnlockLevel25();
+
                 CheckTimeScoreLevel24(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel24Time() == 111111)
                 {
@@ -2252,6 +2262,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level25":
+                gameDataManager.UnlockLevel26();
+
                 CheckTimeScoreLevel25(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel25Time() == 111111)
                 {
@@ -2266,6 +2278,9 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level26":
+                gameDataManager.UnlockLevel27();
+
+
                 CheckTimeScoreLevel26(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel26Time() == 111111)
                 {
@@ -2280,6 +2295,9 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level27":
+                gameDataManager.UnlockLevel28();
+
+
                 CheckTimeScoreLevel27(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel27Time() == 111111)
                 {
@@ -2294,6 +2312,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level28":
+                gameDataManager.UnlockLevel29();
+
                 CheckTimeScoreLevel28(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel28Time() == 111111)
                 {
@@ -2308,6 +2328,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level29":
+                gameDataManager.UnlockLevel30();
+
                 CheckTimeScoreLevel29(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel29Time() == 111111)
                 {
@@ -2322,6 +2344,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level30":
+                gameDataManager.UnlockLevel31();
+
                 CheckTimeScoreLevel30(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel30Time() == 111111)
                 {
@@ -2336,6 +2360,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level31":
+                gameDataManager.UnlockLevel32();
+
                 CheckTimeScoreLevel31(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel31Time() == 111111)
                 {
@@ -2350,6 +2376,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level32":
+                gameDataManager.UnlockLevel33();
+
                 CheckTimeScoreLevel32(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel32Time() == 111111)
                 {
@@ -2364,6 +2392,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level33":
+                gameDataManager.UnlockLevel34();
+
                 CheckTimeScoreLevel33(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel33Time() == 111111)
                 {
@@ -2378,6 +2408,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level34":
+                gameDataManager.UnlockLevel35();
+
                 CheckTimeScoreLevel34(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel34Time() == 111111)
                 {
@@ -2392,6 +2424,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level35":
+                gameDataManager.UnlockLevel36();
+
                 CheckTimeScoreLevel35(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel35Time() == 111111)
                 {
@@ -2406,6 +2440,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level36":
+                gameDataManager.UnlockLevel37();
+
                 CheckTimeScoreLevel36(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel36Time() == 111111)
                 {
@@ -2420,6 +2456,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level37":
+                gameDataManager.UnlockLevel38();
+
                 CheckTimeScoreLevel37(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel37Time() == 111111)
                 {
@@ -2434,6 +2472,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level38":
+                gameDataManager.UnlockLevel39();
+
                 CheckTimeScoreLevel38(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel38Time() == 111111)
                 {
@@ -2448,6 +2488,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level39":
+                gameDataManager.UnlockLevel40();
+
                 CheckTimeScoreLevel39(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel39Time() == 111111)
                 {
@@ -2462,6 +2504,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level40":
+                gameDataManager.UnlockLevel41();
+
                 CheckTimeScoreLevel40(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel40Time() == 111111)
                 {
@@ -2476,6 +2520,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level41":
+                gameDataManager.UnlockLevel42();
+
                 CheckTimeScoreLevel41(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel41Time() == 111111)
                 {
@@ -2490,6 +2536,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level42":
+                gameDataManager.UnlockLevel43();
+
                 CheckTimeScoreLevel42(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel42Time() == 111111)
                 {
@@ -2504,6 +2552,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level43":
+                gameDataManager.UnlockLevel44();
+
                 CheckTimeScoreLevel43(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel43Time() == 111111)
                 {
@@ -2518,6 +2568,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level44":
+                gameDataManager.UnlockLevel45();
+
                 CheckTimeScoreLevel44(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel44Time() == 111111)
                 {
@@ -2532,6 +2584,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level45":
+                gameDataManager.UnlockLevel46();
+
                 CheckTimeScoreLevel45(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel45Time() == 111111)
                 {
@@ -2546,6 +2600,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level46":
+                gameDataManager.UnlockLevel47();
+
                 CheckTimeScoreLevel46(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel46Time() == 111111)
                 {
@@ -2560,6 +2616,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level47":
+                gameDataManager.UnlockLevel48();
+
                 CheckTimeScoreLevel47(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel47Time() == 111111)
                 {
@@ -2574,6 +2632,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level48":
+                gameDataManager.UnlockLevel49();
+
                 CheckTimeScoreLevel48(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel48Time() == 111111)
                 {
@@ -2588,6 +2648,8 @@ public class WinTriggerMaster : MonoBehaviour
                 break;
 
             case "Level49":
+                gameDataManager.UnlockLevel50();
+
                 CheckTimeScoreLevel49(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel49Time() == 111111)
                 {

@@ -27,9 +27,6 @@ public class LoadingMaster : MonoBehaviour
 
     public void ClickNextLevel()
     {
-
-
-
         Scene scene = SceneManager.GetActiveScene();
         switch (scene.name)
         {
@@ -89,6 +86,106 @@ public class LoadingMaster : MonoBehaviour
                 break;
             case "Level19":
                 gameDataManager.UnlockLevel20();
+                break;
+            case "Level20":
+                gameDataManager.UnlockLevel21();
+                break;
+            case "Level21":
+                gameDataManager.UnlockLevel22();
+                break;
+
+            case "Level22":
+                gameDataManager.UnlockLevel23();
+                break;
+
+            case "Level23":
+                gameDataManager.UnlockLevel24();
+                break;
+
+            case "Level24":
+                gameDataManager.UnlockLevel25();
+                break;
+            case "Level25":
+                gameDataManager.UnlockLevel26();
+                break;
+            case "Level26":
+                gameDataManager.UnlockLevel27();
+                break;
+            case "Level27":
+                gameDataManager.UnlockLevel28();
+                break;
+            case "Level28":
+                gameDataManager.UnlockLevel29();
+                break;
+            case "Level29":
+                gameDataManager.UnlockLevel30();
+                break;
+            case "Level30":
+                gameDataManager.UnlockLevel31();
+                break;
+            case "Level31":
+                gameDataManager.UnlockLevel32();
+                break;
+            case "Level32":
+                gameDataManager.UnlockLevel33();
+                break;
+            case "Level33":
+                gameDataManager.UnlockLevel34();
+                break;
+            case "Level34":
+                gameDataManager.UnlockLevel35();
+                break;
+            case "Level35":
+                gameDataManager.UnlockLevel36();
+                break;
+            case "Level36":
+                gameDataManager.UnlockLevel37();
+                break;
+            case "Level37":
+                gameDataManager.UnlockLevel38();
+                break;
+            case "Level38":
+                gameDataManager.UnlockLevel39();
+                break;
+            case "Level39":
+                gameDataManager.UnlockLevel40();
+                break;
+            case "Level40":
+                gameDataManager.UnlockLevel41();
+                break;
+            case "Level41":
+                gameDataManager.UnlockLevel42();
+                break;
+            case "Level42":
+                gameDataManager.UnlockLevel43();
+                break;
+
+            case "Level43":
+                gameDataManager.UnlockLevel44();
+                break;
+
+            case "Level44":
+                gameDataManager.UnlockLevel45();
+                break;
+
+            case "Level45":
+                gameDataManager.UnlockLevel46();
+                break;
+
+            case "Level46":
+                gameDataManager.UnlockLevel47();
+                break;
+
+            case "Level47":
+                gameDataManager.UnlockLevel48();
+                break;
+
+            case "Level48":
+                gameDataManager.UnlockLevel49();
+                break;
+
+            case "Level49":
+                gameDataManager.UnlockLevel50();
                 break;
             default: break;
         }
