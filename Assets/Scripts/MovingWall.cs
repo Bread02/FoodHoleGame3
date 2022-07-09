@@ -32,6 +32,11 @@ public class MovingWall : MonoBehaviour
             this.gameObject.transform.Translate(new Vector3(Time.deltaTime, 0, 0));
             StartCoroutine(TriggerActionTime());
         }
+        if (scene.name == "Level47")
+        {
+            this.gameObject.transform.Translate(new Vector3(-Time.deltaTime, 0, 0));
+            StartCoroutine(TriggerActionTime());
+        }
         if (scene.name == "Level9" || scene.name == "Level33")
         {
             this.gameObject.transform.Translate(new Vector3(0, 0, Time.deltaTime));
