@@ -8,7 +8,6 @@ public class MovingWall : MonoBehaviour
     public bool triggered;
     public bool completeTriggerAction;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +42,11 @@ public class MovingWall : MonoBehaviour
             this.gameObject.transform.Translate(new Vector3(0, 0, Time.deltaTime));
             StartCoroutine(TriggerActionLongTime());
         }
+        if (scene.name == "Level41")
+        {
+            this.gameObject.transform.Translate(new Vector3(0, 0, -Time.deltaTime));
+            StartCoroutine(TriggerActionLongTime2());
+        }
     }
 
     IEnumerator TriggerActionTime()
@@ -54,6 +58,12 @@ public class MovingWall : MonoBehaviour
     IEnumerator TriggerActionLongTime()
     {
         yield return new WaitForSeconds(15);
+        completeTriggerAction = true;
+    }
+
+    IEnumerator TriggerActionLongTime2()
+    {
+        yield return new WaitForSeconds(17);
         completeTriggerAction = true;
     }
 }
