@@ -47,6 +47,11 @@ public class MovingWall : MonoBehaviour
             this.gameObject.transform.Translate(new Vector3(0, 0, -Time.deltaTime));
             StartCoroutine(TriggerActionLongTime2());
         }
+        if (scene.name == "Level46")
+        {
+            this.gameObject.transform.Translate(new Vector3(Time.deltaTime, 0, 0));
+            StartCoroutine(TriggerActionLongTime3());
+        }
     }
 
     IEnumerator TriggerActionTime()
@@ -64,6 +69,11 @@ public class MovingWall : MonoBehaviour
     IEnumerator TriggerActionLongTime2()
     {
         yield return new WaitForSeconds(17);
+        completeTriggerAction = true;
+    }
+    IEnumerator TriggerActionLongTime3()
+    {
+        yield return new WaitForSeconds(25);
         completeTriggerAction = true;
     }
 }
