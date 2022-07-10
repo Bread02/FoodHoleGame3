@@ -2197,6 +2197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8af6821b51b6b448317445d4341115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winTrigger: 0
 --- !u!4 &1789559234
 Transform:
   m_ObjectHideFlags: 0
@@ -2810,27 +2811,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2352275671276635357, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2352275671276635357, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2352275671969956439, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2352275671969956439, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2352275671969956439, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2352275672493603513, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2991394881079763800, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_IsActive
@@ -2856,21 +2857,29 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 4172101888279785605, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265931536037280363, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_text
+      value: "Skip \nlevel"
+      objectReference: {fileID: 0}
     - target: {fileID: 5288372329002250178, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6054825934820316191, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6054825935895589732, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6054825935949308618, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6054825936224576820, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_RootOrder
@@ -2919,6 +2928,10 @@ PrefabInstance:
     - target: {fileID: 6054825936224576823, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Name
       value: == LevelTemplate ==
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054825936224576823, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6397824067126375706, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_IsActive
