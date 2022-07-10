@@ -1330,8 +1330,8 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void CheckTimeScoreLevel38(float timer)
     {
-        float threeStarTime = 10f;
-        float twoStarTime = 20f;
+        float threeStarTime = 24f;
+        float twoStarTime = 32f;
 
         StarCheck(timer, threeStarTime, twoStarTime);
         if (levelComplete && !levelCompleteSaveProgress)
@@ -1620,8 +1620,8 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void CheckTimeScoreLevel48(float timer)
     {
-        float threeStarTime = 10f;
-        float twoStarTime = 20f;
+        float threeStarTime = 40f;
+        float twoStarTime = 50f;
 
         StarCheck(timer, threeStarTime, twoStarTime);
         if (levelComplete && !levelCompleteSaveProgress)
@@ -1649,8 +1649,8 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void CheckTimeScoreLevel49(float timer)
     {
-        float threeStarTime = 10f;
-        float twoStarTime = 20f;
+        float threeStarTime = 23f;
+        float twoStarTime = 30f;
 
         StarCheck(timer, threeStarTime, twoStarTime);
         if (levelComplete && !levelCompleteSaveProgress)
@@ -1678,8 +1678,8 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void CheckTimeScoreLevel50(float timer)
     {
-        float threeStarTime = 10f;
-        float twoStarTime = 20f;
+        float threeStarTime = 15f;
+        float twoStarTime = 22f;
 
         StarCheck(timer, threeStarTime, twoStarTime);
         if (levelComplete && !levelCompleteSaveProgress)

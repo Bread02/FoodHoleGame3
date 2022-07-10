@@ -27,7 +27,7 @@ public class MovingWall : MonoBehaviour
     public void TriggerAction()
     {
         Scene scene = SceneManager.GetActiveScene();
-        if (scene.name == "Level29")
+        if (scene.name == "Level29" || scene.name == "Level50")
         {
             this.gameObject.transform.Translate(new Vector3(Time.deltaTime, 0, 0));
             StartCoroutine(TriggerActionTime());
