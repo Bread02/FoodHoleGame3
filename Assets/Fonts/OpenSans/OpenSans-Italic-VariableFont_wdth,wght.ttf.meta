@@ -10,7 +10,19 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Open Sans
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c976be4e8e62ace44b83de6c6cdbb8e4, type: 3}
+  - {fileID: 12800000, guid: 14afd17e295924145a1757bd1ae9a982, type: 3}
+  - {fileID: 12800000, guid: 93067ccc09b4fe74d86572ea14db0529, type: 3}
+  - {fileID: 12800000, guid: aa22623fdd11d374cade9d4c696bcc54, type: 3}
+  - {fileID: 12800000, guid: b3ccc1a06b4dc304d84469deea024f21, type: 3}
+  - {fileID: 12800000, guid: 8d0e808005341164fa3d7ba9b18b7cb1, type: 3}
+  - {fileID: 12800000, guid: 3dac272f337fb0b4faefc611f471b5e0, type: 3}
+  - {fileID: 12800000, guid: a4977a5d27bf5af40ac733cb6f24e2f4, type: 3}
+  - {fileID: 12800000, guid: 35e7bec7ad47bb14199809d15165a349, type: 3}
+  - {fileID: 12800000, guid: 19fc3625aadb54945912556b9eef3366, type: 3}
+  - {fileID: 12800000, guid: 055e5aae366dbd6489554a236ac14bcc, type: 3}
+  - {fileID: 12800000, guid: ddbd470a3ec302f4eb7e61da09d666aa, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
