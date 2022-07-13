@@ -337,7 +337,7 @@ public class MainMenuManager : LoadingMaster
         CheckLevel28TimeAndStars();
         CheckLevel29TimeAndStars();
         CheckLevel30TimeAndStars();
-        /*
+        
         CheckLevel31TimeAndStars();
         CheckLevel32TimeAndStars();
         CheckLevel33TimeAndStars();
@@ -359,7 +359,7 @@ public class MainMenuManager : LoadingMaster
         CheckLevel49TimeAndStars();
         CheckLevel50TimeAndStars();
         
-        */
+        
         CheckUnlockedLevels();
     }
 

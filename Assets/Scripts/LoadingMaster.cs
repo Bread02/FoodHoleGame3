@@ -12,6 +12,8 @@ public class LoadingMaster : MonoBehaviour
     public Slider slider;
 
     public GameDataManager gameDataManager;
+
+    public bool winAdPlayed;
     //   [SerializeField] private TextMeshProUGUI loadingPercentage;
 
     // loading bar
@@ -25,8 +27,11 @@ public class LoadingMaster : MonoBehaviour
         Time.timeScale = 1;
     }
 
+
+
     public void ClickNextLevel()
     {
+
         Scene scene = SceneManager.GetActiveScene();
         switch (scene.name)
         {

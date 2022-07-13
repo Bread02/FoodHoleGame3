@@ -121,6 +121,16 @@ public class GameDataManager : MonoBehaviour
         WriteToSave();
     }
 
+    public int ReturnNumberOfWins()
+    {
+        return unlockedLevels1.numberOfWins;
+    }
+
+    public void IncrementNumberOfWins()
+    {
+        unlockedLevels1.numberOfWins += 1;
+    }
+
     #region Unlock Levels
     public void UnlockLevel2()
     {
@@ -2209,6 +2219,8 @@ public class UnlockedLevels
     public bool level49Unlocked;
     public bool level50Unlocked;
 
+    public int numberOfWins;
+
     public UnlockedLevels(bool level2Unlocked, bool level3Unlocked, bool level4Unlocked, bool level5Unlocked,
     bool level6Unlocked, bool level7Unlocked, bool level8Unlocked, bool level9Unlocked, bool level10Unlocked,
     bool level11Unlocked, bool level12Unlocked, bool level13Unlocked, bool level14Unlocked, bool level15Unlocked,
@@ -2218,7 +2230,7 @@ public class UnlockedLevels
     bool level31Unlocked, bool level32Unlocked, bool level33Unlocked, bool level34Unlocked, bool level35Unlocked,
     bool level36Unlocked, bool level37Unlocked, bool level38Unlocked, bool level39Unlocked, bool level40Unlocked,
     bool level41Unlocked, bool level42Unlocked, bool level43Unlocked, bool level44Unlocked, bool level45Unlocked,
-    bool level46Unlocked, bool level47Unlocked, bool level48Unlocked, bool level49Unlocked, bool level50Unlocked)
+    bool level46Unlocked, bool level47Unlocked, bool level48Unlocked, bool level49Unlocked, bool level50Unlocked, int numberOfWins)
     {
         this.level2Unlocked = level2Unlocked;
         this.level3Unlocked = level3Unlocked;
@@ -2269,6 +2281,7 @@ public class UnlockedLevels
         this.level48Unlocked = level48Unlocked;
         this.level49Unlocked = level49Unlocked;
         this.level50Unlocked = level50Unlocked;
+        this.numberOfWins = numberOfWins;
     }
     
     public UnlockedLevels()
@@ -2322,6 +2335,7 @@ public class UnlockedLevels
         level48Unlocked = false;
         level49Unlocked = false;
         level50Unlocked = false;
+        numberOfWins = 0;
     }
 
     
