@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
- using GoogleMobileAds.Api;
+ // using GoogleMobileAds.Api;
 using UnityEngine.Audio;
 
 public class WinTriggerMaster : MonoBehaviour
@@ -20,6 +20,7 @@ public class WinTriggerMaster : MonoBehaviour
     private GameObject winCanvas;
     private TextMeshProUGUI itemsRemaining;
     private GameObject newRecordText;
+
 
     public GameObject restartButton;
 
@@ -44,7 +45,7 @@ public class WinTriggerMaster : MonoBehaviour
     public bool timeScoreChecked;
 
     [Header("Mobile Ads")]
-     private InterstitialAd interstitial;
+    public AdMaster adMaster;
 
     [Header("Sound Effects")]
     [SerializeField] private AudioClip oneStarWinSoundEffect;
@@ -64,7 +65,8 @@ public class WinTriggerMaster : MonoBehaviour
     // https://developers.google.com/admob/unity/interstitial
     // view this documentation on how to create an ad
     // Look at Ad Events next.
-
+    /*
+    
     private void RequestInterstitial()
     {
         // test ad IDs
@@ -89,18 +91,18 @@ public class WinTriggerMaster : MonoBehaviour
         */
 
         //  Initialize an InterstitialAd.
-        this.interstitial = new InterstitialAd(adUnitId);
+   //     this.interstitial = new InterstitialAd(adUnitId);
 
         // Create empty ad request
-        AdRequest request = new AdRequest.Builder().Build();
+  //      AdRequest request = new AdRequest.Builder().Build();
 
         // Load the interstitial with the request
-        this.interstitial.LoadAd(request);
+  //      this.interstitial.LoadAd(request);
 
         // on IOS a NEW interstitial ad object needs to be created
         // each time an interstitial is used.
         
-    }
+ //   }
 
     private void Awake()
     {
@@ -119,6 +121,7 @@ public class WinTriggerMaster : MonoBehaviour
 
         explosionSFX.SetActive(false);
         winSFX.SetActive(false);
+        adMaster = GameObject.Find("InterstitalAd").GetComponent<AdMaster>();
     }
 
     // Start is called before the first frame update
@@ -1896,7 +1899,9 @@ public class WinTriggerMaster : MonoBehaviour
             case "Level1":
                 gameDataManager.UnlockLevel2();
 
-                RequestInterstitial();
+                //       RequestInterstitial();
+                adMaster.LoadAd();
+                adMaster.ShowAd();
                 CheckTimeScoreLevel1(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel1Time() == 111111)
                 {
