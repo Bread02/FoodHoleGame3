@@ -656,7 +656,6 @@ public class MainMenuManager : LoadingMaster
 
     private void CheckLevel14TimeAndStars()
     {
-        Debug.Log("Level 14 stars is " + gameDataManager.ReturnLevel14Stars());
         int levelStars = gameDataManager.ReturnLevel14Stars();
         float levelTime = gameDataManager.ReturnLevel14Time();
         GameObject levelStar1 = GameObject.Find("Level14Star1");
