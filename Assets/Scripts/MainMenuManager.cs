@@ -690,6 +690,7 @@ public class MainMenuManager : LoadingMaster
 
     private void CheckLevel14TimeAndStars()
     {
+        Debug.Log("Level 14 stars is " + gameDataManager.ReturnLevel14Stars());
         int levelStars = gameDataManager.ReturnLevel14Stars();
         float levelTime = gameDataManager.ReturnLevel14Time();
         GameObject levelStar1 = GameObject.Find("Level14Star1");
@@ -1184,7 +1185,7 @@ public class MainMenuManager : LoadingMaster
         GameObject levelStar3 = GameObject.Find("Level49Star3");
 
         LevelStars(levelStar1, levelStar2, levelStar3, levelStars);
-        TextMeshProUGUI levelTimeText = GameObject.Find("Level19Time").GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI levelTimeText = GameObject.Find("Level49Time").GetComponent<TextMeshProUGUI>();
 
         LevelTimeText(levelTime, levelTimeText);
     }
