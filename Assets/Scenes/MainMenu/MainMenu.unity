@@ -40932,6 +40932,7 @@ MonoBehaviour:
   slider: {fileID: 152165372}
   gameDataManager: {fileID: 1204149504}
   winAdPlayed: 0
+  adMaster: {fileID: 0}
   mainMainCanvas: {fileID: 1562956045}
   levelSelectCanvas1: {fileID: 54571611}
   levelSelectCanvas2: {fileID: 1123611796}

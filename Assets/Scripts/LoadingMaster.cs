@@ -13,7 +13,9 @@ public class LoadingMaster : MonoBehaviour
 
     public GameDataManager gameDataManager;
 
-    public bool winAdPlayed;
+
+    [Header("Mobile Ads")]
+    public AdMaster adMaster;
     //   [SerializeField] private TextMeshProUGUI loadingPercentage;
 
     // loading bar
@@ -25,6 +27,7 @@ public class LoadingMaster : MonoBehaviour
         loadingCanvas = GameObject.Find("LoadingCanvas");
         loadingCanvas?.SetActive(false);
         Time.timeScale = 1;
+        adMaster = GameObject.Find("InterstitalAd").GetComponent<AdMaster>();
     }
 
 
@@ -192,11 +195,14 @@ public class LoadingMaster : MonoBehaviour
             case "Level49":
                 gameDataManager.UnlockLevel50();
                 break;
+
             default: break;
         }
 
         int sceneIndex = scene.buildIndex;
+
         StartCoroutine(LoadAsynchronously(sceneIndex + 1));
+
     }
 
     public void ClickMenu()
@@ -213,7 +219,7 @@ public class LoadingMaster : MonoBehaviour
     protected IEnumerator LoadAsynchronously(string scene)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(scene);
-            loadingCanvas?.SetActive(true);
+        loadingCanvas?.SetActive(true);
 
             while (!operation.isDone)
             {

@@ -2256,7 +2256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 2352275672077703349}
   gameDataManager: {fileID: 0}
-  winAdPlayed: 0
+  adMaster: {fileID: 0}
 --- !u!1 &2992571655896194853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,6 +2491,7 @@ GameObject:
   - component: {fileID: 6830146522881595829}
   - component: {fileID: 1363105321507147107}
   - component: {fileID: 5605690272173274663}
+  - component: {fileID: 3053749744212362840}
   m_Layer: 5
   m_Name: SkipLevelButton
   m_TagString: Untagged
@@ -2602,9 +2603,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3816873929808172025}
-        m_TargetAssemblyTypeName: LoadingMaster, Assembly-CSharp
-        m_MethodName: ClickNextLevel
+      - m_Target: {fileID: 3053749744212362840}
+        m_TargetAssemblyTypeName: RewardedAdButton, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2614,6 +2615,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3053749744212362840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3196485320110382578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1e3ce9400f19644afb183725d71813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showAdButton: {fileID: 5605690272173274663}
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &3286867534864017792
 GameObject:
   m_ObjectHideFlags: 0
@@ -2930,6 +2946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _androidAdUnitId: Interstitial_Android
   _iOsAdUnitId: Interstitial_iOS
+  adComplete: 0
 --- !u!1 &3688952785107863815
 GameObject:
   m_ObjectHideFlags: 0

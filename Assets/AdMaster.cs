@@ -7,12 +7,16 @@ public class AdMaster : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
     [SerializeField] string _iOsAdUnitId = "Interstitial_iOS";
     string _adUnitId;
 
+    public bool adComplete;
+
     void Awake()
     {
         // Get the Ad Unit ID for the current platform:
         _adUnitId = (Application.platform == RuntimePlatform.IPhonePlayer)
             ? _iOsAdUnitId
             : _androidAdUnitId;
+
+        adComplete = false;
     }
 
     // Load content to the Ad Unit:
@@ -51,5 +55,10 @@ public class AdMaster : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
 
     public void OnUnityAdsShowStart(string adUnitId) { }
     public void OnUnityAdsShowClick(string adUnitId) { }
-    public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState) { }
+    public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState) {
+        adComplete = true;
+    }
+
+     
+
 }

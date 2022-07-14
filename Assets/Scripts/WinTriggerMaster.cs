@@ -1892,6 +1892,14 @@ public class WinTriggerMaster : MonoBehaviour
         winCanvas.SetActive(true);
        // Time.timeScale = 0;
         levelComplete = true;
+        gameDataManager.IncrementNumberOfWins();
+        Debug.Log(gameDataManager.ReturnNumberOfWins() + " Number of wins now");
+
+        if (gameDataManager.ReturnNumberOfWins() % 5 == 0)
+        {
+            adMaster.LoadAd();
+            adMaster.ShowAd();
+        }
 
         Scene scene = SceneManager.GetActiveScene();
         switch (scene.name)
@@ -1899,8 +1907,6 @@ public class WinTriggerMaster : MonoBehaviour
             case "Level1":
                 gameDataManager.UnlockLevel2();
 
-                adMaster.LoadAd();
-                adMaster.ShowAd();
                 CheckTimeScoreLevel1(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel1Time() == 111111)
                 {
