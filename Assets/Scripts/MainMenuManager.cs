@@ -800,7 +800,7 @@ public class MainMenuManager : LoadingMaster
 
     private void CheckLevel22TimeAndStars()
     {
-        int levelStars = gameDataManager.ReturnLevel2Stars();
+        int levelStars = gameDataManager.ReturnLevel22Stars();
         float levelTime = gameDataManager.ReturnLevel22Time();
         GameObject levelStar1 = GameObject.Find("Level22Star1");
         GameObject levelStar2 = GameObject.Find("Level22Star2");

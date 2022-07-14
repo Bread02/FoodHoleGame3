@@ -1498,7 +1498,7 @@ RectTransform:
   m_GameObject: {fileID: 48290001}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1525165794}
@@ -12075,7 +12075,7 @@ RectTransform:
   m_GameObject: {fileID: 353277567}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 763539264}
@@ -35187,7 +35187,7 @@ RectTransform:
   m_GameObject: {fileID: 892246213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 798038232}
@@ -40931,7 +40931,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 152165372}
   gameDataManager: {fileID: 1204149504}
-  winAdPlayed: 0
   adMaster: {fileID: 0}
   mainMainCanvas: {fileID: 1562956045}
   levelSelectCanvas1: {fileID: 54571611}
@@ -53284,7 +53283,7 @@ RectTransform:
   m_GameObject: {fileID: 1425428287}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 489361724}
@@ -64466,7 +64465,7 @@ GameObject:
   - component: {fileID: 1728963926}
   - component: {fileID: 1728963925}
   m_Layer: 5
-  m_Name: Level3StarBG
+  m_Name: Level3Star2BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
