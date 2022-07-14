@@ -1899,7 +1899,6 @@ public class WinTriggerMaster : MonoBehaviour
             case "Level1":
                 gameDataManager.UnlockLevel2();
 
-                //       RequestInterstitial();
                 adMaster.LoadAd();
                 adMaster.ShowAd();
                 CheckTimeScoreLevel1(timerMaster.timerSimplified);
