@@ -22,12 +22,6 @@ public class MainMenuManager : LoadingMaster
     public GameObject levelSelectCanvas7;
     public GameObject levelSelectCanvas8;
     public GameObject levelSelectCanvas9;
-    public GameObject levelSelectCanvas10;
-    public GameObject levelSelectCanvas11;
-    public GameObject levelSelectCanvas12;
-    public GameObject levelSelectCanvas13;
-
-
 
 
     [Header("LevelButtons")]
@@ -375,11 +369,6 @@ public class MainMenuManager : LoadingMaster
         levelSelectCanvas7.SetActive(false);
         levelSelectCanvas8.SetActive(false);
         levelSelectCanvas9.SetActive(false);
-        levelSelectCanvas10.SetActive(false);
-        levelSelectCanvas11.SetActive(false);
-        levelSelectCanvas12.SetActive(false);
-        levelSelectCanvas13.SetActive(false);
-
     }
 
     #region Click Pages
@@ -437,29 +426,6 @@ public class MainMenuManager : LoadingMaster
         levelSelectCanvas9.SetActive(true);
     }
 
-    public void ClickPage10()
-    {
-        HideAllLevelSelectCanvas();
-        levelSelectCanvas10.SetActive(true);
-    }
-
-    public void ClickPage11()
-    {
-        HideAllLevelSelectCanvas();
-        levelSelectCanvas11.SetActive(true);
-    }
-
-    public void ClickPage12()
-    {
-        HideAllLevelSelectCanvas();
-        levelSelectCanvas12.SetActive(true);
-    }
-
-    public void ClickPage13()
-    {
-        HideAllLevelSelectCanvas();
-        levelSelectCanvas13.SetActive(true);
-    }
 
     #endregion
     // level stars
