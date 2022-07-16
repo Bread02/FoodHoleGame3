@@ -954,6 +954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8af6821b51b6b448317445d4341115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winTrigger: 0
 --- !u!4 &1106018360
 Transform:
   m_ObjectHideFlags: 0
@@ -1336,7 +1337,7 @@ PrefabInstance:
     - target: {fileID: 2613519143429768834, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 322bdd2490596b54c8f31b1eb9f04985, type: 2}
+      objectReference: {fileID: 2100000, guid: 4ca25e3e0f1b18742a79870b15cccb60, type: 2}
     - target: {fileID: 6054825934820316186, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_LocalPosition.y
       value: 35

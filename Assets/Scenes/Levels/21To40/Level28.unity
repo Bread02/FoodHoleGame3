@@ -1212,7 +1212,7 @@ PrefabInstance:
     - target: {fileID: 2613519143429768834, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7ca57d6d8cbc03d438b3626c7964b7fb, type: 2}
+      objectReference: {fileID: 2100000, guid: 322bdd2490596b54c8f31b1eb9f04985, type: 2}
     - target: {fileID: 6054825936224576820, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1604,6 +1604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8af6821b51b6b448317445d4341115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winTrigger: 0
 --- !u!4 &2054578952
 Transform:
   m_ObjectHideFlags: 0

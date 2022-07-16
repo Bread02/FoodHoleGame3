@@ -2003,7 +2003,7 @@ PrefabInstance:
     - target: {fileID: 2613519143429768834, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d00993cf8ae38904cb1514dee5351833, type: 2}
+      objectReference: {fileID: 2100000, guid: 2eeb4299d5af29f4898c981a1390fa1b, type: 2}
     - target: {fileID: 4941384455711531900, guid: e7594ef16211f6f459aba88eb0b67768, type: 3}
       propertyPath: m_Color.b
       value: 0

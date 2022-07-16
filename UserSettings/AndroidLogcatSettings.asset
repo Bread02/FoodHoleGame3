@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "ce12160ccb253cd70c",
         "name": "com.DigitalCorgiProductions.HoleTheFood",
-        "processId": 29777,
+        "processId": 12694,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -72,6 +72,12 @@
             "deviceId": "ce12160ccb253cd70c",
             "name": "com.DigitalCorgiProductions.HoleTheFood",
             "processId": 29777,
+            "exited": false
+        },
+        {
+            "deviceId": "ce12160ccb253cd70c",
+            "name": "com.DigitalCorgiProductions.HoleTheFood",
+            "processId": 12694,
             "exited": false
         }
     ],
