@@ -11,6 +11,8 @@ public class RewardedAdButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsS
 
     private LoadingMaster loadingMaster;
 
+    public GameObject internetRequiredToSkip;
+
     void Awake()
     {
         loadingMaster = GameObject.Find("LoadingMaster").GetComponent<LoadingMaster>();
@@ -29,6 +31,18 @@ public class RewardedAdButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsS
     {
         LoadAd();
 
+    }
+
+    public void Update()
+    {
+        if (_showAdButton.interactable == false)
+        {
+            internetRequiredToSkip.SetActive(true);
+        }
+        else
+        {
+            internetRequiredToSkip.SetActive(false);
+        }
     }
 
     // Load content to the Ad Unit:
@@ -79,6 +93,7 @@ public class RewardedAdButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsS
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
     {
         Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");
+        Debug.Log("User is offline!!!!!!");
         // Use the error details to determine whether to try to load another ad.
     }
 

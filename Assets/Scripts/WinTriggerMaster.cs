@@ -1890,12 +1890,11 @@ public class WinTriggerMaster : MonoBehaviour
     public void WinTrigger()
     {
         winCanvas.SetActive(true);
-       // Time.timeScale = 0;
         levelComplete = true;
         gameDataManager.IncrementNumberOfWins();
         Debug.Log(gameDataManager.ReturnNumberOfWins() + " Number of wins now");
 
-        if (gameDataManager.ReturnNumberOfWins() % 5 == 0)
+        if (gameDataManager.ReturnNumberOfWins() % 6 == 0)
         {
             adMaster.LoadAd();
             adMaster.ShowAd();
