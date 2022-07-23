@@ -16,10 +16,6 @@ public class LoadingMaster : MonoBehaviour
 
     [Header("Mobile Ads")]
     public AdMaster adMaster;
-    //   [SerializeField] private TextMeshProUGUI loadingPercentage;
-
-    // loading bar
-    //Note: The progress may look like it goes straight to 100% if your Scene doesn’t have a lot to load.
 
     public virtual void Awake()
     {

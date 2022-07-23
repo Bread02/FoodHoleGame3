@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class UnityAdsManager : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsLoadListener, IUnityAdsShowListener
 {
-    public string GAME_ID = "3003911"; //replace with your gameID from dashboard. note: will be different for each platform.
+    public string GAME_ID_ANDROID = "4839037";
+    public string GAME_ID_IOS = "4839036"; 
 
     private const string BANNER_PLACEMENT = "banner";
     private const string VIDEO_PLACEMENT = "video";
@@ -13,7 +14,7 @@ public class UnityAdsManager : MonoBehaviour, IUnityAdsInitializationListener, I
 
     [SerializeField] private BannerPosition bannerPosition = BannerPosition.BOTTOM_CENTER;
 
-    private bool testMode = true;
+    private bool testMode = false;
     private bool showBanner = false;
 
     //utility wrappers for debuglog
@@ -26,7 +27,11 @@ public class UnityAdsManager : MonoBehaviour, IUnityAdsInitializationListener, I
         {
             DebugLog(Application.platform + " supported by Advertisement");
         }
-        Advertisement.Initialize(GAME_ID, testMode, this);
+#if UNITY_IOS
+        Advertisement.Initialize(GAME_ID_IOS, testMode, this);
+#elif UNITY_ANDROID
+        Advertisement.Initialize(GAME_ID_ANDROID, testMode, this);
+#endif
     }
 
     public void ToggleBanner() 
@@ -108,7 +113,11 @@ public class UnityAdsManager : MonoBehaviour, IUnityAdsInitializationListener, I
 
     public void OnGameIDFieldChanged(string newInput)
     {
-        GAME_ID = newInput;
+#if UNITY_IOS
+        GAME_ID_IOS = newInput;
+#elif UNITY_ANDROID
+        GAME_ID_ANDROID = newInput;
+#endif
     }
 
     public void ToggleTestMode(bool isOn)

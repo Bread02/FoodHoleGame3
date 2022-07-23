@@ -61,49 +61,6 @@ public class WinTriggerMaster : MonoBehaviour
     [Header("Fruit Salad")]
     public FruitSaladController fruitSaladController;
 
-
-    // https://developers.google.com/admob/unity/interstitial
-    // view this documentation on how to create an ad
-    // Look at Ad Events next.
-    /*
-    
-    private void RequestInterstitial()
-    {
-        // test ad IDs
-#if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
-#elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3940256099942544/4411468910";
-#else
-        string adUnitId = "unexpected_platform";
-#endif
-        Debug.Log("Trigger ad");
-
-        // REAL ad IDs DO NOT USE IN TEST
-        /*
-#if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-6859020072079255~1820319644";
-#elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-6859020072079255~9124094598";
-#else
-        string adUnitId = "unexpected_platform";
-#endif
-        */
-
-        //  Initialize an InterstitialAd.
-   //     this.interstitial = new InterstitialAd(adUnitId);
-
-        // Create empty ad request
-  //      AdRequest request = new AdRequest.Builder().Build();
-
-        // Load the interstitial with the request
-  //      this.interstitial.LoadAd(request);
-
-        // on IOS a NEW interstitial ad object needs to be created
-        // each time an interstitial is used.
-        
- //   }
-
     private void Awake()
     {
         starOne = GameObject.Find("WinStar1").gameObject;
