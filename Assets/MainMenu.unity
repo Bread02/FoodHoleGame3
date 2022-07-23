@@ -3663,7 +3663,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2137956877}
         m_TargetAssemblyTypeName: MainMainMenuManager, Assembly-CSharp
-        m_MethodName: twitterButton
+        m_MethodName: DigitalCorgiWebsiteButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

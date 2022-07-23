@@ -35,14 +35,9 @@ public class MainMainMenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void youTubeButton()
+    public void DigitalCorgiWebsiteButton()
     {
-        Application.OpenURL("https://www.youtube.com/channel/UC_d9rmDj59SiK_YrIj0hrkg");
-    }
-
-    public void twitterButton()
-    {
-        Application.OpenURL("https://twitter.com/DigitalCorgiPro");
+        Application.OpenURL("https://www.digitalcorgiproductions.com");
     }
 
     public void AudioToggleOn()
