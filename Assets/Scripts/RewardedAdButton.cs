@@ -30,7 +30,6 @@ public class RewardedAdButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsS
     public void Start()
     {
         LoadAd();
-
     }
 
     public void Update()
