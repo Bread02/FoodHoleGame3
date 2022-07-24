@@ -56,7 +56,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
         {
             internetRequiredToSkip.SetActive(false);
         }
-        CheckIfNextLevelUnlocked();
+    //    CheckIfNextLevelUnlocked();
     }
 
     // Load content to the Ad Unit:
@@ -702,10 +702,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level1":
                 if(!gameDataManager.Level2UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -716,10 +713,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level2":
                 if (!gameDataManager.Level3UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -730,10 +724,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level3":
                 if (!gameDataManager.Level4UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -744,10 +735,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level4":
                 if (!gameDataManager.Level5UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -758,10 +746,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level5":
                 if (!gameDataManager.Level6UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -772,10 +757,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level6":
                 if (!gameDataManager.Level7UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -786,10 +768,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level7":
                 if (!gameDataManager.Level8UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -800,10 +779,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level8":
                 if (!gameDataManager.Level9UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -814,10 +790,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level9":
                 if (!gameDataManager.Level10UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -828,10 +801,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level10":
                 if (!gameDataManager.Level11UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -842,10 +812,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level11":
                 if (!gameDataManager.Level12UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -856,10 +823,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level12":
                 if (!gameDataManager.Level13UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -870,10 +834,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level13":
                 if (!gameDataManager.Level14UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -884,10 +845,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level14":
                 if (!gameDataManager.Level15UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -898,10 +856,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level15":
                 if (!gameDataManager.Level16UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -912,10 +867,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level16":
                 if (!gameDataManager.Level17UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -927,10 +879,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level17":
                 if (!gameDataManager.Level18UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -941,10 +890,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level18":
                 if (!gameDataManager.Level19UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -955,10 +901,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level19":
                 if (!gameDataManager.Level20UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -969,10 +912,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level20":
                 if (!gameDataManager.Level21UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -983,10 +923,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level21":
                 if (!gameDataManager.Level22UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -998,10 +935,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level22":
                 if (!gameDataManager.Level23UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1013,10 +947,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level23":
                 if (!gameDataManager.Level24UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1028,10 +959,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level24":
                 if (!gameDataManager.Level25UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1042,10 +970,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level25":
                 if (!gameDataManager.Level26UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1056,10 +981,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level26":
                 if (!gameDataManager.Level27UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1070,10 +992,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level27":
                 if (!gameDataManager.Level28UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1084,10 +1003,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level28":
                 if (!gameDataManager.Level29UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1098,10 +1014,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level29":
                 if (!gameDataManager.Level30UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1112,10 +1025,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level30":
                 if (!gameDataManager.Level31UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1126,10 +1036,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level31":
                 if (!gameDataManager.Level32UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1140,10 +1047,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level32":
                 if (!gameDataManager.Level33UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1154,10 +1058,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level33":
                 if (!gameDataManager.Level34UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1168,10 +1069,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level34":
                 if (!gameDataManager.Level35UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1182,10 +1080,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level35":
                 if (!gameDataManager.Level36UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1196,10 +1091,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level36":
                 if (!gameDataManager.Level37UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1210,10 +1102,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level37":
                 if (!gameDataManager.Level38UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1224,10 +1113,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level38":
                 if (!gameDataManager.Level39UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1238,10 +1124,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level39":
                 if (!gameDataManager.Level40UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1252,10 +1135,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level40":
                 if (!gameDataManager.Level41UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1266,10 +1146,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level41":
                 if (!gameDataManager.Level42UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1280,10 +1157,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level42":
                 if (!gameDataManager.Level43UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1295,10 +1169,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level43":
                 if (!gameDataManager.Level44UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1310,10 +1181,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level44":
                 if (!gameDataManager.Level45UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1325,10 +1193,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level45":
                 if (!gameDataManager.Level46UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1340,10 +1205,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level46":
                 if (!gameDataManager.Level47UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1355,10 +1217,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level47":
                 if (!gameDataManager.Level48UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1370,10 +1229,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level48":
                 if (!gameDataManager.Level49UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1385,10 +1241,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             case "Level49":
                 if (!gameDataManager.Level50UnlockedCheck())
                 {
-                    // Disable the button:
-                    _showAdButton.interactable = false;
-                    // Then show the ad:
-                    Advertisement.Show(_adUnitId, this);
+                    ActuallyShowAd();
                 }
                 else
                 {
@@ -1400,17 +1253,14 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             default:
                 break;
         }
-        /*
-                // Disable the button:
-                _showAdButton.interactable = false;
-        // Then show the ad:
-        Advertisement.Show(_adUnitId, this);
-        */
     }
 
     public void ActuallyShowAd()
     {
-
+        // Disable the button:
+        _showAdButton.interactable = false;
+        // Then show the ad:
+        Advertisement.Show(_adUnitId, this);
     }
 
     // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:

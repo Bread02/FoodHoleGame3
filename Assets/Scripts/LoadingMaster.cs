@@ -23,7 +23,11 @@ public class LoadingMaster : MonoBehaviour
         loadingCanvas = GameObject.Find("LoadingCanvas");
         loadingCanvas?.SetActive(false);
         Time.timeScale = 1;
-        adMaster = GameObject.Find("InterstitalAd").GetComponent<AdMaster>();
+
+        if(SceneManager.GetActiveScene().name != "AllLevelsCompleted")
+        {
+            adMaster = GameObject.Find("InterstitalAd").GetComponent<AdMaster>();
+        }
     }
 
 
