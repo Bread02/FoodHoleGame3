@@ -48,6 +48,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
         LoadAd();
     }
 
+
     // Load content to the Ad Unit:
     public void LoadAd()
     {
