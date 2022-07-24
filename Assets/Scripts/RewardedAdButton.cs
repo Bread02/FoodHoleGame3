@@ -39,24 +39,13 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
 
         //Disable the button until the ad is ready to show:
         _showAdButton.interactable = false;
+        internetRequiredToSkip.SetActive(true);
+
     }
 
     public void Start()
     {
         LoadAd();
-    }
-
-    public void Update()
-    {
-        if (_showAdButton.interactable == false)
-        {
-            internetRequiredToSkip.SetActive(true);
-        }
-        else
-        {
-            internetRequiredToSkip.SetActive(false);
-        }
-    //    CheckIfNextLevelUnlocked();
     }
 
     // Load content to the Ad Unit:
@@ -78,6 +67,11 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             _showAdButton.onClick.AddListener(ShowAd);
             // Enable the button for users to click:
             _showAdButton.interactable = true;
+            internetRequiredToSkip.SetActive(false);
+        }
+        else
+        {
+            internetRequiredToSkip.SetActive(true);
         }
     }
 
