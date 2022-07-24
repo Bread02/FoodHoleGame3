@@ -233,7 +233,6 @@ public class LoadingMaster : MonoBehaviour
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / 0.9f);
-            //        loadingPercentage.text = (operation.progress * 100).ToString() + "%";
             slider.value = progress;
             yield return null;
         }
