@@ -164,6 +164,7 @@ public class MainMenuManager : LoadingMaster
     {
         mainMainCanvas.SetActive(true);
         HideAllLevelSelectCanvas();
+        Debug.Log(gameDataManager.ReturnLevel2Stars());
     }
 
     private void FindButtons()
@@ -297,7 +298,6 @@ public class MainMenuManager : LoadingMaster
 
     private void CheckTimeAndLocks()
     {
-        CheckLevel20TimeAndStars();
         CheckLevel1TimeAndStars();
         CheckLevel2TimeAndStars();
         CheckLevel3TimeAndStars();

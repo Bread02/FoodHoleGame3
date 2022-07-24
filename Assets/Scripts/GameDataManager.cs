@@ -2283,7 +2283,7 @@ public class UnlockedLevels
         this.level50Unlocked = level50Unlocked;
         this.numberOfWins = numberOfWins;
     }
-    /*
+    
     public UnlockedLevels()
     {
         level2Unlocked = false;
@@ -2337,10 +2337,10 @@ public class UnlockedLevels
         level50Unlocked = false;
         numberOfWins = 0;
     }
-    */
+    
     
    //  All levels unlocked
-    
+    /*
         public UnlockedLevels()
     {
         level2Unlocked = true;
@@ -2395,7 +2395,7 @@ public class UnlockedLevels
     }
     
    
-     
+     */
 
 }
 

@@ -38,8 +38,16 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
 #endif
 
         //Disable the button until the ad is ready to show:
-        _showAdButton.interactable = false;
-        internetRequiredToSkip.SetActive(true);
+        if (!CheckIfUnlocked())
+        {
+            _showAdButton.interactable = false;
+            internetRequiredToSkip.SetActive(true);
+        }
+        else
+        {
+            _showAdButton.interactable = true;
+            internetRequiredToSkip.SetActive(false);
+        }
 
     }
 
@@ -62,6 +70,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
     {
         Debug.Log("Ad Loaded: " + adUnitId);
 
+        // if ad loads
         if (adUnitId.Equals(_adUnitId))
         {
             // Configure the button to call the ShowAd() method when clicked:
@@ -70,10 +79,40 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
             _showAdButton.interactable = true;
             internetRequiredToSkip.SetActive(false);
         }
+        // if ad does NOT load
         else
         {
-            internetRequiredToSkip.SetActive(true);
+            if (CheckIfUnlocked())
+            {
+                internetRequiredToSkip.SetActive(false);
+                _showAdButton.interactable = true;
+            }
+            else
+            {
+                internetRequiredToSkip.SetActive(true);
+                _showAdButton.interactable = false;
+            }
         }
+    }
+
+    public bool CheckIfUnlocked()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Level1")
+        {
+            if (gameDataManager.Level2UnlockedCheck())
+            {
+                return true;
+            }
+        }
+        if (scene.name == "Level2")
+        {
+            if (gameDataManager.Level3UnlockedCheck())
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void CheckIfNextLevelUnlocked()
@@ -86,11 +125,13 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
                 {
                     adIcon.SetActive(true);
                     skipLevelIcon.SetActive(false);
+                    LoadAd();
                 }
                 else
                 {
                     adIcon.SetActive(false);
                     skipLevelIcon.SetActive(true);
+                    _showAdButton.interactable = true;
                 }
                 break;
             case "Level2":
@@ -98,11 +139,13 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
                 {
                     adIcon.SetActive(true);
                     skipLevelIcon.SetActive(false);
+                    LoadAd();
                 }
                 else
                 {
                     adIcon.SetActive(false);
                     skipLevelIcon.SetActive(true);
+                    _showAdButton.interactable = true;
                 }
                 break;
             case "Level3":
@@ -1283,6 +1326,7 @@ public class RewardedAdButton : LoadingMaster, IUnityAdsLoadListener, IUnityAdsS
     {
         Debug.Log($"Error showing Ad Unit {adUnitId}: {error.ToString()} - {message}");
         // Use the error details to determine whether to try to load another ad.
+        Debug.Log("User is offline!!!!!! 2");
     }
 
     public void OnUnityAdsShowStart(string adUnitId) { }
