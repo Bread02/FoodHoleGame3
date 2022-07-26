@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
- // using GoogleMobileAds.Api;
 using UnityEngine.Audio;
 
 public class WinTriggerMaster : MonoBehaviour
@@ -1027,8 +1026,8 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void CheckTimeScoreLevel29(float timer)
     {
-        float threeStarTime = 22f;
-        float twoStarTime = 32f;
+        float threeStarTime = 27f;
+        float twoStarTime = 35f;
 
         StarCheck(timer, threeStarTime, twoStarTime);
         if (levelComplete && !levelCompleteSaveProgress)
@@ -1462,8 +1461,8 @@ public class WinTriggerMaster : MonoBehaviour
 
     public void CheckTimeScoreLevel44(float timer)
     {
-        float threeStarTime = 7f;
-        float twoStarTime = 15f;
+        float threeStarTime = 10f;
+        float twoStarTime = 16f;
 
         StarCheck(timer, threeStarTime, twoStarTime);
         if (levelComplete && !levelCompleteSaveProgress)
@@ -1851,12 +1850,6 @@ public class WinTriggerMaster : MonoBehaviour
         gameDataManager.IncrementNumberOfWins();
         Debug.Log(gameDataManager.ReturnNumberOfWins() + " Number of wins now");
 
-        if (gameDataManager.ReturnNumberOfWins() % 6 == 0)
-        {
-            adMaster.LoadAd();
-            adMaster.ShowAd();
-        }
-
         Scene scene = SceneManager.GetActiveScene();
         switch (scene.name)
         {
@@ -2059,7 +2052,7 @@ public class WinTriggerMaster : MonoBehaviour
                 gameDataManager.UnlockLevel15();
 
                 CheckTimeScoreLevel14(timerMaster.timerSimplified);
-                if (gameDataManager.ReturnLevel1Time() == 111111)
+                if (gameDataManager.ReturnLevel14Time() == 111111)
                 {
                     gameDataManager.SetLevel14Time(timerMaster.timerSimplified);
                     newRecordText.SetActive(true);
@@ -2197,7 +2190,7 @@ public class WinTriggerMaster : MonoBehaviour
             case "Level23":
                 gameDataManager.UnlockLevel24();
 
-                CheckTimeScoreLevel20(timerMaster.timerSimplified);
+                CheckTimeScoreLevel23(timerMaster.timerSimplified);
                 if (gameDataManager.ReturnLevel23Time() == 111111)
                 {
                     gameDataManager.SetLevel23Time(timerMaster.timerSimplified);
@@ -2642,6 +2635,12 @@ public class WinTriggerMaster : MonoBehaviour
                 }
                 break;
 
+        }
+
+        if (gameDataManager.ReturnNumberOfWins() % 6 == 0)
+        {
+            adMaster.LoadAd();
+            adMaster.ShowAd();
         }
     }
 
