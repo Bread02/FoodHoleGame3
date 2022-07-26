@@ -164,7 +164,6 @@ public class MainMenuManager : LoadingMaster
     {
         mainMainCanvas.SetActive(true);
         HideAllLevelSelectCanvas();
-        Debug.Log(gameDataManager.ReturnLevel2Stars());
     }
 
     private void FindButtons()
