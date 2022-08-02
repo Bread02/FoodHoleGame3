@@ -35,11 +35,6 @@ public class MainMainMenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void DigitalCorgiWebsiteButton()
-    {
-        Application.OpenURL("https://www.digitalcorgiproductions.com");
-    }
-
     public void AudioToggleOn()
     {
         audioMixer.SetFloat("Master", -10);
